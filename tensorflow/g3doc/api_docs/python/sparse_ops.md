@@ -16,7 +16,7 @@ dimension, and dense along all other dimensions.
 
 - - -
 
-### `class tf.SparseTensor` {#SparseTensor}
+### [`class tf.SparseTensor`](#SparseTensor) {#SparseTensor}
 
 Represents a sparse tensor.
 
@@ -64,7 +64,7 @@ represents the dense tensor
 
 - - -
 
-#### `tf.SparseTensor.__init__(indices, values, shape)` {#SparseTensor.__init__}
+#### [`tf.SparseTensor.__init__(indices, values, shape)`](#SparseTensor.__init__) {#SparseTensor.__init__}
 
 Creates a `SparseTensor`.
 
@@ -82,7 +82,7 @@ Creates a `SparseTensor`.
 
 - - -
 
-#### `tf.SparseTensor.indices` {#SparseTensor.indices}
+#### [`tf.SparseTensor.indices`](#SparseTensor.indices) {#SparseTensor.indices}
 
 The indices of non-zero values in the represented dense tensor.
 
@@ -94,7 +94,7 @@ The indices of non-zero values in the represented dense tensor.
 
 - - -
 
-#### `tf.SparseTensor.values` {#SparseTensor.values}
+#### [`tf.SparseTensor.values`](#SparseTensor.values) {#SparseTensor.values}
 
 The non-zero values in the represented dense tensor.
 
@@ -105,21 +105,21 @@ The non-zero values in the represented dense tensor.
 
 - - -
 
-#### `tf.SparseTensor.dtype` {#SparseTensor.dtype}
+#### [`tf.SparseTensor.dtype`](#SparseTensor.dtype) {#SparseTensor.dtype}
 
 The `DType` of elements in this tensor.
 
 
 - - -
 
-#### `tf.SparseTensor.shape` {#SparseTensor.shape}
+#### [`tf.SparseTensor.shape`](#SparseTensor.shape) {#SparseTensor.shape}
 
 A 1-D Tensor of int64 representing the shape of the dense tensor.
 
 
 - - -
 
-#### `tf.SparseTensor.graph` {#SparseTensor.graph}
+#### [`tf.SparseTensor.graph`](#SparseTensor.graph) {#SparseTensor.graph}
 
 The `Graph` that contains the index, value, and shape tensors.
 
@@ -127,26 +127,26 @@ The `Graph` that contains the index, value, and shape tensors.
 
 - - -
 
-### `class tf.SparseTensorValue` {#SparseTensorValue}
+### [`class tf.SparseTensorValue`](#SparseTensorValue) {#SparseTensorValue}
 
 SparseTensorValue(indices, values, shape)
 - - -
 
-#### `tf.SparseTensorValue.indices` {#SparseTensorValue.indices}
+#### [`tf.SparseTensorValue.indices`](#SparseTensorValue.indices) {#SparseTensorValue.indices}
 
 Alias for field number 0
 
 
 - - -
 
-#### `tf.SparseTensorValue.shape` {#SparseTensorValue.shape}
+#### [`tf.SparseTensorValue.shape`](#SparseTensorValue.shape) {#SparseTensorValue.shape}
 
 Alias for field number 2
 
 
 - - -
 
-#### `tf.SparseTensorValue.values` {#SparseTensorValue.values}
+#### [`tf.SparseTensorValue.values`](#SparseTensorValue.values) {#SparseTensorValue.values}
 
 Alias for field number 1
 
@@ -157,7 +157,7 @@ Alias for field number 1
 
 - - -
 
-### `tf.sparse_to_dense(sparse_indices, output_shape, sparse_values, default_value=0, name=None)` {#sparse_to_dense}
+### [`tf.sparse_to_dense(sparse_indices, output_shape, sparse_values, default_value=0, name=None)`](#sparse_to_dense) {#sparse_to_dense}
 
 Converts a sparse representation into a dense tensor.
 
@@ -199,7 +199,7 @@ is a scalar, all sparse indices are set to this single value.
 
 - - -
 
-### `tf.sparse_tensor_to_dense(sp_input, default_value=0, name=None)` {#sparse_tensor_to_dense}
+### [`tf.sparse_tensor_to_dense(sp_input, default_value=0, name=None)`](#sparse_tensor_to_dense) {#sparse_tensor_to_dense}
 
 Converts a `SparseTensor` into a dense tensor.
 
@@ -240,7 +240,7 @@ string tensor with values:
 
 - - -
 
-### `tf.sparse_to_indicator(sp_input, vocab_size, name=None)` {#sparse_to_indicator}
+### [`tf.sparse_to_indicator(sp_input, vocab_size, name=None)`](#sparse_to_indicator) {#sparse_to_indicator}
 
 Converts a `SparseTensor` of ids into a dense bool indicator tensor.
 
@@ -294,7 +294,7 @@ The input `SparseTensor` must be in row-major order.
 
 - - -
 
-### `tf.sparse_concat(concat_dim, sp_inputs, name=None)` {#sparse_concat}
+### [`tf.sparse_concat(concat_dim, sp_inputs, name=None)`](#sparse_concat) {#sparse_concat}
 
 Concatenates a list of `SparseTensor` along the specified dimension.
 
@@ -359,7 +359,7 @@ Graphically this is equivalent to doing
 
 - - -
 
-### `tf.sparse_reorder(sp_input, name=None)` {#sparse_reorder}
+### [`tf.sparse_reorder(sp_input, name=None)`](#sparse_reorder) {#sparse_reorder}
 
 Reorders a `SparseTensor` into the canonical, row-major ordering.
 
@@ -403,7 +403,7 @@ then the output will be a `SparseTensor` of shape `[4, 5]` and
 
 - - -
 
-### `tf.sparse_split(split_dim, num_split, sp_input, name=None)` {#sparse_split}
+### [`tf.sparse_split(split_dim, num_split, sp_input, name=None)`](#sparse_split) {#sparse_split}
 
 Split a `SparseTensor` into `num_split` tensors along `split_dim`.
 
@@ -446,7 +446,7 @@ Graphically the output tensors are:
 
 - - -
 
-### `tf.sparse_retain(sp_input, to_retain)` {#sparse_retain}
+### [`tf.sparse_retain(sp_input, to_retain)`](#sparse_retain) {#sparse_retain}
 
 Retains specified non-empty values within a `SparseTensor`.
 
@@ -482,7 +482,7 @@ be a `SparseTensor` of shape `[4, 5]` with 2 non-empty values:
 
 - - -
 
-### `tf.sparse_fill_empty_rows(sp_input, default_value, name=None)` {#sparse_fill_empty_rows}
+### [`tf.sparse_fill_empty_rows(sp_input, default_value, name=None)`](#sparse_fill_empty_rows) {#sparse_fill_empty_rows}
 
 Fills empty rows in the input 2-D `SparseTensor` with a default value.
 

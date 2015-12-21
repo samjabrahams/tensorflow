@@ -11,7 +11,7 @@ Note: Functions taking `Tensor` arguments can also take anything accepted by
 
 - - -
 
-### `class tf.Variable` {#Variable}
+### [`class tf.Variable`](#Variable) {#Variable}
 
 See the [Variables How To](../../how_tos/variables/index.md) for a high
 level overview.
@@ -104,7 +104,7 @@ Creating a variable.
 
 - - -
 
-#### `tf.Variable.__init__(initial_value, trainable=True, collections=None, validate_shape=True, name=None)` {#Variable.__init__}
+#### [`tf.Variable.__init__(initial_value, trainable=True, collections=None, validate_shape=True, name=None)`](#Variable.__init__) {#Variable.__init__}
 
 Creates a new variable with value `initial_value`.
 
@@ -147,7 +147,7 @@ variable to its initial value.
 
 - - -
 
-#### `tf.Variable.initialized_value()` {#Variable.initialized_value}
+#### [`tf.Variable.initialized_value()`](#Variable.initialized_value) {#Variable.initialized_value}
 
 Returns the value of the initialized variable.
 
@@ -174,7 +174,7 @@ Changing a variable value.
 
 - - -
 
-#### `tf.Variable.assign(value, use_locking=False)` {#Variable.assign}
+#### [`tf.Variable.assign(value, use_locking=False)`](#Variable.assign) {#Variable.assign}
 
 Assigns a new value to the variable.
 
@@ -194,7 +194,7 @@ This is essentially a shortcut for `assign(self, value)`.
 
 - - -
 
-#### `tf.Variable.assign_add(delta, use_locking=False)` {#Variable.assign_add}
+#### [`tf.Variable.assign_add(delta, use_locking=False)`](#Variable.assign_add) {#Variable.assign_add}
 
 Adds a value to this variable.
 
@@ -214,7 +214,7 @@ Adds a value to this variable.
 
 - - -
 
-#### `tf.Variable.assign_sub(delta, use_locking=False)` {#Variable.assign_sub}
+#### [`tf.Variable.assign_sub(delta, use_locking=False)`](#Variable.assign_sub) {#Variable.assign_sub}
 
 Subtracts a value from this variable.
 
@@ -234,7 +234,7 @@ This is essentially a shortcut for `assign_sub(self, delta)`.
 
 - - -
 
-#### `tf.Variable.scatter_sub(sparse_delta, use_locking=False)` {#Variable.scatter_sub}
+#### [`tf.Variable.scatter_sub(sparse_delta, use_locking=False)`](#Variable.scatter_sub) {#Variable.scatter_sub}
 
 Subtracts `IndexedSlices` from this variable.
 
@@ -260,7 +260,7 @@ sparse_delta.values)`.
 
 - - -
 
-#### `tf.Variable.count_up_to(limit)` {#Variable.count_up_to}
+#### [`tf.Variable.count_up_to(limit)`](#Variable.count_up_to) {#Variable.count_up_to}
 
 Increments this variable until it reaches `limit`.
 
@@ -288,7 +288,7 @@ This is essentially a shortcut for `count_up_to(self, limit)`.
 
 - - -
 
-#### `tf.Variable.eval(session=None)` {#Variable.eval}
+#### [`tf.Variable.eval(session=None)`](#Variable.eval) {#Variable.eval}
 
 In a session, computes and returns the value of this variable.
 
@@ -328,21 +328,21 @@ Properties.
 
 - - -
 
-#### `tf.Variable.name` {#Variable.name}
+#### [`tf.Variable.name`](#Variable.name) {#Variable.name}
 
 The name of this variable.
 
 
 - - -
 
-#### `tf.Variable.dtype` {#Variable.dtype}
+#### [`tf.Variable.dtype`](#Variable.dtype) {#Variable.dtype}
 
 The `DType` of this variable.
 
 
 - - -
 
-#### `tf.Variable.get_shape()` {#Variable.get_shape}
+#### [`tf.Variable.get_shape()`](#Variable.get_shape) {#Variable.get_shape}
 
 The `TensorShape` of this variable.
 
@@ -353,28 +353,28 @@ The `TensorShape` of this variable.
 
 - - -
 
-#### `tf.Variable.device` {#Variable.device}
+#### [`tf.Variable.device`](#Variable.device) {#Variable.device}
 
 The device of this variable.
 
 
 - - -
 
-#### `tf.Variable.initializer` {#Variable.initializer}
+#### [`tf.Variable.initializer`](#Variable.initializer) {#Variable.initializer}
 
 The initializer operation for this variable.
 
 
 - - -
 
-#### `tf.Variable.graph` {#Variable.graph}
+#### [`tf.Variable.graph`](#Variable.graph) {#Variable.graph}
 
 The `Graph` of this variable.
 
 
 - - -
 
-#### `tf.Variable.op` {#Variable.op}
+#### [`tf.Variable.op`](#Variable.op) {#Variable.op}
 
 The `Operation` of this variable.
 
@@ -383,7 +383,7 @@ The `Operation` of this variable.
 #### Other Methods
 - - -
 
-#### `tf.Variable.ref()` {#Variable.ref}
+#### [`tf.Variable.ref()`](#Variable.ref) {#Variable.ref}
 
 Returns a reference to this variable.
 
@@ -402,7 +402,7 @@ variable.
 
 - - -
 
-#### `tf.Variable.value()` {#Variable.value}
+#### [`tf.Variable.value()`](#Variable.value) {#Variable.value}
 
 Returns the last snapshot of this variable.
 
@@ -433,7 +433,7 @@ collected in the graph.
 
 - - -
 
-### `tf.all_variables()` {#all_variables}
+### [`tf.all_variables()`](#all_variables) {#all_variables}
 
 Returns all variables collected in the graph.
 
@@ -448,7 +448,7 @@ contents of that collection.
 
 - - -
 
-### `tf.trainable_variables()` {#trainable_variables}
+### [`tf.trainable_variables()`](#trainable_variables) {#trainable_variables}
 
 Returns all variables created with `trainable=True`.
 
@@ -465,7 +465,7 @@ contents of that collection.
 
 - - -
 
-### `tf.initialize_all_variables()` {#initialize_all_variables}
+### [`tf.initialize_all_variables()`](#initialize_all_variables) {#initialize_all_variables}
 
 Returns an Op that initializes all variables.
 
@@ -478,7 +478,7 @@ This is just a shortcut for `initialize_variables(all_variables())`
 
 - - -
 
-### `tf.initialize_variables(var_list, name='init')` {#initialize_variables}
+### [`tf.initialize_variables(var_list, name='init')`](#initialize_variables) {#initialize_variables}
 
 Returns an Op that initializes a list of variables.
 
@@ -505,7 +505,7 @@ be run. That Op just has no effect.
 
 - - -
 
-### `tf.assert_variables_initialized(var_list=None)` {#assert_variables_initialized}
+### [`tf.assert_variables_initialized(var_list=None)`](#assert_variables_initialized) {#assert_variables_initialized}
 
 Returns an Op to check if variables are initialized.
 
@@ -532,7 +532,7 @@ logged by the C++ runtime. This is expected.
 
 - - -
 
-### `class tf.train.Saver` {#Saver}
+### [`class tf.train.Saver`](#Saver) {#Saver}
 
 Saves and restores variables.
 
@@ -608,7 +608,7 @@ protocol buffer file in the call to `save()`.
 
 - - -
 
-#### `tf.train.Saver.__init__(var_list=None, reshape=False, sharded=False, max_to_keep=5, keep_checkpoint_every_n_hours=10000.0, name=None, restore_sequentially=False, saver_def=None, builder=None)` {#Saver.__init__}
+#### [`tf.train.Saver.__init__(var_list=None, reshape=False, sharded=False, max_to_keep=5, keep_checkpoint_every_n_hours=10000.0, name=None, restore_sequentially=False, saver_def=None, builder=None)`](#Saver.__init__) {#Saver.__init__}
 
 Creates a `Saver`.
 
@@ -679,7 +679,7 @@ checkpoints per device.
 
 - - -
 
-#### `tf.train.Saver.save(sess, save_path, global_step=None, latest_filename=None)` {#Saver.save}
+#### [`tf.train.Saver.save(sess, save_path, global_step=None, latest_filename=None)`](#Saver.save) {#Saver.save}
 
 Saves variables.
 
@@ -719,7 +719,7 @@ path can be passed directly to a call to `restore()`.
 
 - - -
 
-#### `tf.train.Saver.restore(sess, save_path)` {#Saver.restore}
+#### [`tf.train.Saver.restore(sess, save_path)`](#Saver.restore) {#Saver.restore}
 
 Restores previously saved variables.
 
@@ -743,7 +743,7 @@ Other utility methods.
 
 - - -
 
-#### `tf.train.Saver.last_checkpoints` {#Saver.last_checkpoints}
+#### [`tf.train.Saver.last_checkpoints`](#Saver.last_checkpoints) {#Saver.last_checkpoints}
 
 List of not-yet-deleted checkpoint filenames.
 
@@ -756,7 +756,7 @@ You can pass any of the returned values to `restore()`.
 
 - - -
 
-#### `tf.train.Saver.set_last_checkpoints(last_checkpoints)` {#Saver.set_last_checkpoints}
+#### [`tf.train.Saver.set_last_checkpoints(last_checkpoints)`](#Saver.set_last_checkpoints) {#Saver.set_last_checkpoints}
 
 Sets the list of old checkpoint filenames.
 
@@ -773,7 +773,7 @@ Sets the list of old checkpoint filenames.
 
 - - -
 
-#### `tf.train.Saver.as_saver_def()` {#Saver.as_saver_def}
+#### [`tf.train.Saver.as_saver_def()`](#Saver.as_saver_def) {#Saver.as_saver_def}
 
 Generates a `SaverDef` representation of this saver.
 
@@ -786,7 +786,7 @@ Generates a `SaverDef` representation of this saver.
 
 - - -
 
-### `tf.train.latest_checkpoint(checkpoint_dir, latest_filename=None)` {#latest_checkpoint}
+### [`tf.train.latest_checkpoint(checkpoint_dir, latest_filename=None)`](#latest_checkpoint) {#latest_checkpoint}
 
 Finds the filename of latest saved checkpoint file.
 
@@ -806,7 +806,7 @@ Finds the filename of latest saved checkpoint file.
 
 - - -
 
-### `tf.train.get_checkpoint_state(checkpoint_dir, latest_filename=None)` {#get_checkpoint_state}
+### [`tf.train.get_checkpoint_state(checkpoint_dir, latest_filename=None)`](#get_checkpoint_state) {#get_checkpoint_state}
 
 Returns CheckpointState proto from the "checkpoint" file.
 
@@ -828,7 +828,7 @@ proto, returns it.
 
 - - -
 
-### `tf.train.update_checkpoint_state(save_dir, model_checkpoint_path, all_model_checkpoint_paths=None, latest_filename=None)` {#update_checkpoint_state}
+### [`tf.train.update_checkpoint_state(save_dir, model_checkpoint_path, all_model_checkpoint_paths=None, latest_filename=None)`](#update_checkpoint_state) {#update_checkpoint_state}
 
 Updates the content of the 'checkpoint' file.
 
@@ -861,7 +861,7 @@ create variables contingent on certain conditions.
 
 - - -
 
-### `tf.get_variable(name, shape=None, dtype=tf.float32, initializer=None, trainable=True, collections=None)` {#get_variable}
+### [`tf.get_variable(name, shape=None, dtype=tf.float32, initializer=None, trainable=True, collections=None)`](#get_variable) {#get_variable}
 
 Gets an existing variable with these parameters or create a new one.
 
@@ -908,14 +908,14 @@ the constructor is used. If that one is `None` too, a
 
 - - -
 
-### `tf.get_variable_scope()` {#get_variable_scope}
+### [`tf.get_variable_scope()`](#get_variable_scope) {#get_variable_scope}
 
 Returns the current variable scope.
 
 
 - - -
 
-### `tf.make_template(name_, func_, **kwargs)` {#make_template}
+### [`tf.make_template(name_, func_, **kwargs)`](#make_template) {#make_template}
 
 Given an arbitrary function, wrap it so that it does variable sharing.
 
@@ -1013,7 +1013,7 @@ of collisions with kwargs.
 
 - - -
 
-### `tf.variable_op_scope(values, name, default_name, initializer=None)` {#variable_op_scope}
+### [`tf.variable_op_scope(values, name, default_name, initializer=None)`](#variable_op_scope) {#variable_op_scope}
 
 Returns a context manager for defining an op that creates variables.
 
@@ -1065,7 +1065,7 @@ def my_op_with_vars(a, b, name=None):
 
 - - -
 
-### `tf.variable_scope(name_or_scope, reuse=None, initializer=None)` {#variable_scope}
+### [`tf.variable_scope(name_or_scope, reuse=None, initializer=None)`](#variable_scope) {#variable_scope}
 
 Returns a context for variable scope.
 
@@ -1148,7 +1148,7 @@ then all its sub-scopes become reusing as well.
 
 - - -
 
-### `tf.constant_initializer(value=0.0)` {#constant_initializer}
+### [`tf.constant_initializer(value=0.0)`](#constant_initializer) {#constant_initializer}
 
 Returns an initializer that generates tensors with a single value.
 
@@ -1165,7 +1165,7 @@ Returns an initializer that generates tensors with a single value.
 
 - - -
 
-### `tf.random_normal_initializer(mean=0.0, stddev=1.0, seed=None)` {#random_normal_initializer}
+### [`tf.random_normal_initializer(mean=0.0, stddev=1.0, seed=None)`](#random_normal_initializer) {#random_normal_initializer}
 
 Returns an initializer that generates tensors with a normal distribution.
 
@@ -1187,7 +1187,7 @@ Returns an initializer that generates tensors with a normal distribution.
 
 - - -
 
-### `tf.truncated_normal_initializer(mean=0.0, stddev=1.0, seed=None)` {#truncated_normal_initializer}
+### [`tf.truncated_normal_initializer(mean=0.0, stddev=1.0, seed=None)`](#truncated_normal_initializer) {#truncated_normal_initializer}
 
 Returns an initializer that generates a truncated normal distribution.
 
@@ -1215,7 +1215,7 @@ neural network weights and filters.
 
 - - -
 
-### `tf.random_uniform_initializer(minval=0.0, maxval=1.0, seed=None)` {#random_uniform_initializer}
+### [`tf.random_uniform_initializer(minval=0.0, maxval=1.0, seed=None)`](#random_uniform_initializer) {#random_uniform_initializer}
 
 Returns an initializer that generates tensors with a uniform distribution.
 
@@ -1237,7 +1237,7 @@ Returns an initializer that generates tensors with a uniform distribution.
 
 - - -
 
-### `tf.uniform_unit_scaling_initializer(factor=1.0, seed=None)` {#uniform_unit_scaling_initializer}
+### [`tf.uniform_unit_scaling_initializer(factor=1.0, seed=None)`](#uniform_unit_scaling_initializer) {#uniform_unit_scaling_initializer}
 
 Returns an initializer that generates tensors without scaling variance.
 
@@ -1271,7 +1271,7 @@ numerically computed: for a linear layer it's 1.0, relu: ~1.43, tanh: ~1.15.
 
 - - -
 
-### `tf.zeros_initializer(shape, dtype=tf.float32)` {#zeros_initializer}
+### [`tf.zeros_initializer(shape, dtype=tf.float32)`](#zeros_initializer) {#zeros_initializer}
 
 An adaptor for zeros() to match the Initializer spec.
 
@@ -1293,7 +1293,7 @@ automatically by the optimizers in most cases.
 
 - - -
 
-### `tf.scatter_update(ref, indices, updates, use_locking=None, name=None)` {#scatter_update}
+### [`tf.scatter_update(ref, indices, updates, use_locking=None, name=None)`](#scatter_update) {#scatter_update}
 
 Applies sparse updates to a variable reference.
 
@@ -1341,7 +1341,7 @@ Requires `updates.shape = indices.shape + ref.shape[1:]`.
 
 - - -
 
-### `tf.scatter_add(ref, indices, updates, use_locking=None, name=None)` {#scatter_add}
+### [`tf.scatter_add(ref, indices, updates, use_locking=None, name=None)`](#scatter_add) {#scatter_add}
 
 Adds sparse updates to a variable reference.
 
@@ -1390,7 +1390,7 @@ Requires `updates.shape = indices.shape + ref.shape[1:]`.
 
 - - -
 
-### `tf.scatter_sub(ref, indices, updates, use_locking=None, name=None)` {#scatter_sub}
+### [`tf.scatter_sub(ref, indices, updates, use_locking=None, name=None)`](#scatter_sub) {#scatter_sub}
 
 Subtracts sparse updates to a variable reference.
 
@@ -1437,7 +1437,7 @@ Requires `updates.shape = indices.shape + ref.shape[1:]`.
 
 - - -
 
-### `tf.sparse_mask(a, mask_indices, name=None)` {#sparse_mask}
+### [`tf.sparse_mask(a, mask_indices, name=None)`](#sparse_mask) {#sparse_mask}
 
 Masks elements of `IndexedSlices`.
 
@@ -1479,7 +1479,7 @@ tf.shape(b.values) => [2, 10]
 
 - - -
 
-### `class tf.IndexedSlices` {#IndexedSlices}
+### [`class tf.IndexedSlices`](#IndexedSlices) {#IndexedSlices}
 
 A sparse representation of a set of tensor slices at given indices.
 
@@ -1509,7 +1509,7 @@ which uses multi-dimensional indices and scalar values.
 
 - - -
 
-#### `tf.IndexedSlices.__init__(values, indices, dense_shape=None)` {#IndexedSlices.__init__}
+#### [`tf.IndexedSlices.__init__(values, indices, dense_shape=None)`](#IndexedSlices.__init__) {#IndexedSlices.__init__}
 
 Creates an `IndexedSlices`.
 
@@ -1517,21 +1517,21 @@ Creates an `IndexedSlices`.
 
 - - -
 
-#### `tf.IndexedSlices.values` {#IndexedSlices.values}
+#### [`tf.IndexedSlices.values`](#IndexedSlices.values) {#IndexedSlices.values}
 
 A `Tensor` containing the values of the slices.
 
 
 - - -
 
-#### `tf.IndexedSlices.indices` {#IndexedSlices.indices}
+#### [`tf.IndexedSlices.indices`](#IndexedSlices.indices) {#IndexedSlices.indices}
 
 A 1-D `Tensor` containing the indices of the slices.
 
 
 - - -
 
-#### `tf.IndexedSlices.dense_shape` {#IndexedSlices.dense_shape}
+#### [`tf.IndexedSlices.dense_shape`](#IndexedSlices.dense_shape) {#IndexedSlices.dense_shape}
 
 A 1-D `Tensor` containing the shape of the corresponding dense tensor.
 
@@ -1539,28 +1539,28 @@ A 1-D `Tensor` containing the shape of the corresponding dense tensor.
 
 - - -
 
-#### `tf.IndexedSlices.name` {#IndexedSlices.name}
+#### [`tf.IndexedSlices.name`](#IndexedSlices.name) {#IndexedSlices.name}
 
 The name of this `IndexedSlices`.
 
 
 - - -
 
-#### `tf.IndexedSlices.dtype` {#IndexedSlices.dtype}
+#### [`tf.IndexedSlices.dtype`](#IndexedSlices.dtype) {#IndexedSlices.dtype}
 
 The `DType` of elements in this tensor.
 
 
 - - -
 
-#### `tf.IndexedSlices.device` {#IndexedSlices.device}
+#### [`tf.IndexedSlices.device`](#IndexedSlices.device) {#IndexedSlices.device}
 
 The name of the device on which `values` will be produced, or `None`.
 
 
 - - -
 
-#### `tf.IndexedSlices.op` {#IndexedSlices.op}
+#### [`tf.IndexedSlices.op`](#IndexedSlices.op) {#IndexedSlices.op}
 
 The `Operation` that produces `values` as an output.
 
@@ -1569,7 +1569,7 @@ The `Operation` that produces `values` as an output.
 #### Other Methods
 - - -
 
-#### `tf.IndexedSlices.graph` {#IndexedSlices.graph}
+#### [`tf.IndexedSlices.graph`](#IndexedSlices.graph) {#IndexedSlices.graph}
 
 The `Graph` that contains the values, indices, and shape tensors.
 

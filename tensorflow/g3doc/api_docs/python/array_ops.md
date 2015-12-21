@@ -14,7 +14,7 @@ types in your graph.
 
 - - -
 
-### `tf.string_to_number(string_tensor, out_type=None, name=None)` {#string_to_number}
+### [`tf.string_to_number(string_tensor, out_type=None, name=None)`](#string_to_number) {#string_to_number}
 
 Converts each string in the input Tensor to the specified numeric type.
 
@@ -37,7 +37,7 @@ results in a rounded value.)
 
 - - -
 
-### `tf.to_double(x, name='ToDouble')` {#to_double}
+### [`tf.to_double(x, name='ToDouble')`](#to_double) {#to_double}
 
 Casts a tensor to type `float64`.
 
@@ -59,7 +59,7 @@ Casts a tensor to type `float64`.
 
 - - -
 
-### `tf.to_float(x, name='ToFloat')` {#to_float}
+### [`tf.to_float(x, name='ToFloat')`](#to_float) {#to_float}
 
 Casts a tensor to type `float32`.
 
@@ -81,7 +81,7 @@ Casts a tensor to type `float32`.
 
 - - -
 
-### `tf.to_bfloat16(x, name='ToBFloat16')` {#to_bfloat16}
+### [`tf.to_bfloat16(x, name='ToBFloat16')`](#to_bfloat16) {#to_bfloat16}
 
 Casts a tensor to type `bfloat16`.
 
@@ -103,7 +103,7 @@ Casts a tensor to type `bfloat16`.
 
 - - -
 
-### `tf.to_int32(x, name='ToInt32')` {#to_int32}
+### [`tf.to_int32(x, name='ToInt32')`](#to_int32) {#to_int32}
 
 Casts a tensor to type `int32`.
 
@@ -125,7 +125,7 @@ Casts a tensor to type `int32`.
 
 - - -
 
-### `tf.to_int64(x, name='ToInt64')` {#to_int64}
+### [`tf.to_int64(x, name='ToInt64')`](#to_int64) {#to_int64}
 
 Casts a tensor to type `int64`.
 
@@ -147,7 +147,7 @@ Casts a tensor to type `int64`.
 
 - - -
 
-### `tf.cast(x, dtype, name=None)` {#cast}
+### [`tf.cast(x, dtype, name=None)`](#cast) {#cast}
 
 Casts a tensor to a new type.
 
@@ -186,7 +186,7 @@ of a tensor and change the shape of a tensor.
 
 - - -
 
-### `tf.shape(input, name=None)` {#shape}
+### [`tf.shape(input, name=None)`](#shape) {#shape}
 
 Returns the shape of a tensor.
 
@@ -212,7 +212,7 @@ shape(t) ==> [2, 2, 3]
 
 - - -
 
-### `tf.size(input, name=None)` {#size}
+### [`tf.size(input, name=None)`](#size) {#size}
 
 Returns the size of a tensor.
 
@@ -239,7 +239,7 @@ size(t) ==> 12
 
 - - -
 
-### `tf.rank(input, name=None)` {#rank}
+### [`tf.rank(input, name=None)`](#rank) {#rank}
 
 Returns the rank of a tensor.
 
@@ -270,7 +270,7 @@ of the tensor. Rank is also known as "order", "degree", or "ndims."
 
 - - -
 
-### `tf.reshape(tensor, shape, name=None)` {#reshape}
+### [`tf.reshape(tensor, shape, name=None)`](#reshape) {#reshape}
 
 Reshapes a tensor.
 
@@ -332,7 +332,7 @@ reshape(t, []) ==> 7
 
 - - -
 
-### `tf.squeeze(input, squeeze_dims=None, name=None)` {#squeeze}
+### [`tf.squeeze(input, squeeze_dims=None, name=None)`](#squeeze) {#squeeze}
 
 Removes dimensions of size 1 from the shape of a tensor.
 
@@ -373,7 +373,7 @@ shape(squeeze(t, [2, 4])) ==> [1, 2, 3, 1]
 
 - - -
 
-### `tf.expand_dims(input, dim, name=None)` {#expand_dims}
+### [`tf.expand_dims(input, dim, name=None)`](#expand_dims) {#expand_dims}
 
 Inserts a dimension of 1 into a tensor's shape.
 
@@ -432,7 +432,7 @@ or join multiple tensors together.
 
 - - -
 
-### `tf.slice(input_, begin, size, name=None)` {#slice}
+### [`tf.slice(input_, begin, size, name=None)`](#slice) {#slice}
 
 Extracts a slice from a tensor.
 
@@ -482,7 +482,7 @@ tf.slice(input, [1, 0, 0], [2, 1, 3]) ==> [[[3, 3, 3]],
 
 - - -
 
-### `tf.split(split_dim, num_split, value, name='split')` {#split}
+### [`tf.split(split_dim, num_split, value, name='split')`](#split) {#split}
 
 Splits a tensor into `num_split` tensors along one dimension.
 
@@ -514,7 +514,7 @@ tf.shape(split0) ==> [5, 10]
 
 - - -
 
-### `tf.tile(input, multiples, name=None)` {#tile}
+### [`tf.tile(input, multiples, name=None)`](#tile) {#tile}
 
 Constructs a tensor by tiling a given tensor.
 
@@ -539,7 +539,7 @@ dimension. For example, tiling `[a b c d]` by `[2]` produces
 
 - - -
 
-### `tf.pad(input, paddings, name=None)` {#pad}
+### [`tf.pad(input, paddings, name=None)`](#pad) {#pad}
 
 Pads a tensor with zeros.
 
@@ -580,7 +580,7 @@ pad(t, paddings) ==> [[0, 0, 0, 0, 0, 0]
 
 - - -
 
-### `tf.concat(concat_dim, values, name='concat')` {#concat}
+### [`tf.concat(concat_dim, values, name='concat')`](#concat) {#concat}
 
 Concatenates tensors along one dimension.
 
@@ -628,7 +628,7 @@ tf.shape(tf.concat(1, [t3, t4])) ==> [2, 6]
 
 - - -
 
-### `tf.pack(values, name='pack')` {#pack}
+### [`tf.pack(values, name='pack')`](#pack) {#pack}
 
 Packs a list of rank-`R` tensors into one rank-`(R+1)` tensor.
 
@@ -654,7 +654,7 @@ This is the opposite of unpack.  The numpy equivalent is
 
 - - -
 
-### `tf.unpack(value, num=None, name='unpack')` {#unpack}
+### [`tf.unpack(value, num=None, name='unpack')`](#unpack) {#unpack}
 
 Unpacks the outer dimension of a rank-`R` tensor into rank-`(R-1)` tensors.
 
@@ -689,7 +689,7 @@ This is the opposite of pack.  The numpy equivalent is
 
 - - -
 
-### `tf.reverse_sequence(input, seq_lengths, seq_dim, batch_dim=None, name=None)` {#reverse_sequence}
+### [`tf.reverse_sequence(input, seq_lengths, seq_dim, batch_dim=None, name=None)`](#reverse_sequence) {#reverse_sequence}
 
 Reverses variable length slices.
 
@@ -767,7 +767,7 @@ output[2:, :, 3, :, ...] = input[2:, :, 3, :, ...]
 
 - - -
 
-### `tf.reverse(tensor, dims, name=None)` {#reverse}
+### [`tf.reverse(tensor, dims, name=None)`](#reverse) {#reverse}
 
 Reverses specific dimensions of a tensor.
 
@@ -831,7 +831,7 @@ reverse(t, dims) ==> [[[[8, 9, 10, 11],
 
 - - -
 
-### `tf.transpose(a, perm=None, name='transpose')` {#transpose}
+### [`tf.transpose(a, perm=None, name='transpose')`](#transpose) {#transpose}
 
 Transposes `a`. Permutes the dimensions according to `perm`.
 
@@ -883,7 +883,7 @@ tf.transpose(b, perm=[0, 2, 1]) ==> [[[1  4]
 
 - - -
 
-### `tf.gather(params, indices, name=None)` {#gather}
+### [`tf.gather(params, indices, name=None)`](#gather) {#gather}
 
 Gather slices from `params` according to `indices`.
 
@@ -920,7 +920,7 @@ this operation will permute `params` accordingly.
 
 - - -
 
-### `tf.dynamic_partition(data, partitions, num_partitions, name=None)` {#dynamic_partition}
+### [`tf.dynamic_partition(data, partitions, num_partitions, name=None)`](#dynamic_partition) {#dynamic_partition}
 
 Partitions `data` into `num_partitions` tensors using indices from `partitions`.
 
@@ -973,7 +973,7 @@ For example:
 
 - - -
 
-### `tf.dynamic_stitch(indices, data, name=None)` {#dynamic_stitch}
+### [`tf.dynamic_stitch(indices, data, name=None)`](#dynamic_stitch) {#dynamic_stitch}
 
 Interleave the values from the `data` tensors into a single tensor.
 

@@ -55,19 +55,19 @@ Only one thread must call Close() , and Close() must only be called after all ot
 
 ##Member Details
 
-#### `virtual Status tensorflow::Session::Create(const GraphDef &graph)=0` {#virtual_Status_tensorflow_Session_Create}
+#### [`virtual Status tensorflow::Session::Create(const GraphDef &graph)=0`](#virtual_Status_tensorflow_Session_Create) {#virtual_Status_tensorflow_Session_Create}
 
 Create the graph to be used for the session.
 
 Returns an error if this session has already been created with a graph. To re-use the session with a different graph, the caller must Close() the session first.
 
-#### `virtual Status tensorflow::Session::Extend(const GraphDef &graph)=0` {#virtual_Status_tensorflow_Session_Extend}
+#### [`virtual Status tensorflow::Session::Extend(const GraphDef &graph)=0`](#virtual_Status_tensorflow_Session_Extend) {#virtual_Status_tensorflow_Session_Extend}
 
 Adds operations to the graph that is already registered with the Session .
 
 The names of new operations in "graph" must not exist in the graph that is already registered.
 
-#### `virtual Status tensorflow::Session::Run(const std::vector< std::pair< string, Tensor > > &inputs, const std::vector< string > &output_tensor_names, const std::vector< string > &target_node_names, std::vector< Tensor > *outputs)=0` {#virtual_Status_tensorflow_Session_Run}
+#### [`virtual Status tensorflow::Session::Run(const std::vector< std::pair< string, Tensor > > &inputs, const std::vector< string > &output_tensor_names, const std::vector< string > &target_node_names, std::vector< Tensor > *outputs)=0`](#virtual_Status_tensorflow_Session_Run) {#virtual_Status_tensorflow_Session_Run}
 
 Runs the graph with the provided input tensors and fills `outputs` for the endpoints specified in `output_tensor_names`. Runs to but does not return Tensors for the nodes in `target_node_names`.
 
@@ -79,13 +79,13 @@ REQUIRES: The name of each Tensor of the input or output must match a "Tensor en
 
 REQUIRES: outputs is not nullptr if `output_tensor_names` is non-empty.
 
-#### `virtual Status tensorflow::Session::Close()=0` {#virtual_Status_tensorflow_Session_Close}
+#### [`virtual Status tensorflow::Session::Close()=0`](#virtual_Status_tensorflow_Session_Close) {#virtual_Status_tensorflow_Session_Close}
 
 Closes this session.
 
 Closing a session releases the resources used by this session on the TensorFlow runtime (specified during session creation by the ` SessionOptions::target ` field).
 
-#### `virtual tensorflow::Session::~Session()` {#virtual_tensorflow_Session_Session}
+#### [`virtual tensorflow::Session::~Session()`](#virtual_tensorflow_Session_Session) {#virtual_tensorflow_Session_Session}
 
 
 

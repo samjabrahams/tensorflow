@@ -14,7 +14,7 @@ the execution of operations and add conditional dependencies to your graph.
 
 - - -
 
-### `tf.identity(input, name=None)` {#identity}
+### [`tf.identity(input, name=None)`](#identity) {#identity}
 
 Return a tensor with the same shape and contents as the input tensor or value.
 
@@ -31,7 +31,7 @@ Return a tensor with the same shape and contents as the input tensor or value.
 
 - - -
 
-### `tf.tuple(tensors, name=None, control_inputs=None)` {#tuple}
+### [`tf.tuple(tensors, name=None, control_inputs=None)`](#tuple) {#tuple}
 
 Group tensors together.
 
@@ -70,7 +70,7 @@ See also `group` and `with_dependencies`.
 
 - - -
 
-### `tf.group(*inputs, **kwargs)` {#group}
+### [`tf.group(*inputs, **kwargs)`](#group) {#group}
 
 Create an op that groups multiple operations.
 
@@ -99,7 +99,7 @@ See also `tuple` and `with_dependencies`.
 
 - - -
 
-### `tf.no_op(name=None)` {#no_op}
+### [`tf.no_op(name=None)`](#no_op) {#no_op}
 
 Does nothing. Only useful as a placeholder for control edges.
 
@@ -115,7 +115,7 @@ Does nothing. Only useful as a placeholder for control edges.
 
 - - -
 
-### `tf.count_up_to(ref, limit, name=None)` {#count_up_to}
+### [`tf.count_up_to(ref, limit, name=None)`](#count_up_to) {#count_up_to}
 
 Increments 'ref' until it reaches 'limit'.
 
@@ -147,7 +147,7 @@ to your graph.
 
 - - -
 
-### `tf.logical_and(x, y, name=None)` {#logical_and}
+### [`tf.logical_and(x, y, name=None)`](#logical_and) {#logical_and}
 
 Returns the truth value of x AND y element-wise.
 
@@ -165,7 +165,7 @@ Returns the truth value of x AND y element-wise.
 
 - - -
 
-### `tf.logical_not(x, name=None)` {#logical_not}
+### [`tf.logical_not(x, name=None)`](#logical_not) {#logical_not}
 
 Returns the truth value of NOT x element-wise.
 
@@ -182,7 +182,7 @@ Returns the truth value of NOT x element-wise.
 
 - - -
 
-### `tf.logical_or(x, y, name=None)` {#logical_or}
+### [`tf.logical_or(x, y, name=None)`](#logical_or) {#logical_or}
 
 Returns the truth value of x OR y element-wise.
 
@@ -200,7 +200,7 @@ Returns the truth value of x OR y element-wise.
 
 - - -
 
-### `tf.logical_xor(x, y, name='LogicalXor')` {#logical_xor}
+### [`tf.logical_xor(x, y, name='LogicalXor')`](#logical_xor) {#logical_xor}
 
 x ^ y = (x | y) & ~(x & y).
 
@@ -213,7 +213,7 @@ operators to your graph.
 
 - - -
 
-### `tf.equal(x, y, name=None)` {#equal}
+### [`tf.equal(x, y, name=None)`](#equal) {#equal}
 
 Returns the truth value of (x == y) element-wise.
 
@@ -231,7 +231,7 @@ Returns the truth value of (x == y) element-wise.
 
 - - -
 
-### `tf.not_equal(x, y, name=None)` {#not_equal}
+### [`tf.not_equal(x, y, name=None)`](#not_equal) {#not_equal}
 
 Returns the truth value of (x != y) element-wise.
 
@@ -249,7 +249,7 @@ Returns the truth value of (x != y) element-wise.
 
 - - -
 
-### `tf.less(x, y, name=None)` {#less}
+### [`tf.less(x, y, name=None)`](#less) {#less}
 
 Returns the truth value of (x < y) element-wise.
 
@@ -267,7 +267,7 @@ Returns the truth value of (x < y) element-wise.
 
 - - -
 
-### `tf.less_equal(x, y, name=None)` {#less_equal}
+### [`tf.less_equal(x, y, name=None)`](#less_equal) {#less_equal}
 
 Returns the truth value of (x <= y) element-wise.
 
@@ -285,7 +285,7 @@ Returns the truth value of (x <= y) element-wise.
 
 - - -
 
-### `tf.greater(x, y, name=None)` {#greater}
+### [`tf.greater(x, y, name=None)`](#greater) {#greater}
 
 Returns the truth value of (x > y) element-wise.
 
@@ -303,7 +303,7 @@ Returns the truth value of (x > y) element-wise.
 
 - - -
 
-### `tf.greater_equal(x, y, name=None)` {#greater_equal}
+### [`tf.greater_equal(x, y, name=None)`](#greater_equal) {#greater_equal}
 
 Returns the truth value of (x >= y) element-wise.
 
@@ -321,7 +321,7 @@ Returns the truth value of (x >= y) element-wise.
 
 - - -
 
-### `tf.select(condition, t, e, name=None)` {#select}
+### [`tf.select(condition, t, e, name=None)`](#select) {#select}
 
 Selects elements from `t` or `e`, depending on `condition`.
 
@@ -359,7 +359,7 @@ select(condition, t, e) ==> [[1, 2],
 
 - - -
 
-### `tf.where(input, name=None)` {#where}
+### [`tf.where(input, name=None)`](#where) {#where}
 
 Returns locations of true values in a boolean tensor.
 
@@ -414,7 +414,7 @@ debug your graph.
 
 - - -
 
-### `tf.is_finite(x, name=None)` {#is_finite}
+### [`tf.is_finite(x, name=None)`](#is_finite) {#is_finite}
 
 Returns which elements of x are finite.
 
@@ -431,7 +431,7 @@ Returns which elements of x are finite.
 
 - - -
 
-### `tf.is_inf(x, name=None)` {#is_inf}
+### [`tf.is_inf(x, name=None)`](#is_inf) {#is_inf}
 
 Returns which elements of x are Inf.
 
@@ -448,7 +448,7 @@ Returns which elements of x are Inf.
 
 - - -
 
-### `tf.is_nan(x, name=None)` {#is_nan}
+### [`tf.is_nan(x, name=None)`](#is_nan) {#is_nan}
 
 Returns which elements of x are NaN.
 
@@ -465,7 +465,7 @@ Returns which elements of x are NaN.
 
 - - -
 
-### `tf.verify_tensor_all_finite(t, msg, name=None)` {#verify_tensor_all_finite}
+### [`tf.verify_tensor_all_finite(t, msg, name=None)`](#verify_tensor_all_finite) {#verify_tensor_all_finite}
 
 Assert that the tensor does not contain any NaN's or Inf's.
 
@@ -483,7 +483,7 @@ Assert that the tensor does not contain any NaN's or Inf's.
 
 - - -
 
-### `tf.check_numerics(tensor, message, name=None)` {#check_numerics}
+### [`tf.check_numerics(tensor, message, name=None)`](#check_numerics) {#check_numerics}
 
 Checks a tensor for NaN and Inf values.
 
@@ -504,7 +504,7 @@ that are not a number (NaN) or infinity (Inf). Otherwise, passes `tensor` as-is.
 
 - - -
 
-### `tf.add_check_numerics_ops()` {#add_check_numerics_ops}
+### [`tf.add_check_numerics_ops()`](#add_check_numerics_ops) {#add_check_numerics_ops}
 
 Connect a `check_numerics` to every floating point tensor.
 
@@ -520,7 +520,7 @@ all of its (`float` or `double`) inputs is guaranteed to run before the
 
 - - -
 
-### `tf.Assert(condition, data, summarize=None, name=None)` {#Assert}
+### [`tf.Assert(condition, data, summarize=None, name=None)`](#Assert) {#Assert}
 
 Asserts that the given condition is true.
 
@@ -538,7 +538,7 @@ If `condition` evaluates to false, print the list of tensors in `data`.
 
 - - -
 
-### `tf.Print(input_, data, message=None, first_n=None, summarize=None, name=None)` {#Print}
+### [`tf.Print(input_, data, message=None, first_n=None, summarize=None, name=None)`](#Print) {#Print}
 
 Prints a list of tensors.
 

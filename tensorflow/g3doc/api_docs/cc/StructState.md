@@ -11,13 +11,13 @@
 
 ##Member Details
 
-#### `tensorflow::error::Code tensorflow::Status::State::code` {#tensorflow_error_Code_tensorflow_Status_State_code}
+#### [`tensorflow::error::Code tensorflow::Status::State::code`](#tensorflow_error_Code_tensorflow_Status_State_code) {#tensorflow_error_Code_tensorflow_Status_State_code}
 
 
 
 
 
-#### `string tensorflow::Status::State::msg` {#string_tensorflow_Status_State_msg}
+#### [`string tensorflow::Status::State::msg`](#string_tensorflow_Status_State_msg) {#string_tensorflow_Status_State_msg}
 
 
 

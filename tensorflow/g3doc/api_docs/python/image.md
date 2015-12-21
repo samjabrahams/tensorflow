@@ -23,7 +23,7 @@ to be stripped from the image and re-attached using slicing ops.
 
 - - -
 
-### `tf.image.decode_jpeg(contents, channels=None, ratio=None, fancy_upscaling=None, try_recover_truncated=None, acceptable_fraction=None, name=None)` {#decode_jpeg}
+### [`tf.image.decode_jpeg(contents, channels=None, ratio=None, fancy_upscaling=None, try_recover_truncated=None, acceptable_fraction=None, name=None)`](#decode_jpeg) {#decode_jpeg}
 
 Decode a JPEG-encoded image to a uint8 tensor.
 
@@ -67,7 +67,7 @@ downscaling the image later.
 
 - - -
 
-### `tf.image.encode_jpeg(image, format=None, quality=None, progressive=None, optimize_size=None, chroma_downsampling=None, density_unit=None, x_density=None, y_density=None, xmp_metadata=None, name=None)` {#encode_jpeg}
+### [`tf.image.encode_jpeg(image, format=None, quality=None, progressive=None, optimize_size=None, chroma_downsampling=None, density_unit=None, x_density=None, y_density=None, xmp_metadata=None, name=None)`](#encode_jpeg) {#encode_jpeg}
 
 JPEG-encode an image.
 
@@ -122,7 +122,7 @@ in function of the number of channels in `image`:
 
 - - -
 
-### `tf.image.decode_png(contents, channels=None, name=None)` {#decode_png}
+### [`tf.image.decode_png(contents, channels=None, name=None)`](#decode_png) {#decode_png}
 
 Decode a PNG-encoded image to a uint8 tensor.
 
@@ -154,7 +154,7 @@ of color channels.
 
 - - -
 
-### `tf.image.encode_png(image, compression=None, name=None)` {#encode_png}
+### [`tf.image.encode_png(image, compression=None, name=None)`](#encode_png) {#encode_png}
 
 PNG-encode an image.
 
@@ -207,7 +207,7 @@ resized_image = tf.image.resize_images(image, 299, 299)
 
 - - -
 
-### `tf.image.resize_images(images, new_height, new_width, method=0)` {#resize_images}
+### [`tf.image.resize_images(images, new_height, new_width, method=0)`](#resize_images) {#resize_images}
 
 Resize `images` to `new_width`, `new_height` using the specified `method`.
 
@@ -252,7 +252,7 @@ the same as `new_width`, `new_height`.  To avoid distortions see
 
 - - -
 
-### `tf.image.resize_area(images, size, name=None)` {#resize_area}
+### [`tf.image.resize_area(images, size, name=None)`](#resize_area) {#resize_area}
 
 Resize `images` to `size` using area interpolation.
 
@@ -275,7 +275,7 @@ Input images can be of different types but output images are always float.
 
 - - -
 
-### `tf.image.resize_bicubic(images, size, name=None)` {#resize_bicubic}
+### [`tf.image.resize_bicubic(images, size, name=None)`](#resize_bicubic) {#resize_bicubic}
 
 Resize `images` to `size` using bicubic interpolation.
 
@@ -298,7 +298,7 @@ Input images can be of different types but output images are always float.
 
 - - -
 
-### `tf.image.resize_bilinear(images, size, name=None)` {#resize_bilinear}
+### [`tf.image.resize_bilinear(images, size, name=None)`](#resize_bilinear) {#resize_bilinear}
 
 Resize `images` to `size` using bilinear interpolation.
 
@@ -321,7 +321,7 @@ Input images can be of different types but output images are always float.
 
 - - -
 
-### `tf.image.resize_nearest_neighbor(images, size, name=None)` {#resize_nearest_neighbor}
+### [`tf.image.resize_nearest_neighbor(images, size, name=None)`](#resize_nearest_neighbor) {#resize_nearest_neighbor}
 
 Resize `images` to `size` using nearest neighbor interpolation.
 
@@ -346,7 +346,7 @@ Resize `images` to `size` using nearest neighbor interpolation.
 
 - - -
 
-### `tf.image.resize_image_with_crop_or_pad(image, target_height, target_width)` {#resize_image_with_crop_or_pad}
+### [`tf.image.resize_image_with_crop_or_pad(image, target_height, target_width)`](#resize_image_with_crop_or_pad) {#resize_image_with_crop_or_pad}
 
 Crops and/or pads an image to a target width and height.
 
@@ -380,7 +380,7 @@ dimension.
 
 - - -
 
-### `tf.image.pad_to_bounding_box(image, offset_height, offset_width, target_height, target_width)` {#pad_to_bounding_box}
+### [`tf.image.pad_to_bounding_box(image, offset_height, offset_width, target_height, target_width)`](#pad_to_bounding_box) {#pad_to_bounding_box}
 
 Pad `image` with zeros to the specified `height` and `width`.
 
@@ -413,7 +413,7 @@ This op does nothing if `offset_*` is zero and the image already has size
 
 - - -
 
-### `tf.image.crop_to_bounding_box(image, offset_height, offset_width, target_height, target_width)` {#crop_to_bounding_box}
+### [`tf.image.crop_to_bounding_box(image, offset_height, offset_width, target_height, target_width)`](#crop_to_bounding_box) {#crop_to_bounding_box}
 
 Crops an image to a specified bounding box.
 
@@ -446,7 +446,7 @@ lower-right corner is at
 
 - - -
 
-### `tf.image.random_crop(image, size, seed=None, name=None)` {#random_crop}
+### [`tf.image.random_crop(image, size, seed=None, name=None)`](#random_crop) {#random_crop}
 
 Randomly crops `image` to size `[target_height, target_width]`.
 
@@ -470,7 +470,7 @@ fully contains the result.
 
 - - -
 
-### `tf.image.extract_glimpse(input, size, offsets, centered=None, normalized=None, uniform_noise=None, name=None)` {#extract_glimpse}
+### [`tf.image.extract_glimpse(input, size, offsets, centered=None, normalized=None, uniform_noise=None, name=None)`](#extract_glimpse) {#extract_glimpse}
 
 Extracts a glimpse from the input tensor.
 
@@ -526,7 +526,7 @@ The argument `normalized` and `centered` controls how the windows are built:
 
 - - -
 
-### `tf.image.flip_up_down(image)` {#flip_up_down}
+### [`tf.image.flip_up_down(image)`](#flip_up_down) {#flip_up_down}
 
 Flip an image horizontally (upside down).
 
@@ -552,7 +552,7 @@ See also `reverse()`.
 
 - - -
 
-### `tf.image.random_flip_up_down(image, seed=None)` {#random_flip_up_down}
+### [`tf.image.random_flip_up_down(image, seed=None)`](#random_flip_up_down) {#random_flip_up_down}
 
 Randomly flips an image vertically (upside down).
 
@@ -580,7 +580,7 @@ dimension, which is `height`.  Otherwise output the image as-is.
 
 - - -
 
-### `tf.image.flip_left_right(image)` {#flip_left_right}
+### [`tf.image.flip_left_right(image)`](#flip_left_right) {#flip_left_right}
 
 Flip an image horizontally (left to right).
 
@@ -606,7 +606,7 @@ See also `reverse()`.
 
 - - -
 
-### `tf.image.random_flip_left_right(image, seed=None)` {#random_flip_left_right}
+### [`tf.image.random_flip_left_right(image, seed=None)`](#random_flip_left_right) {#random_flip_left_right}
 
 Randomly flip an image horizontally (left to right).
 
@@ -634,7 +634,7 @@ second dimension, which is `width`.  Otherwise output the image as-is.
 
 - - -
 
-### `tf.image.transpose_image(image)` {#transpose_image}
+### [`tf.image.transpose_image(image)`](#transpose_image) {#transpose_image}
 
 Transpose an image by swapping the first and second dimension.
 
@@ -690,7 +690,7 @@ hsv_image = tf.hsv_to_rgb(rgb_image)
 
 - - -
 
-### `tf.image.rgb_to_grayscale(images)` {#rgb_to_grayscale}
+### [`tf.image.rgb_to_grayscale(images)`](#rgb_to_grayscale) {#rgb_to_grayscale}
 
 Converts one or more images from RGB to Grayscale.
 
@@ -711,7 +711,7 @@ pixels.
 
 - - -
 
-### `tf.image.grayscale_to_rgb(images)` {#grayscale_to_rgb}
+### [`tf.image.grayscale_to_rgb(images)`](#grayscale_to_rgb) {#grayscale_to_rgb}
 
 Converts one or more images from Grayscale to RGB.
 
@@ -731,7 +731,7 @@ last dimension of the output is 3, containing the RGB value of the pixels.
 
 - - -
 
-### `tf.image.hsv_to_rgb(images, name=None)` {#hsv_to_rgb}
+### [`tf.image.hsv_to_rgb(images, name=None)`](#hsv_to_rgb) {#hsv_to_rgb}
 
 Convert one or more images from HSV to RGB.
 
@@ -755,7 +755,7 @@ See `rgb_to_hsv` for a description of the HSV encoding.
 
 - - -
 
-### `tf.image.rgb_to_hsv(images, name=None)` {#rgb_to_hsv}
+### [`tf.image.rgb_to_hsv(images, name=None)`](#rgb_to_hsv) {#rgb_to_hsv}
 
 Converts one or more images from RGB to HSV.
 
@@ -782,7 +782,7 @@ corresponds to pure red, hue 1/3 is pure green, and 2/3 is pure blue.
 
 - - -
 
-### `tf.image.convert_image_dtype(image, dtype, saturate=False, name=None)` {#convert_image_dtype}
+### [`tf.image.convert_image_dtype(image, dtype, saturate=False, name=None)`](#convert_image_dtype) {#convert_image_dtype}
 
 Convert `image` to `dtype`, scaling its values if needed.
 
@@ -828,7 +828,7 @@ type and representation (RGB or HSV).
 
 - - -
 
-### `tf.image.adjust_brightness(image, delta)` {#adjust_brightness}
+### [`tf.image.adjust_brightness(image, delta)`](#adjust_brightness) {#adjust_brightness}
 
 Adjust the brightness of RGB or Grayscale images.
 
@@ -856,7 +856,7 @@ floating point representation, where pixel values are in the `[0,1)` range.
 
 - - -
 
-### `tf.image.random_brightness(image, max_delta, seed=None)` {#random_brightness}
+### [`tf.image.random_brightness(image, max_delta, seed=None)`](#random_brightness) {#random_brightness}
 
 Adjust the brightness of images by a random factor.
 
@@ -885,7 +885,7 @@ interval `[-max_delta, max_delta)`.
 
 - - -
 
-### `tf.image.adjust_contrast(images, contrast_factor)` {#adjust_contrast}
+### [`tf.image.adjust_contrast(images, contrast_factor)`](#adjust_contrast) {#adjust_contrast}
 
 Adjust contrast of RGB or grayscale images.
 
@@ -917,7 +917,7 @@ channel and then adjusts each component `x` of each pixel to
 
 - - -
 
-### `tf.image.random_contrast(image, lower, upper, seed=None)` {#random_contrast}
+### [`tf.image.random_contrast(image, lower, upper, seed=None)`](#random_contrast) {#random_contrast}
 
 Adjust the contrast of an image by a random factor.
 
@@ -947,7 +947,7 @@ picked in the interval `[lower, upper]`.
 
 - - -
 
-### `tf.image.adjust_hue(image, delta, name=None)` {#adjust_hue}
+### [`tf.image.adjust_hue(image, delta, name=None)`](#adjust_hue) {#adjust_hue}
 
 Adjust hue of an RGB image.
 
@@ -976,7 +976,7 @@ image to HSV and rotating the hue channel (H) by
 
 - - -
 
-### `tf.image.random_hue(image, max_delta, seed=None)` {#random_hue}
+### [`tf.image.random_hue(image, max_delta, seed=None)`](#random_hue) {#random_hue}
 
 Adjust the hue of an RGB image by a random factor.
 
@@ -1008,7 +1008,7 @@ picked in the interval `[-max_delta, max_delta]`.
 
 - - -
 
-### `tf.image.adjust_saturation(image, saturation_factor, name=None)` {#adjust_saturation}
+### [`tf.image.adjust_saturation(image, saturation_factor, name=None)`](#adjust_saturation) {#adjust_saturation}
 
 Adjust staturation of an RGB image.
 
@@ -1036,7 +1036,7 @@ image to HSV and multiplying the saturation (S) channel by
 
 - - -
 
-### `tf.image.random_saturation(image, lower, upper, seed=None)` {#random_saturation}
+### [`tf.image.random_saturation(image, lower, upper, seed=None)`](#random_saturation) {#random_saturation}
 
 Adjust the saturation of an RGB image by a random factor.
 
@@ -1067,7 +1067,7 @@ picked in the interval `[lower, upper]`.
 
 - - -
 
-### `tf.image.per_image_whitening(image)` {#per_image_whitening}
+### [`tf.image.per_image_whitening(image)`](#per_image_whitening) {#per_image_whitening}
 
 Linearly scales `image` to have zero mean and unit norm.
 
@@ -1101,7 +1101,7 @@ Note that this implementation is limited:
 ## Other Functions and Classes
 - - -
 
-### `tf.image.saturate_cast(image, dtype)` {#saturate_cast}
+### [`tf.image.saturate_cast(image, dtype)`](#saturate_cast) {#saturate_cast}
 
 Performs a safe cast of image data to `dtype`.
 

@@ -13,7 +13,7 @@ TensorFlow provides several operations that you can use to generate constants.
 
 - - -
 
-### `tf.zeros(shape, dtype=tf.float32, name=None)` {#zeros}
+### [`tf.zeros(shape, dtype=tf.float32, name=None)`](#zeros) {#zeros}
 
 Creates a tensor with all elements set to zero.
 
@@ -40,7 +40,7 @@ tf.zeros([3, 4], int32) ==> [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 
 - - -
 
-### `tf.zeros_like(tensor, dtype=None, name=None)` {#zeros_like}
+### [`tf.zeros_like(tensor, dtype=None, name=None)`](#zeros_like) {#zeros_like}
 
 Creates a tensor with all elements set to zero.
 
@@ -72,7 +72,7 @@ tf.zeros_like(tensor) ==> [[0, 0, 0], [0, 0, 0]]
 
 - - -
 
-### `tf.ones(shape, dtype=tf.float32, name=None)` {#ones}
+### [`tf.ones(shape, dtype=tf.float32, name=None)`](#ones) {#ones}
 
 Creates a tensor with all elements set to 1.
 
@@ -99,7 +99,7 @@ tf.ones([2, 3], int32) ==> [[1, 1, 1], [1, 1, 1]]
 
 - - -
 
-### `tf.ones_like(tensor, dtype=None, name=None)` {#ones_like}
+### [`tf.ones_like(tensor, dtype=None, name=None)`](#ones_like) {#ones_like}
 
 Creates a tensor with all elements set to 1.
 
@@ -131,7 +131,7 @@ tf.ones_like(tensor) ==> [[1, 1, 1], [1, 1, 1]]
 
 - - -
 
-### `tf.fill(dims, value, name=None)` {#fill}
+### [`tf.fill(dims, value, name=None)`](#fill) {#fill}
 
 Creates a tensor filled with a scalar value.
 
@@ -161,7 +161,7 @@ fill([2, 3], 9) ==> [[9, 9, 9]
 
 - - -
 
-### `tf.constant(value, dtype=None, shape=None, name='Const')` {#constant}
+### [`tf.constant(value, dtype=None, shape=None, name='Const')`](#constant) {#constant}
 
 Creates a constant tensor.
 
@@ -218,7 +218,7 @@ Creates a constant tensor.
 
 - - -
 
-### `tf.linspace(start, stop, num, name=None)` {#linspace}
+### [`tf.linspace(start, stop, num, name=None)`](#linspace) {#linspace}
 
 Generates values in an interval.
 
@@ -250,7 +250,7 @@ tf.linspace(10.0, 12.0, 3, name="linspace") => [ 10.0  11.0  12.0]
 
 - - -
 
-### `tf.range(start, limit=None, delta=1, name='range')` {#range}
+### [`tf.range(start, limit=None, delta=1, name='range')`](#range) {#range}
 
 Creates a sequence of integers.
 
@@ -345,7 +345,7 @@ print(sess.run(var))
 
 - - -
 
-### `tf.random_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)` {#random_normal}
+### [`tf.random_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)`](#random_normal) {#random_normal}
 
 Outputs random values from a normal distribution.
 
@@ -371,7 +371,7 @@ Outputs random values from a normal distribution.
 
 - - -
 
-### `tf.truncated_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)` {#truncated_normal}
+### [`tf.truncated_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)`](#truncated_normal) {#truncated_normal}
 
 Outputs random values from a truncated normal distribution.
 
@@ -401,7 +401,7 @@ deviations from the mean are dropped and re-picked.
 
 - - -
 
-### `tf.random_uniform(shape, minval=0, maxval=None, dtype=tf.float32, seed=None, name=None)` {#random_uniform}
+### [`tf.random_uniform(shape, minval=0, maxval=None, dtype=tf.float32, seed=None, name=None)`](#random_uniform) {#random_uniform}
 
 Outputs random values from a uniform distribution.
 
@@ -445,7 +445,7 @@ In the integer case, the random integers are slightly biased unless
 
 - - -
 
-### `tf.random_shuffle(value, seed=None, name=None)` {#random_shuffle}
+### [`tf.random_shuffle(value, seed=None, name=None)`](#random_shuffle) {#random_shuffle}
 
 Randomly shuffles a tensor along its first dimension.
 
@@ -477,7 +477,7 @@ to one and only one `output[i]`. For example, a mapping that might occur for a
 
 - - -
 
-### `tf.set_random_seed(seed)` {#set_random_seed}
+### [`tf.set_random_seed(seed)`](#set_random_seed) {#set_random_seed}
 
 Sets the graph-level random seed.
 

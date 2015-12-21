@@ -9,7 +9,7 @@ Classes and functions for building TensorFlow graphs.
 
 - - -
 
-### `class tf.Graph` {#Graph}
+### [`class tf.Graph`](#Graph) {#Graph}
 
 A TensorFlow computation, represented as a dataflow graph.
 
@@ -49,14 +49,14 @@ are not thread-safe.
 
 - - -
 
-#### `tf.Graph.__init__()` {#Graph.__init__}
+#### [`tf.Graph.__init__()`](#Graph.__init__) {#Graph.__init__}
 
 Creates a new, empty Graph.
 
 
 - - -
 
-#### `tf.Graph.as_default()` {#Graph.as_default}
+#### [`tf.Graph.as_default()`](#Graph.as_default) {#Graph.as_default}
 
 Returns a context manager that makes this `Graph` the default graph.
 
@@ -94,7 +94,7 @@ with tf.Graph().as_default() as g:
 
 - - -
 
-#### `tf.Graph.as_graph_def(from_version=None)` {#Graph.as_graph_def}
+#### [`tf.Graph.as_graph_def(from_version=None)`](#Graph.as_graph_def) {#Graph.as_graph_def}
 
 Returns a serialized `GraphDef` representation of this graph.
 
@@ -124,7 +124,7 @@ This method is thread-safe.
 
 - - -
 
-#### `tf.Graph.finalize()` {#Graph.finalize}
+#### [`tf.Graph.finalize()`](#Graph.finalize) {#Graph.finalize}
 
 Finalizes this graph, making it read-only.
 
@@ -136,7 +136,7 @@ when using a [`QueueRunner`](../../api_docs/python/train.md#QueueRunner).
 
 - - -
 
-#### `tf.Graph.finalized` {#Graph.finalized}
+#### [`tf.Graph.finalized`](#Graph.finalized) {#Graph.finalized}
 
 True if this graph has been finalized.
 
@@ -144,7 +144,7 @@ True if this graph has been finalized.
 
 - - -
 
-#### `tf.Graph.control_dependencies(control_inputs)` {#Graph.control_dependencies}
+#### [`tf.Graph.control_dependencies(control_inputs)`](#Graph.control_dependencies) {#Graph.control_dependencies}
 
 Returns a context manager that specifies control dependencies.
 
@@ -226,7 +226,7 @@ def my_func(pred, tensor):
 
 - - -
 
-#### `tf.Graph.device(device_name_or_function)` {#Graph.device}
+#### [`tf.Graph.device(device_name_or_function)`](#Graph.device) {#Graph.device}
 
 Returns a context manager that specifies the default device to use.
 
@@ -278,7 +278,7 @@ with g.device(matmul_on_gpu):
 
 - - -
 
-#### `tf.Graph.name_scope(name)` {#Graph.name_scope}
+#### [`tf.Graph.name_scope(name)`](#Graph.name_scope) {#Graph.name_scope}
 
 Returns a context manager that creates hierarchical names for operations.
 
@@ -369,7 +369,7 @@ may define additional collections by specifying a new name.
 
 - - -
 
-#### `tf.Graph.add_to_collection(name, value)` {#Graph.add_to_collection}
+#### [`tf.Graph.add_to_collection(name, value)`](#Graph.add_to_collection) {#Graph.add_to_collection}
 
 Stores `value` in the collection with the given `name`.
 
@@ -383,7 +383,7 @@ Stores `value` in the collection with the given `name`.
 
 - - -
 
-#### `tf.Graph.get_collection(name, scope=None)` {#Graph.get_collection}
+#### [`tf.Graph.get_collection(name, scope=None)`](#Graph.get_collection) {#Graph.get_collection}
 
 Returns a list of values in the collection with the given `name`.
 
@@ -406,7 +406,7 @@ Returns a list of values in the collection with the given `name`.
 
 - - -
 
-#### `tf.Graph.as_graph_element(obj, allow_tensor=True, allow_operation=True)` {#Graph.as_graph_element}
+#### [`tf.Graph.as_graph_element(obj, allow_tensor=True, allow_operation=True)`](#Graph.as_graph_element) {#Graph.as_graph_element}
 
 Returns the object referred to by `obj`, as an `Operation` or `Tensor`.
 
@@ -444,7 +444,7 @@ This method may be called concurrently from multiple threads.
 
 - - -
 
-#### `tf.Graph.get_operation_by_name(name)` {#Graph.get_operation_by_name}
+#### [`tf.Graph.get_operation_by_name(name)`](#Graph.get_operation_by_name) {#Graph.get_operation_by_name}
 
 Returns the `Operation` with the given `name`.
 
@@ -468,7 +468,7 @@ This method may be called concurrently from multiple threads.
 
 - - -
 
-#### `tf.Graph.get_tensor_by_name(name)` {#Graph.get_tensor_by_name}
+#### [`tf.Graph.get_tensor_by_name(name)`](#Graph.get_tensor_by_name) {#Graph.get_tensor_by_name}
 
 Returns the `Tensor` with the given `name`.
 
@@ -492,7 +492,7 @@ This method may be called concurrently from multiple threads.
 
 - - -
 
-#### `tf.Graph.get_operations()` {#Graph.get_operations}
+#### [`tf.Graph.get_operations()`](#Graph.get_operations) {#Graph.get_operations}
 
 Return the list of operations in the graph.
 
@@ -510,7 +510,7 @@ This method may be called concurrently from multiple threads.
 
 - - -
 
-#### `tf.Graph.get_default_device()` {#Graph.get_default_device}
+#### [`tf.Graph.get_default_device()`](#Graph.get_default_device) {#Graph.get_default_device}
 
 Returns the default device.
 
@@ -521,14 +521,14 @@ Returns the default device.
 
 - - -
 
-#### `tf.Graph.seed` {#Graph.seed}
+#### [`tf.Graph.seed`](#Graph.seed) {#Graph.seed}
 
 
 
 
 - - -
 
-#### `tf.Graph.unique_name(name)` {#Graph.unique_name}
+#### [`tf.Graph.unique_name(name)`](#Graph.unique_name) {#Graph.unique_name}
 
 Return a unique operation name for `name`.
 
@@ -555,7 +555,7 @@ TensorBoard.
 
 - - -
 
-#### `tf.Graph.version` {#Graph.version}
+#### [`tf.Graph.version`](#Graph.version) {#Graph.version}
 
 Returns a version number that increases as ops are added to the graph.
 
@@ -565,7 +565,7 @@ Note that this is unrelated to the
 
 - - -
 
-#### `tf.Graph.graph_def_version` {#Graph.graph_def_version}
+#### [`tf.Graph.graph_def_version`](#Graph.graph_def_version) {#Graph.graph_def_version}
 
 The GraphDef version of this graph.
 
@@ -576,7 +576,7 @@ For details on the meaning of each version, see [`GraphDef`]
 
 - - -
 
-#### `tf.Graph.create_op(op_type, inputs, dtypes, input_types=None, name=None, attrs=None, op_def=None, compute_shapes=True)` {#Graph.create_op}
+#### [`tf.Graph.create_op(op_type, inputs, dtypes, input_types=None, name=None, attrs=None, op_def=None, compute_shapes=True)`](#Graph.create_op) {#Graph.create_op}
 
 Creates an `Operation` in this graph.
 
@@ -620,7 +620,7 @@ the default graph.
 
 - - -
 
-#### `tf.Graph.gradient_override_map(op_type_map)` {#Graph.gradient_override_map}
+#### [`tf.Graph.gradient_override_map(op_type_map)`](#Graph.gradient_override_map) {#Graph.gradient_override_map}
 
 EXPERIMENTAL: A context manager for overriding gradient functions.
 
@@ -663,7 +663,7 @@ with tf.Graph().as_default() as g:
 
 - - -
 
-### `class tf.Operation` {#Operation}
+### [`class tf.Operation`](#Operation) {#Operation}
 
 Represents a graph node that performs computation on tensors.
 
@@ -685,28 +685,28 @@ be executed by passing it to
 
 - - -
 
-#### `tf.Operation.name` {#Operation.name}
+#### [`tf.Operation.name`](#Operation.name) {#Operation.name}
 
 The full name of this operation.
 
 
 - - -
 
-#### `tf.Operation.type` {#Operation.type}
+#### [`tf.Operation.type`](#Operation.type) {#Operation.type}
 
 The type of the op (e.g. `"MatMul"`).
 
 
 - - -
 
-#### `tf.Operation.inputs` {#Operation.inputs}
+#### [`tf.Operation.inputs`](#Operation.inputs) {#Operation.inputs}
 
 The list of `Tensor` objects representing the data inputs of this op.
 
 
 - - -
 
-#### `tf.Operation.control_inputs` {#Operation.control_inputs}
+#### [`tf.Operation.control_inputs`](#Operation.control_inputs) {#Operation.control_inputs}
 
 The `Operation` objects on which this op has a control dependency.
 
@@ -723,14 +723,14 @@ in the correct order.
 
 - - -
 
-#### `tf.Operation.outputs` {#Operation.outputs}
+#### [`tf.Operation.outputs`](#Operation.outputs) {#Operation.outputs}
 
 The list of `Tensor` objects representing the outputs of this op.
 
 
 - - -
 
-#### `tf.Operation.device` {#Operation.device}
+#### [`tf.Operation.device`](#Operation.device) {#Operation.device}
 
 The name of the device to which this op has been assigned, if any.
 
@@ -742,7 +742,7 @@ The name of the device to which this op has been assigned, if any.
 
 - - -
 
-#### `tf.Operation.graph` {#Operation.graph}
+#### [`tf.Operation.graph`](#Operation.graph) {#Operation.graph}
 
 The `Graph` that contains this operation.
 
@@ -750,7 +750,7 @@ The `Graph` that contains this operation.
 
 - - -
 
-#### `tf.Operation.run(feed_dict=None, session=None)` {#Operation.run}
+#### [`tf.Operation.run(feed_dict=None, session=None)`](#Operation.run) {#Operation.run}
 
 Runs this operation in a `Session`.
 
@@ -774,7 +774,7 @@ available, or `session` must be specified explicitly.
 
 - - -
 
-#### `tf.Operation.get_attr(name)` {#Operation.get_attr}
+#### [`tf.Operation.get_attr(name)`](#Operation.get_attr) {#Operation.get_attr}
 
 Returns the value of the attr of this op with the given `name`.
 
@@ -795,7 +795,7 @@ Returns the value of the attr of this op with the given `name`.
 
 - - -
 
-#### `tf.Operation.traceback` {#Operation.traceback}
+#### [`tf.Operation.traceback`](#Operation.traceback) {#Operation.traceback}
 
 Returns the call stack from when this operation was constructed.
 
@@ -804,7 +804,7 @@ Returns the call stack from when this operation was constructed.
 #### Other Methods
 - - -
 
-#### `tf.Operation.__init__(node_def, g, inputs=None, output_types=None, control_inputs=None, input_types=None, original_op=None, op_def=None)` {#Operation.__init__}
+#### [`tf.Operation.__init__(node_def, g, inputs=None, output_types=None, control_inputs=None, input_types=None, original_op=None, op_def=None)`](#Operation.__init__) {#Operation.__init__}
 
 Creates an `Operation`.
 
@@ -851,7 +851,7 @@ regular expression:
 
 - - -
 
-#### `tf.Operation.node_def` {#Operation.node_def}
+#### [`tf.Operation.node_def`](#Operation.node_def) {#Operation.node_def}
 
 Returns a serialized `NodeDef` representation of this operation.
 
@@ -864,7 +864,7 @@ Returns a serialized `NodeDef` representation of this operation.
 
 - - -
 
-#### `tf.Operation.op_def` {#Operation.op_def}
+#### [`tf.Operation.op_def`](#Operation.op_def) {#Operation.op_def}
 
 Returns the `OpDef` proto that represents the type of this op.
 
@@ -877,7 +877,7 @@ Returns the `OpDef` proto that represents the type of this op.
 
 - - -
 
-#### `tf.Operation.values()` {#Operation.values}
+#### [`tf.Operation.values()`](#Operation.values) {#Operation.values}
 
 DEPRECATED: Use outputs.
 
@@ -885,7 +885,7 @@ DEPRECATED: Use outputs.
 
 - - -
 
-### `class tf.Tensor` {#Tensor}
+### [`class tf.Tensor`](#Tensor) {#Tensor}
 
 Represents a value produced by an `Operation`.
 
@@ -926,42 +926,42 @@ result = sess.run(e)
 
 - - -
 
-#### `tf.Tensor.dtype` {#Tensor.dtype}
+#### [`tf.Tensor.dtype`](#Tensor.dtype) {#Tensor.dtype}
 
 The `DType` of elements in this tensor.
 
 
 - - -
 
-#### `tf.Tensor.name` {#Tensor.name}
+#### [`tf.Tensor.name`](#Tensor.name) {#Tensor.name}
 
 The string name of this tensor.
 
 
 - - -
 
-#### `tf.Tensor.value_index` {#Tensor.value_index}
+#### [`tf.Tensor.value_index`](#Tensor.value_index) {#Tensor.value_index}
 
 The index of this tensor in the outputs of its `Operation`.
 
 
 - - -
 
-#### `tf.Tensor.graph` {#Tensor.graph}
+#### [`tf.Tensor.graph`](#Tensor.graph) {#Tensor.graph}
 
 The `Graph` that contains this tensor.
 
 
 - - -
 
-#### `tf.Tensor.op` {#Tensor.op}
+#### [`tf.Tensor.op`](#Tensor.op) {#Tensor.op}
 
 The `Operation` that produces this tensor as an output.
 
 
 - - -
 
-#### `tf.Tensor.consumers()` {#Tensor.consumers}
+#### [`tf.Tensor.consumers()`](#Tensor.consumers) {#Tensor.consumers}
 
 Returns a list of `Operation`s that consume this tensor.
 
@@ -973,7 +973,7 @@ Returns a list of `Operation`s that consume this tensor.
 
 - - -
 
-#### `tf.Tensor.eval(feed_dict=None, session=None)` {#Tensor.eval}
+#### [`tf.Tensor.eval(feed_dict=None, session=None)`](#Tensor.eval) {#Tensor.eval}
 
 Evaluates this tensor in a `Session`.
 
@@ -1002,7 +1002,7 @@ available, or `session` must be specified explicitly.
 
 - - -
 
-#### `tf.Tensor.get_shape()` {#Tensor.get_shape}
+#### [`tf.Tensor.get_shape()`](#Tensor.get_shape) {#Tensor.get_shape}
 
 Returns the `TensorShape` that represents the shape of this tensor.
 
@@ -1049,7 +1049,7 @@ inferred shape.
 
 - - -
 
-#### `tf.Tensor.set_shape(shape)` {#Tensor.set_shape}
+#### [`tf.Tensor.set_shape(shape)`](#Tensor.set_shape) {#Tensor.set_shape}
 
 Updates the shape of this tensor.
 
@@ -1090,7 +1090,7 @@ print(image.get_shape())
 #### Other Methods
 - - -
 
-#### `tf.Tensor.__init__(op, value_index, dtype)` {#Tensor.__init__}
+#### [`tf.Tensor.__init__(op, value_index, dtype)`](#Tensor.__init__) {#Tensor.__init__}
 
 Creates a new `Tensor`.
 
@@ -1110,7 +1110,7 @@ Creates a new `Tensor`.
 
 - - -
 
-#### `tf.Tensor.device` {#Tensor.device}
+#### [`tf.Tensor.device`](#Tensor.device) {#Tensor.device}
 
 The name of the device on which this tensor will be produced, or None.
 
@@ -1121,7 +1121,7 @@ The name of the device on which this tensor will be produced, or None.
 
 - - -
 
-### `class tf.DType` {#DType}
+### [`class tf.DType`](#DType) {#DType}
 
 Represents the type of the elements in a `Tensor`.
 
@@ -1153,7 +1153,7 @@ names to a `DType` object.
 
 - - -
 
-#### `tf.DType.is_compatible_with(other)` {#DType.is_compatible_with}
+#### [`tf.DType.is_compatible_with(other)`](#DType.is_compatible_with) {#DType.is_compatible_with}
 
 Returns True if the `other` DType will be converted to this DType.
 
@@ -1179,56 +1179,56 @@ DType(T).as_ref.is_compatible_with(DType(T).as_ref) == True
 
 - - -
 
-#### `tf.DType.name` {#DType.name}
+#### [`tf.DType.name`](#DType.name) {#DType.name}
 
 Returns the string name for this `DType`.
 
 
 - - -
 
-#### `tf.DType.base_dtype` {#DType.base_dtype}
+#### [`tf.DType.base_dtype`](#DType.base_dtype) {#DType.base_dtype}
 
 Returns a non-reference `DType` based on this `DType`.
 
 
 - - -
 
-#### `tf.DType.is_ref_dtype` {#DType.is_ref_dtype}
+#### [`tf.DType.is_ref_dtype`](#DType.is_ref_dtype) {#DType.is_ref_dtype}
 
 Returns `True` if this `DType` represents a reference type.
 
 
 - - -
 
-#### `tf.DType.as_ref` {#DType.as_ref}
+#### [`tf.DType.as_ref`](#DType.as_ref) {#DType.as_ref}
 
 Returns a reference `DType` based on this `DType`.
 
 
 - - -
 
-#### `tf.DType.is_floating` {#DType.is_floating}
+#### [`tf.DType.is_floating`](#DType.is_floating) {#DType.is_floating}
 
 Returns whether this is a (real) floating point type.
 
 
 - - -
 
-#### `tf.DType.is_integer` {#DType.is_integer}
+#### [`tf.DType.is_integer`](#DType.is_integer) {#DType.is_integer}
 
 Returns whether this is a (non-quantized) integer type.
 
 
 - - -
 
-#### `tf.DType.is_quantized` {#DType.is_quantized}
+#### [`tf.DType.is_quantized`](#DType.is_quantized) {#DType.is_quantized}
 
 Returns whether this is a quantized data type.
 
 
 - - -
 
-#### `tf.DType.is_unsigned` {#DType.is_unsigned}
+#### [`tf.DType.is_unsigned`](#DType.is_unsigned) {#DType.is_unsigned}
 
 Returns whether this type is unsigned.
 
@@ -1243,14 +1243,14 @@ this function returns `False`.
 
 - - -
 
-#### `tf.DType.as_numpy_dtype` {#DType.as_numpy_dtype}
+#### [`tf.DType.as_numpy_dtype`](#DType.as_numpy_dtype) {#DType.as_numpy_dtype}
 
 Returns a `numpy.dtype` based on this `DType`.
 
 
 - - -
 
-#### `tf.DType.as_datatype_enum` {#DType.as_datatype_enum}
+#### [`tf.DType.as_datatype_enum`](#DType.as_datatype_enum) {#DType.as_datatype_enum}
 
 Returns a `types_pb2.DataType` enum value based on this `DType`.
 
@@ -1259,7 +1259,7 @@ Returns a `types_pb2.DataType` enum value based on this `DType`.
 #### Other Methods
 - - -
 
-#### `tf.DType.__init__(type_enum)` {#DType.__init__}
+#### [`tf.DType.__init__(type_enum)`](#DType.__init__) {#DType.__init__}
 
 Creates a new `DataType`.
 
@@ -1280,7 +1280,7 @@ construct a `DataType` object directly. Instead, use the
 
 - - -
 
-#### `tf.DType.max` {#DType.max}
+#### [`tf.DType.max`](#DType.max) {#DType.max}
 
 Returns the maximum representable value in this data type.
 
@@ -1292,7 +1292,7 @@ Returns the maximum representable value in this data type.
 
 - - -
 
-#### `tf.DType.min` {#DType.min}
+#### [`tf.DType.min`](#DType.min) {#DType.min}
 
 Returns the minimum representable value in this data type.
 
@@ -1305,7 +1305,7 @@ Returns the minimum representable value in this data type.
 
 - - -
 
-### `tf.as_dtype(type_value)` {#as_dtype}
+### [`tf.as_dtype(type_value)`](#as_dtype) {#as_dtype}
 
 Converts the given `type_value` to a `DType`.
 
@@ -1332,7 +1332,7 @@ Converts the given `type_value` to a `DType`.
 
 - - -
 
-### `tf.device(dev)` {#device}
+### [`tf.device(dev)`](#device) {#device}
 
 Wrapper for `Graph.device()` using the default graph.
 
@@ -1354,7 +1354,7 @@ for more details.
 
 - - -
 
-### `tf.name_scope(name)` {#name_scope}
+### [`tf.name_scope(name)`](#name_scope) {#name_scope}
 
 Wrapper for `Graph.name_scope()` using the default graph.
 
@@ -1375,7 +1375,7 @@ for more details.
 
 - - -
 
-### `tf.control_dependencies(control_inputs)` {#control_dependencies}
+### [`tf.control_dependencies(control_inputs)`](#control_dependencies) {#control_dependencies}
 
 Wrapper for `Graph.control_dependencies()` using the default graph.
 
@@ -1398,7 +1398,7 @@ for more details.
 
 - - -
 
-### `tf.convert_to_tensor(value, dtype=None, name=None, as_ref=False)` {#convert_to_tensor}
+### [`tf.convert_to_tensor(value, dtype=None, name=None, as_ref=False)`](#convert_to_tensor) {#convert_to_tensor}
 
 Converts the given `value` to a `Tensor`.
 
@@ -1408,7 +1408,7 @@ and Python scalars. For example:
 
 ```python
 import numpy as np
-array = np.random.rand(32, 100, 100)
+array = np.random.rand((32, 100, 100))
 
 def my_func(arg):
   arg = tf.convert_to_tensor(arg, dtype=tf.float32)
@@ -1448,7 +1448,7 @@ and scalars in addition to `Tensor` objects.
 
 - - -
 
-### `tf.convert_to_tensor_or_indexed_slices(value, dtype=None, name=None, as_ref=False)` {#convert_to_tensor_or_indexed_slices}
+### [`tf.convert_to_tensor_or_indexed_slices(value, dtype=None, name=None, as_ref=False)`](#convert_to_tensor_or_indexed_slices) {#convert_to_tensor_or_indexed_slices}
 
 Converts the given object to a `Tensor` or an `IndexedSlices`.
 
@@ -1478,7 +1478,7 @@ unmodified. Otherwise, it is converted to a `Tensor` using
 
 - - -
 
-### `tf.get_default_graph()` {#get_default_graph}
+### [`tf.get_default_graph()`](#get_default_graph) {#get_default_graph}
 
 Returns the default graph for the current thread.
 
@@ -1498,7 +1498,7 @@ thread's function.
 
 - - -
 
-### `tf.import_graph_def(graph_def, input_map=None, return_elements=None, name=None, op_dict=None)` {#import_graph_def}
+### [`tf.import_graph_def(graph_def, input_map=None, return_elements=None, name=None, op_dict=None)`](#import_graph_def) {#import_graph_def}
 
 Imports the TensorFlow graph in `graph_def` into the Python `Graph`.
 
@@ -1547,7 +1547,7 @@ protocol buffer, and extract individual objects in the `GraphDef` as
 
 - - -
 
-### `tf.add_to_collection(name, value)` {#add_to_collection}
+### [`tf.add_to_collection(name, value)`](#add_to_collection) {#add_to_collection}
 
 Wrapper for `Graph.add_to_collection()` using the default graph.
 
@@ -1564,7 +1564,7 @@ for more details.
 
 - - -
 
-### `tf.get_collection(key, scope=None)` {#get_collection}
+### [`tf.get_collection(key, scope=None)`](#get_collection) {#get_collection}
 
 Wrapper for `Graph.get_collection()` using the default graph.
 
@@ -1589,7 +1589,7 @@ for more details.
 
 - - -
 
-### `class tf.GraphKeys` {#GraphKeys}
+### [`class tf.GraphKeys`](#GraphKeys) {#GraphKeys}
 
 Standard names to use for graph collections.
 
@@ -1624,7 +1624,7 @@ The following standard keys are defined:
 
 - - -
 
-### `class tf.RegisterGradient` {#RegisterGradient}
+### [`class tf.RegisterGradient`](#RegisterGradient) {#RegisterGradient}
 
 A decorator for registering the gradient function for an op type.
 
@@ -1651,7 +1651,7 @@ that defines the operation.
 
 - - -
 
-#### `tf.RegisterGradient.__init__(op_type)` {#RegisterGradient.__init__}
+#### [`tf.RegisterGradient.__init__(op_type)`](#RegisterGradient.__init__) {#RegisterGradient.__init__}
 
 Creates a new decorator with `op_type` as the Operation type.
 
@@ -1665,7 +1665,7 @@ Creates a new decorator with `op_type` as the Operation type.
 
 - - -
 
-### `tf.NoGradient(op_type)` {#NoGradient}
+### [`tf.NoGradient(op_type)`](#NoGradient) {#NoGradient}
 
 Specifies that ops of type `op_type` do not have a defined gradient.
 
@@ -1691,7 +1691,7 @@ tf.NoGradient("Size")
 
 - - -
 
-### `class tf.RegisterShape` {#RegisterShape}
+### [`class tf.RegisterShape`](#RegisterShape) {#RegisterShape}
 
 A decorator for registering the shape function for an op type.
 
@@ -1715,7 +1715,7 @@ operation. This corresponds to the `OpDef.name` field for the proto
 that defines the operation.
 - - -
 
-#### `tf.RegisterShape.__init__(op_type)` {#RegisterShape.__init__}
+#### [`tf.RegisterShape.__init__(op_type)`](#RegisterShape.__init__) {#RegisterShape.__init__}
 
 Saves the `op_type` as the `Operation` type.
 
@@ -1723,7 +1723,7 @@ Saves the `op_type` as the `Operation` type.
 
 - - -
 
-### `class tf.TensorShape` {#TensorShape}
+### [`class tf.TensorShape`](#TensorShape) {#TensorShape}
 
 Represents the shape of a `Tensor`.
 
@@ -1746,7 +1746,7 @@ explicitly using [`Tensor.set_shape()`](../../api_docs/python/framework.md#Tenso
 
 - - -
 
-#### `tf.TensorShape.merge_with(other)` {#TensorShape.merge_with}
+#### [`tf.TensorShape.merge_with(other)`](#TensorShape.merge_with) {#TensorShape.merge_with}
 
 Returns a `TensorShape` combining the information in `self` and `other`.
 
@@ -1771,7 +1771,7 @@ according to the rules defined for `Dimension.merge_with()`.
 
 - - -
 
-#### `tf.TensorShape.concatenate(other)` {#TensorShape.concatenate}
+#### [`tf.TensorShape.concatenate(other)`](#TensorShape.concatenate) {#TensorShape.concatenate}
 
 Returns the concatenation of the dimension in `self` and `other`.
 
@@ -1794,28 +1794,28 @@ information for use with slicing.
 
 - - -
 
-#### `tf.TensorShape.ndims` {#TensorShape.ndims}
+#### [`tf.TensorShape.ndims`](#TensorShape.ndims) {#TensorShape.ndims}
 
 Returns the rank of this shape, or None if it is unspecified.
 
 
 - - -
 
-#### `tf.TensorShape.dims` {#TensorShape.dims}
+#### [`tf.TensorShape.dims`](#TensorShape.dims) {#TensorShape.dims}
 
 Returns a list of Dimensions, or None if the shape is unspecified.
 
 
 - - -
 
-#### `tf.TensorShape.as_list()` {#TensorShape.as_list}
+#### [`tf.TensorShape.as_list()`](#TensorShape.as_list) {#TensorShape.as_list}
 
 Returns a list of integers or None for each dimension.
 
 
 - - -
 
-#### `tf.TensorShape.is_compatible_with(other)` {#TensorShape.is_compatible_with}
+#### [`tf.TensorShape.is_compatible_with(other)`](#TensorShape.is_compatible_with) {#TensorShape.is_compatible_with}
 
 Returns True iff `self` is compatible with `other`.
 
@@ -1859,7 +1859,7 @@ TensorShape([4, 4]).
 
 - - -
 
-#### `tf.TensorShape.is_fully_defined()` {#TensorShape.is_fully_defined}
+#### [`tf.TensorShape.is_fully_defined()`](#TensorShape.is_fully_defined) {#TensorShape.is_fully_defined}
 
 Returns True iff `self` is fully defined in every dimension.
 
@@ -1867,7 +1867,7 @@ Returns True iff `self` is fully defined in every dimension.
 
 - - -
 
-#### `tf.TensorShape.with_rank(rank)` {#TensorShape.with_rank}
+#### [`tf.TensorShape.with_rank(rank)`](#TensorShape.with_rank) {#TensorShape.with_rank}
 
 Returns a shape based on `self` with the given rank.
 
@@ -1891,7 +1891,7 @@ known rank.
 
 - - -
 
-#### `tf.TensorShape.with_rank_at_least(rank)` {#TensorShape.with_rank_at_least}
+#### [`tf.TensorShape.with_rank_at_least(rank)`](#TensorShape.with_rank_at_least) {#TensorShape.with_rank_at_least}
 
 Returns a shape based on `self` with at least the given rank.
 
@@ -1914,7 +1914,7 @@ Returns a shape based on `self` with at least the given rank.
 
 - - -
 
-#### `tf.TensorShape.with_rank_at_most(rank)` {#TensorShape.with_rank_at_most}
+#### [`tf.TensorShape.with_rank_at_most(rank)`](#TensorShape.with_rank_at_most) {#TensorShape.with_rank_at_most}
 
 Returns a shape based on `self` with at most the given rank.
 
@@ -1938,7 +1938,7 @@ Returns a shape based on `self` with at most the given rank.
 
 - - -
 
-#### `tf.TensorShape.assert_has_rank(rank)` {#TensorShape.assert_has_rank}
+#### [`tf.TensorShape.assert_has_rank(rank)`](#TensorShape.assert_has_rank) {#TensorShape.assert_has_rank}
 
 Raises an exception if `self` is not compatible with the given `rank`.
 
@@ -1955,7 +1955,7 @@ Raises an exception if `self` is not compatible with the given `rank`.
 
 - - -
 
-#### `tf.TensorShape.assert_same_rank(other)` {#TensorShape.assert_same_rank}
+#### [`tf.TensorShape.assert_same_rank(other)`](#TensorShape.assert_same_rank) {#TensorShape.assert_same_rank}
 
 Raises an exception if `self` and `other` do not have compatible ranks.
 
@@ -1973,7 +1973,7 @@ Raises an exception if `self` and `other` do not have compatible ranks.
 
 - - -
 
-#### `tf.TensorShape.assert_is_compatible_with(other)` {#TensorShape.assert_is_compatible_with}
+#### [`tf.TensorShape.assert_is_compatible_with(other)`](#TensorShape.assert_is_compatible_with) {#TensorShape.assert_is_compatible_with}
 
 Raises exception if `self` and `other` do not represent the same shape.
 
@@ -1993,7 +1993,7 @@ This method can be used to assert that there exists a shape that both
 
 - - -
 
-#### `tf.TensorShape.assert_is_fully_defined()` {#TensorShape.assert_is_fully_defined}
+#### [`tf.TensorShape.assert_is_fully_defined()`](#TensorShape.assert_is_fully_defined) {#TensorShape.assert_is_fully_defined}
 
 Raises an exception if `self` is not fully defined in every dimension.
 
@@ -2007,7 +2007,7 @@ Raises an exception if `self` is not fully defined in every dimension.
 #### Other Methods
 - - -
 
-#### `tf.TensorShape.__init__(dims)` {#TensorShape.__init__}
+#### [`tf.TensorShape.__init__(dims)`](#TensorShape.__init__) {#TensorShape.__init__}
 
 Creates a new TensorShape with the given dimensions.
 
@@ -2020,14 +2020,14 @@ Creates a new TensorShape with the given dimensions.
 
 - - -
 
-#### `tf.TensorShape.as_dimension_list()` {#TensorShape.as_dimension_list}
+#### [`tf.TensorShape.as_dimension_list()`](#TensorShape.as_dimension_list) {#TensorShape.as_dimension_list}
 
 DEPRECATED: use `as_list()`.
 
 
 - - -
 
-#### `tf.TensorShape.num_elements()` {#TensorShape.num_elements}
+#### [`tf.TensorShape.num_elements()`](#TensorShape.num_elements) {#TensorShape.num_elements}
 
 Returns the total number of elements, or none for incomplete shapes.
 
@@ -2035,19 +2035,19 @@ Returns the total number of elements, or none for incomplete shapes.
 
 - - -
 
-### `class tf.Dimension` {#Dimension}
+### [`class tf.Dimension`](#Dimension) {#Dimension}
 
 Represents the value of one dimension in a TensorShape.
 - - -
 
-#### `tf.Dimension.__init__(value)` {#Dimension.__init__}
+#### [`tf.Dimension.__init__(value)`](#Dimension.__init__) {#Dimension.__init__}
 
 Creates a new Dimension with the given value.
 
 
 - - -
 
-#### `tf.Dimension.assert_is_compatible_with(other)` {#Dimension.assert_is_compatible_with}
+#### [`tf.Dimension.assert_is_compatible_with(other)`](#Dimension.assert_is_compatible_with) {#Dimension.assert_is_compatible_with}
 
 Raises an exception if `other` is not compatible with this Dimension.
 
@@ -2065,7 +2065,7 @@ Raises an exception if `other` is not compatible with this Dimension.
 
 - - -
 
-#### `tf.Dimension.is_compatible_with(other)` {#Dimension.is_compatible_with}
+#### [`tf.Dimension.is_compatible_with(other)`](#Dimension.is_compatible_with) {#Dimension.is_compatible_with}
 
 Returns true if `other` is compatible with this Dimension.
 
@@ -2084,7 +2084,7 @@ An unknown Dimension is compatible with all other Dimensions.
 
 - - -
 
-#### `tf.Dimension.merge_with(other)` {#Dimension.merge_with}
+#### [`tf.Dimension.merge_with(other)`](#Dimension.merge_with) {#Dimension.merge_with}
 
 Returns a Dimension that combines the information in `self` and `other`.
 
@@ -2115,7 +2115,7 @@ Dimensions are combined as follows:
 
 - - -
 
-#### `tf.Dimension.value` {#Dimension.value}
+#### [`tf.Dimension.value`](#Dimension.value) {#Dimension.value}
 
 The value of this dimension, or None if it is unknown.
 
@@ -2123,7 +2123,7 @@ The value of this dimension, or None if it is unknown.
 
 - - -
 
-### `tf.op_scope(values, name, default_name=None)` {#op_scope}
+### [`tf.op_scope(values, name, default_name=None)`](#op_scope) {#op_scope}
 
 Returns a context manager for use when defining a Python op.
 
@@ -2162,7 +2162,7 @@ def my_op(a, b, c, name=None):
 
 - - -
 
-### `tf.get_seed(op_seed)` {#get_seed}
+### [`tf.get_seed(op_seed)`](#get_seed) {#get_seed}
 
 Returns the local seeds an operation should use given an op-specific seed.
 

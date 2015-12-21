@@ -15,7 +15,7 @@ data](../../how_tos/reading_data/index.md#feeding).
 
 - - -
 
-### `tf.placeholder(dtype, shape=None, name=None)` {#placeholder}
+### [`tf.placeholder(dtype, shape=None, name=None)`](#placeholder) {#placeholder}
 
 Inserts a placeholder for a tensor that will be always fed.
 
@@ -59,7 +59,7 @@ data](../../how_tos/reading_data/index.md).
 
 - - -
 
-### `class tf.ReaderBase` {#ReaderBase}
+### [`class tf.ReaderBase`](#ReaderBase) {#ReaderBase}
 
 Base class for different Reader types, that produce a record every step.
 
@@ -75,7 +75,7 @@ it is asked to produce a record (via Read()) but it has finished the
 last work unit.
 - - -
 
-#### `tf.ReaderBase.__init__(reader_ref, supports_serialize=False)` {#ReaderBase.__init__}
+#### [`tf.ReaderBase.__init__(reader_ref, supports_serialize=False)`](#ReaderBase.__init__) {#ReaderBase.__init__}
 
 Creates a new ReaderBase.
 
@@ -89,7 +89,7 @@ Creates a new ReaderBase.
 
 - - -
 
-#### `tf.ReaderBase.num_records_produced(name=None)` {#ReaderBase.num_records_produced}
+#### [`tf.ReaderBase.num_records_produced(name=None)`](#ReaderBase.num_records_produced) {#ReaderBase.num_records_produced}
 
 Returns the number of records this reader has produced.
 
@@ -108,7 +108,7 @@ succeeded.
 
 - - -
 
-#### `tf.ReaderBase.num_work_units_completed(name=None)` {#ReaderBase.num_work_units_completed}
+#### [`tf.ReaderBase.num_work_units_completed(name=None)`](#ReaderBase.num_work_units_completed) {#ReaderBase.num_work_units_completed}
 
 Returns the number of work units this reader has finished processing.
 
@@ -124,7 +124,7 @@ Returns the number of work units this reader has finished processing.
 
 - - -
 
-#### `tf.ReaderBase.read(queue, name=None)` {#ReaderBase.read}
+#### [`tf.ReaderBase.read(queue, name=None)`](#ReaderBase.read) {#ReaderBase.read}
 
 Returns the next record (key, value pair) produced by a reader.
 
@@ -149,14 +149,14 @@ finished with the previous file).
 
 - - -
 
-#### `tf.ReaderBase.reader_ref` {#ReaderBase.reader_ref}
+#### [`tf.ReaderBase.reader_ref`](#ReaderBase.reader_ref) {#ReaderBase.reader_ref}
 
 Op that implements the reader.
 
 
 - - -
 
-#### `tf.ReaderBase.reset(name=None)` {#ReaderBase.reset}
+#### [`tf.ReaderBase.reset(name=None)`](#ReaderBase.reset) {#ReaderBase.reset}
 
 Restore a reader to its initial clean state.
 
@@ -172,7 +172,7 @@ Restore a reader to its initial clean state.
 
 - - -
 
-#### `tf.ReaderBase.restore_state(state, name=None)` {#ReaderBase.restore_state}
+#### [`tf.ReaderBase.restore_state(state, name=None)`](#ReaderBase.restore_state) {#ReaderBase.restore_state}
 
 Restore a reader to a previously saved state.
 
@@ -193,7 +193,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.ReaderBase.serialize_state(name=None)` {#ReaderBase.serialize_state}
+#### [`tf.ReaderBase.serialize_state(name=None)`](#ReaderBase.serialize_state) {#ReaderBase.serialize_state}
 
 Produce a string tensor that encodes the state of a reader.
 
@@ -212,7 +212,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.ReaderBase.supports_serialize` {#ReaderBase.supports_serialize}
+#### [`tf.ReaderBase.supports_serialize`](#ReaderBase.supports_serialize) {#ReaderBase.supports_serialize}
 
 Whether the Reader implementation can serialize its state.
 
@@ -220,7 +220,7 @@ Whether the Reader implementation can serialize its state.
 
 - - -
 
-### `class tf.TextLineReader` {#TextLineReader}
+### [`class tf.TextLineReader`](#TextLineReader) {#TextLineReader}
 
 A Reader that outputs the lines of a file delimited by newlines.
 
@@ -228,7 +228,7 @@ Newlines are stripped from the output.
 See ReaderBase for supported methods.
 - - -
 
-#### `tf.TextLineReader.__init__(skip_header_lines=None, name=None)` {#TextLineReader.__init__}
+#### [`tf.TextLineReader.__init__(skip_header_lines=None, name=None)`](#TextLineReader.__init__) {#TextLineReader.__init__}
 
 Create a TextLineReader.
 
@@ -242,7 +242,7 @@ Create a TextLineReader.
 
 - - -
 
-#### `tf.TextLineReader.num_records_produced(name=None)` {#TextLineReader.num_records_produced}
+#### [`tf.TextLineReader.num_records_produced(name=None)`](#TextLineReader.num_records_produced) {#TextLineReader.num_records_produced}
 
 Returns the number of records this reader has produced.
 
@@ -261,7 +261,7 @@ succeeded.
 
 - - -
 
-#### `tf.TextLineReader.num_work_units_completed(name=None)` {#TextLineReader.num_work_units_completed}
+#### [`tf.TextLineReader.num_work_units_completed(name=None)`](#TextLineReader.num_work_units_completed) {#TextLineReader.num_work_units_completed}
 
 Returns the number of work units this reader has finished processing.
 
@@ -277,7 +277,7 @@ Returns the number of work units this reader has finished processing.
 
 - - -
 
-#### `tf.TextLineReader.read(queue, name=None)` {#TextLineReader.read}
+#### [`tf.TextLineReader.read(queue, name=None)`](#TextLineReader.read) {#TextLineReader.read}
 
 Returns the next record (key, value pair) produced by a reader.
 
@@ -302,14 +302,14 @@ finished with the previous file).
 
 - - -
 
-#### `tf.TextLineReader.reader_ref` {#TextLineReader.reader_ref}
+#### [`tf.TextLineReader.reader_ref`](#TextLineReader.reader_ref) {#TextLineReader.reader_ref}
 
 Op that implements the reader.
 
 
 - - -
 
-#### `tf.TextLineReader.reset(name=None)` {#TextLineReader.reset}
+#### [`tf.TextLineReader.reset(name=None)`](#TextLineReader.reset) {#TextLineReader.reset}
 
 Restore a reader to its initial clean state.
 
@@ -325,7 +325,7 @@ Restore a reader to its initial clean state.
 
 - - -
 
-#### `tf.TextLineReader.restore_state(state, name=None)` {#TextLineReader.restore_state}
+#### [`tf.TextLineReader.restore_state(state, name=None)`](#TextLineReader.restore_state) {#TextLineReader.restore_state}
 
 Restore a reader to a previously saved state.
 
@@ -346,7 +346,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.TextLineReader.serialize_state(name=None)` {#TextLineReader.serialize_state}
+#### [`tf.TextLineReader.serialize_state(name=None)`](#TextLineReader.serialize_state) {#TextLineReader.serialize_state}
 
 Produce a string tensor that encodes the state of a reader.
 
@@ -365,7 +365,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.TextLineReader.supports_serialize` {#TextLineReader.supports_serialize}
+#### [`tf.TextLineReader.supports_serialize`](#TextLineReader.supports_serialize) {#TextLineReader.supports_serialize}
 
 Whether the Reader implementation can serialize its state.
 
@@ -373,7 +373,7 @@ Whether the Reader implementation can serialize its state.
 
 - - -
 
-### `class tf.WholeFileReader` {#WholeFileReader}
+### [`class tf.WholeFileReader`](#WholeFileReader) {#WholeFileReader}
 
 A Reader that outputs the entire contents of a file as a value.
 
@@ -383,7 +383,7 @@ be a filename (key) and the contents of that file (value).
 See ReaderBase for supported methods.
 - - -
 
-#### `tf.WholeFileReader.__init__(name=None)` {#WholeFileReader.__init__}
+#### [`tf.WholeFileReader.__init__(name=None)`](#WholeFileReader.__init__) {#WholeFileReader.__init__}
 
 Create a WholeFileReader.
 
@@ -395,7 +395,7 @@ Create a WholeFileReader.
 
 - - -
 
-#### `tf.WholeFileReader.num_records_produced(name=None)` {#WholeFileReader.num_records_produced}
+#### [`tf.WholeFileReader.num_records_produced(name=None)`](#WholeFileReader.num_records_produced) {#WholeFileReader.num_records_produced}
 
 Returns the number of records this reader has produced.
 
@@ -414,7 +414,7 @@ succeeded.
 
 - - -
 
-#### `tf.WholeFileReader.num_work_units_completed(name=None)` {#WholeFileReader.num_work_units_completed}
+#### [`tf.WholeFileReader.num_work_units_completed(name=None)`](#WholeFileReader.num_work_units_completed) {#WholeFileReader.num_work_units_completed}
 
 Returns the number of work units this reader has finished processing.
 
@@ -430,7 +430,7 @@ Returns the number of work units this reader has finished processing.
 
 - - -
 
-#### `tf.WholeFileReader.read(queue, name=None)` {#WholeFileReader.read}
+#### [`tf.WholeFileReader.read(queue, name=None)`](#WholeFileReader.read) {#WholeFileReader.read}
 
 Returns the next record (key, value pair) produced by a reader.
 
@@ -455,14 +455,14 @@ finished with the previous file).
 
 - - -
 
-#### `tf.WholeFileReader.reader_ref` {#WholeFileReader.reader_ref}
+#### [`tf.WholeFileReader.reader_ref`](#WholeFileReader.reader_ref) {#WholeFileReader.reader_ref}
 
 Op that implements the reader.
 
 
 - - -
 
-#### `tf.WholeFileReader.reset(name=None)` {#WholeFileReader.reset}
+#### [`tf.WholeFileReader.reset(name=None)`](#WholeFileReader.reset) {#WholeFileReader.reset}
 
 Restore a reader to its initial clean state.
 
@@ -478,7 +478,7 @@ Restore a reader to its initial clean state.
 
 - - -
 
-#### `tf.WholeFileReader.restore_state(state, name=None)` {#WholeFileReader.restore_state}
+#### [`tf.WholeFileReader.restore_state(state, name=None)`](#WholeFileReader.restore_state) {#WholeFileReader.restore_state}
 
 Restore a reader to a previously saved state.
 
@@ -499,7 +499,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.WholeFileReader.serialize_state(name=None)` {#WholeFileReader.serialize_state}
+#### [`tf.WholeFileReader.serialize_state(name=None)`](#WholeFileReader.serialize_state) {#WholeFileReader.serialize_state}
 
 Produce a string tensor that encodes the state of a reader.
 
@@ -518,7 +518,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.WholeFileReader.supports_serialize` {#WholeFileReader.supports_serialize}
+#### [`tf.WholeFileReader.supports_serialize`](#WholeFileReader.supports_serialize) {#WholeFileReader.supports_serialize}
 
 Whether the Reader implementation can serialize its state.
 
@@ -526,7 +526,7 @@ Whether the Reader implementation can serialize its state.
 
 - - -
 
-### `class tf.IdentityReader` {#IdentityReader}
+### [`class tf.IdentityReader`](#IdentityReader) {#IdentityReader}
 
 A Reader that outputs the queued work as both the key and value.
 
@@ -536,7 +536,7 @@ work string and output (work, work).
 See ReaderBase for supported methods.
 - - -
 
-#### `tf.IdentityReader.__init__(name=None)` {#IdentityReader.__init__}
+#### [`tf.IdentityReader.__init__(name=None)`](#IdentityReader.__init__) {#IdentityReader.__init__}
 
 Create a IdentityReader.
 
@@ -548,7 +548,7 @@ Create a IdentityReader.
 
 - - -
 
-#### `tf.IdentityReader.num_records_produced(name=None)` {#IdentityReader.num_records_produced}
+#### [`tf.IdentityReader.num_records_produced(name=None)`](#IdentityReader.num_records_produced) {#IdentityReader.num_records_produced}
 
 Returns the number of records this reader has produced.
 
@@ -567,7 +567,7 @@ succeeded.
 
 - - -
 
-#### `tf.IdentityReader.num_work_units_completed(name=None)` {#IdentityReader.num_work_units_completed}
+#### [`tf.IdentityReader.num_work_units_completed(name=None)`](#IdentityReader.num_work_units_completed) {#IdentityReader.num_work_units_completed}
 
 Returns the number of work units this reader has finished processing.
 
@@ -583,7 +583,7 @@ Returns the number of work units this reader has finished processing.
 
 - - -
 
-#### `tf.IdentityReader.read(queue, name=None)` {#IdentityReader.read}
+#### [`tf.IdentityReader.read(queue, name=None)`](#IdentityReader.read) {#IdentityReader.read}
 
 Returns the next record (key, value pair) produced by a reader.
 
@@ -608,14 +608,14 @@ finished with the previous file).
 
 - - -
 
-#### `tf.IdentityReader.reader_ref` {#IdentityReader.reader_ref}
+#### [`tf.IdentityReader.reader_ref`](#IdentityReader.reader_ref) {#IdentityReader.reader_ref}
 
 Op that implements the reader.
 
 
 - - -
 
-#### `tf.IdentityReader.reset(name=None)` {#IdentityReader.reset}
+#### [`tf.IdentityReader.reset(name=None)`](#IdentityReader.reset) {#IdentityReader.reset}
 
 Restore a reader to its initial clean state.
 
@@ -631,7 +631,7 @@ Restore a reader to its initial clean state.
 
 - - -
 
-#### `tf.IdentityReader.restore_state(state, name=None)` {#IdentityReader.restore_state}
+#### [`tf.IdentityReader.restore_state(state, name=None)`](#IdentityReader.restore_state) {#IdentityReader.restore_state}
 
 Restore a reader to a previously saved state.
 
@@ -652,7 +652,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.IdentityReader.serialize_state(name=None)` {#IdentityReader.serialize_state}
+#### [`tf.IdentityReader.serialize_state(name=None)`](#IdentityReader.serialize_state) {#IdentityReader.serialize_state}
 
 Produce a string tensor that encodes the state of a reader.
 
@@ -671,7 +671,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.IdentityReader.supports_serialize` {#IdentityReader.supports_serialize}
+#### [`tf.IdentityReader.supports_serialize`](#IdentityReader.supports_serialize) {#IdentityReader.supports_serialize}
 
 Whether the Reader implementation can serialize its state.
 
@@ -679,14 +679,14 @@ Whether the Reader implementation can serialize its state.
 
 - - -
 
-### `class tf.TFRecordReader` {#TFRecordReader}
+### [`class tf.TFRecordReader`](#TFRecordReader) {#TFRecordReader}
 
 A Reader that outputs the records from a TFRecords file.
 
 See ReaderBase for supported methods.
 - - -
 
-#### `tf.TFRecordReader.__init__(name=None)` {#TFRecordReader.__init__}
+#### [`tf.TFRecordReader.__init__(name=None)`](#TFRecordReader.__init__) {#TFRecordReader.__init__}
 
 Create a TFRecordReader.
 
@@ -698,7 +698,7 @@ Create a TFRecordReader.
 
 - - -
 
-#### `tf.TFRecordReader.num_records_produced(name=None)` {#TFRecordReader.num_records_produced}
+#### [`tf.TFRecordReader.num_records_produced(name=None)`](#TFRecordReader.num_records_produced) {#TFRecordReader.num_records_produced}
 
 Returns the number of records this reader has produced.
 
@@ -717,7 +717,7 @@ succeeded.
 
 - - -
 
-#### `tf.TFRecordReader.num_work_units_completed(name=None)` {#TFRecordReader.num_work_units_completed}
+#### [`tf.TFRecordReader.num_work_units_completed(name=None)`](#TFRecordReader.num_work_units_completed) {#TFRecordReader.num_work_units_completed}
 
 Returns the number of work units this reader has finished processing.
 
@@ -733,7 +733,7 @@ Returns the number of work units this reader has finished processing.
 
 - - -
 
-#### `tf.TFRecordReader.read(queue, name=None)` {#TFRecordReader.read}
+#### [`tf.TFRecordReader.read(queue, name=None)`](#TFRecordReader.read) {#TFRecordReader.read}
 
 Returns the next record (key, value pair) produced by a reader.
 
@@ -758,14 +758,14 @@ finished with the previous file).
 
 - - -
 
-#### `tf.TFRecordReader.reader_ref` {#TFRecordReader.reader_ref}
+#### [`tf.TFRecordReader.reader_ref`](#TFRecordReader.reader_ref) {#TFRecordReader.reader_ref}
 
 Op that implements the reader.
 
 
 - - -
 
-#### `tf.TFRecordReader.reset(name=None)` {#TFRecordReader.reset}
+#### [`tf.TFRecordReader.reset(name=None)`](#TFRecordReader.reset) {#TFRecordReader.reset}
 
 Restore a reader to its initial clean state.
 
@@ -781,7 +781,7 @@ Restore a reader to its initial clean state.
 
 - - -
 
-#### `tf.TFRecordReader.restore_state(state, name=None)` {#TFRecordReader.restore_state}
+#### [`tf.TFRecordReader.restore_state(state, name=None)`](#TFRecordReader.restore_state) {#TFRecordReader.restore_state}
 
 Restore a reader to a previously saved state.
 
@@ -802,7 +802,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.TFRecordReader.serialize_state(name=None)` {#TFRecordReader.serialize_state}
+#### [`tf.TFRecordReader.serialize_state(name=None)`](#TFRecordReader.serialize_state) {#TFRecordReader.serialize_state}
 
 Produce a string tensor that encodes the state of a reader.
 
@@ -821,7 +821,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.TFRecordReader.supports_serialize` {#TFRecordReader.supports_serialize}
+#### [`tf.TFRecordReader.supports_serialize`](#TFRecordReader.supports_serialize) {#TFRecordReader.supports_serialize}
 
 Whether the Reader implementation can serialize its state.
 
@@ -829,14 +829,14 @@ Whether the Reader implementation can serialize its state.
 
 - - -
 
-### `class tf.FixedLengthRecordReader` {#FixedLengthRecordReader}
+### [`class tf.FixedLengthRecordReader`](#FixedLengthRecordReader) {#FixedLengthRecordReader}
 
 A Reader that outputs fixed-length records from a file.
 
 See ReaderBase for supported methods.
 - - -
 
-#### `tf.FixedLengthRecordReader.__init__(record_bytes, header_bytes=None, footer_bytes=None, name=None)` {#FixedLengthRecordReader.__init__}
+#### [`tf.FixedLengthRecordReader.__init__(record_bytes, header_bytes=None, footer_bytes=None, name=None)`](#FixedLengthRecordReader.__init__) {#FixedLengthRecordReader.__init__}
 
 Create a FixedLengthRecordReader.
 
@@ -851,7 +851,7 @@ Create a FixedLengthRecordReader.
 
 - - -
 
-#### `tf.FixedLengthRecordReader.num_records_produced(name=None)` {#FixedLengthRecordReader.num_records_produced}
+#### [`tf.FixedLengthRecordReader.num_records_produced(name=None)`](#FixedLengthRecordReader.num_records_produced) {#FixedLengthRecordReader.num_records_produced}
 
 Returns the number of records this reader has produced.
 
@@ -870,7 +870,7 @@ succeeded.
 
 - - -
 
-#### `tf.FixedLengthRecordReader.num_work_units_completed(name=None)` {#FixedLengthRecordReader.num_work_units_completed}
+#### [`tf.FixedLengthRecordReader.num_work_units_completed(name=None)`](#FixedLengthRecordReader.num_work_units_completed) {#FixedLengthRecordReader.num_work_units_completed}
 
 Returns the number of work units this reader has finished processing.
 
@@ -886,7 +886,7 @@ Returns the number of work units this reader has finished processing.
 
 - - -
 
-#### `tf.FixedLengthRecordReader.read(queue, name=None)` {#FixedLengthRecordReader.read}
+#### [`tf.FixedLengthRecordReader.read(queue, name=None)`](#FixedLengthRecordReader.read) {#FixedLengthRecordReader.read}
 
 Returns the next record (key, value pair) produced by a reader.
 
@@ -911,14 +911,14 @@ finished with the previous file).
 
 - - -
 
-#### `tf.FixedLengthRecordReader.reader_ref` {#FixedLengthRecordReader.reader_ref}
+#### [`tf.FixedLengthRecordReader.reader_ref`](#FixedLengthRecordReader.reader_ref) {#FixedLengthRecordReader.reader_ref}
 
 Op that implements the reader.
 
 
 - - -
 
-#### `tf.FixedLengthRecordReader.reset(name=None)` {#FixedLengthRecordReader.reset}
+#### [`tf.FixedLengthRecordReader.reset(name=None)`](#FixedLengthRecordReader.reset) {#FixedLengthRecordReader.reset}
 
 Restore a reader to its initial clean state.
 
@@ -934,7 +934,7 @@ Restore a reader to its initial clean state.
 
 - - -
 
-#### `tf.FixedLengthRecordReader.restore_state(state, name=None)` {#FixedLengthRecordReader.restore_state}
+#### [`tf.FixedLengthRecordReader.restore_state(state, name=None)`](#FixedLengthRecordReader.restore_state) {#FixedLengthRecordReader.restore_state}
 
 Restore a reader to a previously saved state.
 
@@ -955,7 +955,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.FixedLengthRecordReader.serialize_state(name=None)` {#FixedLengthRecordReader.serialize_state}
+#### [`tf.FixedLengthRecordReader.serialize_state(name=None)`](#FixedLengthRecordReader.serialize_state) {#FixedLengthRecordReader.serialize_state}
 
 Produce a string tensor that encodes the state of a reader.
 
@@ -974,7 +974,7 @@ Unimplemented error.
 
 - - -
 
-#### `tf.FixedLengthRecordReader.supports_serialize` {#FixedLengthRecordReader.supports_serialize}
+#### [`tf.FixedLengthRecordReader.supports_serialize`](#FixedLengthRecordReader.supports_serialize) {#FixedLengthRecordReader.supports_serialize}
 
 Whether the Reader implementation can serialize its state.
 
@@ -988,7 +988,7 @@ formats into tensors.
 
 - - -
 
-### `tf.decode_csv(records, record_defaults, field_delim=None, name=None)` {#decode_csv}
+### [`tf.decode_csv(records, record_defaults, field_delim=None, name=None)`](#decode_csv) {#decode_csv}
 
 Convert CSV records to tensors. Each column maps to one tensor.
 
@@ -1017,7 +1017,7 @@ Note that we allow leading and trailing spaces with int or float field.
 
 - - -
 
-### `tf.decode_raw(bytes, out_type, little_endian=None, name=None)` {#decode_raw}
+### [`tf.decode_raw(bytes, out_type, little_endian=None, name=None)`](#decode_raw) {#decode_raw}
 
 Reinterpret the bytes of a string as a vector of numbers.
 
@@ -1055,7 +1055,7 @@ here](https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/core/ex
 
 - - -
 
-### `tf.parse_example(serialized, names=None, sparse_keys=None, sparse_types=None, dense_keys=None, dense_types=None, dense_defaults=None, dense_shapes=None, name='ParseExample')` {#parse_example}
+### [`tf.parse_example(serialized, names=None, sparse_keys=None, sparse_types=None, dense_keys=None, dense_types=None, dense_defaults=None, dense_shapes=None, name='ParseExample')`](#parse_example) {#parse_example}
 
 Parses `Example` protos.
 
@@ -1232,7 +1232,7 @@ And the expected output is:
 
 - - -
 
-### `tf.parse_single_example(serialized, names=None, sparse_keys=None, sparse_types=None, dense_keys=None, dense_types=None, dense_defaults=None, dense_shapes=None, name='ParseSingleExample')` {#parse_single_example}
+### [`tf.parse_single_example(serialized, names=None, sparse_keys=None, sparse_types=None, dense_keys=None, dense_types=None, dense_defaults=None, dense_shapes=None, name='ParseSingleExample')`](#parse_single_example) {#parse_single_example}
 
 Parses a single `Example` proto.
 
@@ -1285,7 +1285,7 @@ Queues](../../how_tos/threading_and_queues/index.md).
 
 - - -
 
-### `class tf.QueueBase` {#QueueBase}
+### [`class tf.QueueBase`](#QueueBase) {#QueueBase}
 
 Base class for queue implementations.
 
@@ -1306,7 +1306,7 @@ them.
 
 - - -
 
-#### `tf.QueueBase.enqueue(vals, name=None)` {#QueueBase.enqueue}
+#### [`tf.QueueBase.enqueue(vals, name=None)`](#QueueBase.enqueue) {#QueueBase.enqueue}
 
 Enqueues one element to this queue.
 
@@ -1326,7 +1326,7 @@ until the element has been enqueued.
 
 - - -
 
-#### `tf.QueueBase.enqueue_many(vals, name=None)` {#QueueBase.enqueue_many}
+#### [`tf.QueueBase.enqueue_many(vals, name=None)`](#QueueBase.enqueue_many) {#QueueBase.enqueue_many}
 
 Enqueues zero or elements to this queue.
 
@@ -1352,7 +1352,7 @@ until all of the elements have been enqueued.
 
 - - -
 
-#### `tf.QueueBase.dequeue(name=None)` {#QueueBase.dequeue}
+#### [`tf.QueueBase.dequeue(name=None)`](#QueueBase.dequeue) {#QueueBase.dequeue}
 
 Dequeues one element from this queue.
 
@@ -1371,7 +1371,7 @@ until there is an element to dequeue.
 
 - - -
 
-#### `tf.QueueBase.dequeue_many(n, name=None)` {#QueueBase.dequeue_many}
+#### [`tf.QueueBase.dequeue_many(n, name=None)`](#QueueBase.dequeue_many) {#QueueBase.dequeue_many}
 
 Dequeues and concatenates `n` elements from this queue.
 
@@ -1396,7 +1396,7 @@ executes, it will block until `n` elements have been dequeued.
 
 - - -
 
-#### `tf.QueueBase.size(name=None)` {#QueueBase.size}
+#### [`tf.QueueBase.size(name=None)`](#QueueBase.size) {#QueueBase.size}
 
 Compute the number of elements in this queue.
 
@@ -1413,7 +1413,7 @@ Compute the number of elements in this queue.
 
 - - -
 
-#### `tf.QueueBase.close(cancel_pending_enqueues=False, name=None)` {#QueueBase.close}
+#### [`tf.QueueBase.close(cancel_pending_enqueues=False, name=None)`](#QueueBase.close) {#QueueBase.close}
 
 Closes this queue.
 
@@ -1443,7 +1443,7 @@ be cancelled.
 #### Other Methods
 - - -
 
-#### `tf.QueueBase.__init__(dtypes, shapes, queue_ref)` {#QueueBase.__init__}
+#### [`tf.QueueBase.__init__(dtypes, shapes, queue_ref)`](#QueueBase.__init__) {#QueueBase.__init__}
 
 Constructs a queue object from a queue reference.
 
@@ -1461,14 +1461,14 @@ Constructs a queue object from a queue reference.
 
 - - -
 
-#### `tf.QueueBase.dtypes` {#QueueBase.dtypes}
+#### [`tf.QueueBase.dtypes`](#QueueBase.dtypes) {#QueueBase.dtypes}
 
 The list of dtypes for each component of a queue element.
 
 
 - - -
 
-#### `tf.QueueBase.from_list(index, queues)` {#QueueBase.from_list}
+#### [`tf.QueueBase.from_list(index, queues)`](#QueueBase.from_list) {#QueueBase.from_list}
 
 Create a queue using the queue reference from `queues[index]`.
 
@@ -1492,14 +1492,14 @@ Create a queue using the queue reference from `queues[index]`.
 
 - - -
 
-#### `tf.QueueBase.name` {#QueueBase.name}
+#### [`tf.QueueBase.name`](#QueueBase.name) {#QueueBase.name}
 
 The name of the underlying queue.
 
 
 - - -
 
-#### `tf.QueueBase.queue_ref` {#QueueBase.queue_ref}
+#### [`tf.QueueBase.queue_ref`](#QueueBase.queue_ref) {#QueueBase.queue_ref}
 
 The underlying queue reference.
 
@@ -1507,7 +1507,7 @@ The underlying queue reference.
 
 - - -
 
-### `class tf.FIFOQueue` {#FIFOQueue}
+### [`class tf.FIFOQueue`](#FIFOQueue) {#FIFOQueue}
 
 A queue implementation that dequeues elements in first-in-first out order.
 
@@ -1516,7 +1516,7 @@ this class.
 
 - - -
 
-#### `tf.FIFOQueue.__init__(capacity, dtypes, shapes=None, shared_name=None, name='fifo_queue')` {#FIFOQueue.__init__}
+#### [`tf.FIFOQueue.__init__(capacity, dtypes, shapes=None, shared_name=None, name='fifo_queue')`](#FIFOQueue.__init__) {#FIFOQueue.__init__}
 
 Creates a queue that dequeues elements in a first-in first-out order.
 
@@ -1550,7 +1550,7 @@ but the use of `dequeue_many` is disallowed.
 
 - - -
 
-### `class tf.RandomShuffleQueue` {#RandomShuffleQueue}
+### [`class tf.RandomShuffleQueue`](#RandomShuffleQueue) {#RandomShuffleQueue}
 
 A queue implementation that dequeues elements in a random order.
 
@@ -1559,7 +1559,7 @@ this class.
 
 - - -
 
-#### `tf.RandomShuffleQueue.__init__(capacity, min_after_dequeue, dtypes, shapes=None, seed=None, shared_name=None, name='random_shuffle_queue')` {#RandomShuffleQueue.__init__}
+#### [`tf.RandomShuffleQueue.__init__(capacity, min_after_dequeue, dtypes, shapes=None, seed=None, shared_name=None, name='random_shuffle_queue')`](#RandomShuffleQueue.__init__) {#RandomShuffleQueue.__init__}
 
 Create a queue that dequeues elements in a random order.
 
@@ -1609,7 +1609,7 @@ queue has been closed.
 
 - - -
 
-### `tf.matching_files(pattern, name=None)` {#matching_files}
+### [`tf.matching_files(pattern, name=None)`](#matching_files) {#matching_files}
 
 Returns the set of files matching a pattern.
 
@@ -1629,7 +1629,7 @@ basename portion of the pattern, not in the directory portion.
 
 - - -
 
-### `tf.read_file(filename, name=None)` {#read_file}
+### [`tf.read_file(filename, name=None)`](#read_file) {#read_file}
 
 Reads and outputs the entire contents of the input filename.
 
@@ -1658,7 +1658,7 @@ The "producer" functions add a queue to the graph and a corresponding
 
 - - -
 
-### `tf.train.match_filenames_once(pattern, name=None)` {#match_filenames_once}
+### [`tf.train.match_filenames_once(pattern, name=None)`](#match_filenames_once) {#match_filenames_once}
 
 Save the list of files matching pattern, so it is only computed once.
 
@@ -1675,7 +1675,7 @@ Save the list of files matching pattern, so it is only computed once.
 
 - - -
 
-### `tf.train.limit_epochs(tensor, num_epochs=None, name=None)` {#limit_epochs}
+### [`tf.train.limit_epochs(tensor, num_epochs=None, name=None)`](#limit_epochs) {#limit_epochs}
 
 Returns tensor `num_epochs` times and then raises an `OutOfRange` error.
 
@@ -1694,7 +1694,7 @@ Returns tensor `num_epochs` times and then raises an `OutOfRange` error.
 
 - - -
 
-### `tf.train.range_input_producer(limit, num_epochs=None, shuffle=True, seed=None, capacity=32, name=None)` {#range_input_producer}
+### [`tf.train.range_input_producer(limit, num_epochs=None, shuffle=True, seed=None, capacity=32, name=None)`](#range_input_producer) {#range_input_producer}
 
 Produces the integers from 0 to limit-1 in a queue.
 
@@ -1720,7 +1720,7 @@ Produces the integers from 0 to limit-1 in a queue.
 
 - - -
 
-### `tf.train.slice_input_producer(tensor_list, num_epochs=None, shuffle=True, seed=None, capacity=32, name=None)` {#slice_input_producer}
+### [`tf.train.slice_input_producer(tensor_list, num_epochs=None, shuffle=True, seed=None, capacity=32, name=None)`](#slice_input_producer) {#slice_input_producer}
 
 Produces a slice of each `Tensor` in `tensor_list`.
 
@@ -1749,7 +1749,7 @@ is added to the current `Graph`'s `QUEUE_RUNNER` collection.
 
 - - -
 
-### `tf.train.string_input_producer(string_tensor, num_epochs=None, shuffle=True, seed=None, capacity=32, name=None)` {#string_input_producer}
+### [`tf.train.string_input_producer(string_tensor, num_epochs=None, shuffle=True, seed=None, capacity=32, name=None)`](#string_input_producer) {#string_input_producer}
 
 Output strings (e.g. filenames) to a queue for an input pipeline.
 
@@ -1803,7 +1803,7 @@ want them run by *N* threads.
 
 - - -
 
-### `tf.train.batch(tensor_list, batch_size, num_threads=1, capacity=32, enqueue_many=False, shapes=None, name=None)` {#batch}
+### [`tf.train.batch(tensor_list, batch_size, num_threads=1, capacity=32, enqueue_many=False, shapes=None, name=None)`](#batch) {#batch}
 
 Creates batches of tensors in `tensor_list`.
 
@@ -1857,7 +1857,7 @@ these conditions holds.
 
 - - -
 
-### `tf.train.batch_join(tensor_list_list, batch_size, capacity=32, enqueue_many=False, shapes=None, name=None)` {#batch_join}
+### [`tf.train.batch_join(tensor_list_list, batch_size, capacity=32, enqueue_many=False, shapes=None, name=None)`](#batch_join) {#batch_join}
 
 Runs a list of tensors to fill a queue to create batches of examples.
 
@@ -1922,7 +1922,7 @@ these conditions holds.
 
 - - -
 
-### `tf.train.shuffle_batch(tensor_list, batch_size, capacity, min_after_dequeue, num_threads=1, seed=None, enqueue_many=False, shapes=None, name=None)` {#shuffle_batch}
+### [`tf.train.shuffle_batch(tensor_list, batch_size, capacity, min_after_dequeue, num_threads=1, seed=None, enqueue_many=False, shapes=None, name=None)`](#shuffle_batch) {#shuffle_batch}
 
 Creates batches by randomly shuffling tensors.
 
@@ -1997,7 +1997,7 @@ these conditions holds.
 
 - - -
 
-### `tf.train.shuffle_batch_join(tensor_list_list, batch_size, capacity, min_after_dequeue, seed=None, enqueue_many=False, shapes=None, name=None)` {#shuffle_batch_join}
+### [`tf.train.shuffle_batch_join(tensor_list_list, batch_size, capacity, min_after_dequeue, seed=None, enqueue_many=False, shapes=None, name=None)`](#shuffle_batch_join) {#shuffle_batch_join}
 
 Create batches by randomly shuffling tensors.
 

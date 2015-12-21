@@ -16,7 +16,7 @@ of the subclasses.
 
 - - -
 
-### `class tf.train.Optimizer` {#Optimizer}
+### [`class tf.train.Optimizer`](#Optimizer) {#Optimizer}
 
 Base class for optimizers.
 
@@ -71,7 +71,7 @@ opt.apply_gradients(capped_grads_and_vars)
 
 - - -
 
-#### `tf.train.Optimizer.__init__(use_locking, name)` {#Optimizer.__init__}
+#### [`tf.train.Optimizer.__init__(use_locking, name)`](#Optimizer.__init__) {#Optimizer.__init__}
 
 Create a new Optimizer.
 
@@ -94,7 +94,7 @@ This must be called by the constructors of subclasses.
 
 - - -
 
-#### `tf.train.Optimizer.minimize(loss, global_step=None, var_list=None, gate_gradients=1, aggregation_method=None, name=None)` {#Optimizer.minimize}
+#### [`tf.train.Optimizer.minimize(loss, global_step=None, var_list=None, gate_gradients=1, aggregation_method=None, name=None)`](#Optimizer.minimize) {#Optimizer.minimize}
 
 Add operations to minimize `loss` by updating `var_list`.
 
@@ -131,7 +131,7 @@ of using this function.
 
 - - -
 
-#### `tf.train.Optimizer.compute_gradients(loss, var_list=None, gate_gradients=1, aggregation_method=None)` {#Optimizer.compute_gradients}
+#### [`tf.train.Optimizer.compute_gradients(loss, var_list=None, gate_gradients=1, aggregation_method=None)`](#Optimizer.compute_gradients) {#Optimizer.compute_gradients}
 
 Compute gradients of `loss` for the variables in `var_list`.
 
@@ -166,7 +166,7 @@ given variable.
 
 - - -
 
-#### `tf.train.Optimizer.apply_gradients(grads_and_vars, global_step=None, name=None)` {#Optimizer.apply_gradients}
+#### [`tf.train.Optimizer.apply_gradients(grads_and_vars, global_step=None, name=None)`](#Optimizer.apply_gradients) {#Optimizer.apply_gradients}
 
 Apply gradients to variables.
 
@@ -232,7 +232,7 @@ about the slots, etc.
 
 - - -
 
-#### `tf.train.Optimizer.get_slot_names()` {#Optimizer.get_slot_names}
+#### [`tf.train.Optimizer.get_slot_names()`](#Optimizer.get_slot_names) {#Optimizer.get_slot_names}
 
 Return a list of the names of slots created by the `Optimizer`.
 
@@ -245,7 +245,7 @@ See `get_slot()`.
 
 - - -
 
-#### `tf.train.Optimizer.get_slot(var, name)` {#Optimizer.get_slot}
+#### [`tf.train.Optimizer.get_slot(var, name)`](#Optimizer.get_slot) {#Optimizer.get_slot}
 
 Return a slot named `name` created for `var` by the Optimizer.
 
@@ -271,13 +271,13 @@ Use `get_slot_names()` to get the list of slot names created by the
 
 - - -
 
-### `class tf.train.GradientDescentOptimizer` {#GradientDescentOptimizer}
+### [`class tf.train.GradientDescentOptimizer`](#GradientDescentOptimizer) {#GradientDescentOptimizer}
 
 Optimizer that implements the gradient descent algorithm.
 
 - - -
 
-#### `tf.train.GradientDescentOptimizer.__init__(learning_rate, use_locking=False, name='GradientDescent')` {#GradientDescentOptimizer.__init__}
+#### [`tf.train.GradientDescentOptimizer.__init__(learning_rate, use_locking=False, name='GradientDescent')`](#GradientDescentOptimizer.__init__) {#GradientDescentOptimizer.__init__}
 
 Construct a new gradient descent optimizer.
 
@@ -294,13 +294,13 @@ Construct a new gradient descent optimizer.
 
 - - -
 
-### `class tf.train.AdagradOptimizer` {#AdagradOptimizer}
+### [`class tf.train.AdagradOptimizer`](#AdagradOptimizer) {#AdagradOptimizer}
 
 Optimizer that implements the Adagrad algorithm.
 
 - - -
 
-#### `tf.train.AdagradOptimizer.__init__(learning_rate, initial_accumulator_value=0.1, use_locking=False, name='Adagrad')` {#AdagradOptimizer.__init__}
+#### [`tf.train.AdagradOptimizer.__init__(learning_rate, initial_accumulator_value=0.1, use_locking=False, name='Adagrad')`](#AdagradOptimizer.__init__) {#AdagradOptimizer.__init__}
 
 Construct a new Adagrad optimizer.
 
@@ -323,13 +323,13 @@ Construct a new Adagrad optimizer.
 
 - - -
 
-### `class tf.train.MomentumOptimizer` {#MomentumOptimizer}
+### [`class tf.train.MomentumOptimizer`](#MomentumOptimizer) {#MomentumOptimizer}
 
 Optimizer that implements the Momentum algorithm.
 
 - - -
 
-#### `tf.train.MomentumOptimizer.__init__(learning_rate, momentum, use_locking=False, name='Momentum')` {#MomentumOptimizer.__init__}
+#### [`tf.train.MomentumOptimizer.__init__(learning_rate, momentum, use_locking=False, name='Momentum')`](#MomentumOptimizer.__init__) {#MomentumOptimizer.__init__}
 
 Construct a new Momentum optimizer.
 
@@ -346,13 +346,13 @@ Construct a new Momentum optimizer.
 
 - - -
 
-### `class tf.train.AdamOptimizer` {#AdamOptimizer}
+### [`class tf.train.AdamOptimizer`](#AdamOptimizer) {#AdamOptimizer}
 
 Optimizer that implements the Adam algorithm.
 
 - - -
 
-#### `tf.train.AdamOptimizer.__init__(learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-08, use_locking=False, name='Adam')` {#AdamOptimizer.__init__}
+#### [`tf.train.AdamOptimizer.__init__(learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-08, use_locking=False, name='Adam')`](#AdamOptimizer.__init__) {#AdamOptimizer.__init__}
 
 Construct a new Adam optimizer.
 
@@ -399,13 +399,13 @@ current good choice is 1.0 or 0.1.
 
 - - -
 
-### `class tf.train.FtrlOptimizer` {#FtrlOptimizer}
+### [`class tf.train.FtrlOptimizer`](#FtrlOptimizer) {#FtrlOptimizer}
 
 Optimizer that implements the FTRL algorithm.
 
 - - -
 
-#### `tf.train.FtrlOptimizer.__init__(learning_rate, learning_rate_power=-0.5, initial_accumulator_value=0.1, l1_regularization_strength=0.0, l2_regularization_strength=0.0, use_locking=False, name='Ftrl')` {#FtrlOptimizer.__init__}
+#### [`tf.train.FtrlOptimizer.__init__(learning_rate, learning_rate_power=-0.5, initial_accumulator_value=0.1, l1_regularization_strength=0.0, l2_regularization_strength=0.0, use_locking=False, name='Ftrl')`](#FtrlOptimizer.__init__) {#FtrlOptimizer.__init__}
 
 Construct a new FTRL optimizer.
 
@@ -457,13 +457,13 @@ using this function.
 
 - - -
 
-### `class tf.train.RMSPropOptimizer` {#RMSPropOptimizer}
+### [`class tf.train.RMSPropOptimizer`](#RMSPropOptimizer) {#RMSPropOptimizer}
 
 Optimizer that implements the RMSProp algorithm.
 
 - - -
 
-#### `tf.train.RMSPropOptimizer.__init__(learning_rate, decay, momentum=0.0, epsilon=1e-10, use_locking=False, name='RMSProp')` {#RMSPropOptimizer.__init__}
+#### [`tf.train.RMSPropOptimizer.__init__(learning_rate, decay, momentum=0.0, epsilon=1e-10, use_locking=False, name='RMSProp')`](#RMSPropOptimizer.__init__) {#RMSPropOptimizer.__init__}
 
 Construct a new RMSProp optimizer.
 
@@ -491,7 +491,7 @@ functions below.
 
 - - -
 
-### `tf.gradients(ys, xs, grad_ys=None, name='gradients', colocate_gradients_with_ops=False, gate_gradients=False, aggregation_method=None)` {#gradients}
+### [`tf.gradients(ys, xs, grad_ys=None, name='gradients', colocate_gradients_with_ops=False, gate_gradients=False, aggregation_method=None)`](#gradients) {#gradients}
 
 Constructs symbolic partial derivatives of `ys` w.r.t. x in `xs`.
 
@@ -542,7 +542,7 @@ each y).
 
 - - -
 
-### `class tf.AggregationMethod` {#AggregationMethod}
+### [`class tf.AggregationMethod`](#AggregationMethod) {#AggregationMethod}
 
 A class listing aggregation methods used to combine gradients.
 
@@ -558,7 +558,7 @@ be used to combine gradients in the graph:
 
 - - -
 
-### `tf.stop_gradient(input, name=None)` {#stop_gradient}
+### [`tf.stop_gradient(input, name=None)`](#stop_gradient) {#stop_gradient}
 
 Stops gradient computation.
 
@@ -604,7 +604,7 @@ gradients.
 
 - - -
 
-### `tf.clip_by_value(t, clip_value_min, clip_value_max, name=None)` {#clip_by_value}
+### [`tf.clip_by_value(t, clip_value_min, clip_value_max, name=None)`](#clip_by_value) {#clip_by_value}
 
 Clips tensor values to a specified min and max.
 
@@ -628,7 +628,7 @@ greater than `clip_value_max` are set to `clip_value_max`.
 
 - - -
 
-### `tf.clip_by_norm(t, clip_norm, name=None)` {#clip_by_norm}
+### [`tf.clip_by_norm(t, clip_norm, name=None)`](#clip_by_norm) {#clip_by_norm}
 
 Clips tensor values to a maximum L2-norm.
 
@@ -660,7 +660,7 @@ an optimizer.
 
 - - -
 
-### `tf.clip_by_average_norm(t, clip_norm, name=None)` {#clip_by_average_norm}
+### [`tf.clip_by_average_norm(t, clip_norm, name=None)`](#clip_by_average_norm) {#clip_by_average_norm}
 
 Clips tensor values to a maximum average L2-norm.
 
@@ -692,7 +692,7 @@ an optimizer.
 
 - - -
 
-### `tf.clip_by_global_norm(t_list, clip_norm, use_norm=None, name=None)` {#clip_by_global_norm}
+### [`tf.clip_by_global_norm(t_list, clip_norm, use_norm=None, name=None)`](#clip_by_global_norm) {#clip_by_global_norm}
 
 Clips values of multiple tensors by the ratio of the sum of their norms.
 
@@ -745,7 +745,7 @@ ready before the clipping operation can be performed.
 
 - - -
 
-### `tf.global_norm(t_list, name=None)` {#global_norm}
+### [`tf.global_norm(t_list, name=None)`](#global_norm) {#global_norm}
 
 Computes the global norm of multiple tensors.
 
@@ -777,7 +777,7 @@ Any entries in `t_list` that are of type None are ignored.
 ## Decaying the learning rate
 - - -
 
-### `tf.train.exponential_decay(learning_rate, global_step, decay_steps, decay_rate, staircase=False, name=None)` {#exponential_decay}
+### [`tf.train.exponential_decay(learning_rate, global_step, decay_steps, decay_rate, staircase=False, name=None)`](#exponential_decay) {#exponential_decay}
 
 Applies exponential decay to the learning rate.
 
@@ -839,7 +839,7 @@ moving averages for evaluations often improve results significantly.
 
 - - -
 
-### `class tf.train.ExponentialMovingAverage` {#ExponentialMovingAverage}
+### [`class tf.train.ExponentialMovingAverage`](#ExponentialMovingAverage) {#ExponentialMovingAverage}
 
 Maintains moving averages of variables by employing an exponential decay.
 
@@ -923,7 +923,7 @@ saver.restore(...checkpoint filename...)
 
 - - -
 
-#### `tf.train.ExponentialMovingAverage.__init__(decay, num_updates=None, name='ExponentialMovingAverage')` {#ExponentialMovingAverage.__init__}
+#### [`tf.train.ExponentialMovingAverage.__init__(decay, num_updates=None, name='ExponentialMovingAverage')`](#ExponentialMovingAverage.__init__) {#ExponentialMovingAverage.__init__}
 
 Creates a new ExponentialMovingAverage object.
 
@@ -949,7 +949,7 @@ move faster.  If passed, the actual decay rate used is:
 
 - - -
 
-#### `tf.train.ExponentialMovingAverage.apply(var_list=None)` {#ExponentialMovingAverage.apply}
+#### [`tf.train.ExponentialMovingAverage.apply(var_list=None)`](#ExponentialMovingAverage.apply) {#ExponentialMovingAverage.apply}
 
 Maintains moving averages of variables.
 
@@ -987,7 +987,7 @@ variables.
 
 - - -
 
-#### `tf.train.ExponentialMovingAverage.average_name(var)` {#ExponentialMovingAverage.average_name}
+#### [`tf.train.ExponentialMovingAverage.average_name(var)`](#ExponentialMovingAverage.average_name) {#ExponentialMovingAverage.average_name}
 
 Returns the name of the `Variable` holding the average for `var`.
 
@@ -1016,7 +1016,7 @@ to restore the variable from the moving average value with:
 
 - - -
 
-#### `tf.train.ExponentialMovingAverage.average(var)` {#ExponentialMovingAverage.average}
+#### [`tf.train.ExponentialMovingAverage.average(var)`](#ExponentialMovingAverage.average) {#ExponentialMovingAverage.average}
 
 Returns the `Variable` holding the average of `var`.
 
@@ -1041,7 +1041,7 @@ see [Queues](../../api_docs/python/io_ops.md#queues).
 
 - - -
 
-### `class tf.train.Coordinator` {#Coordinator}
+### [`class tf.train.Coordinator`](#Coordinator) {#Coordinator}
 
 A coordinator for threads.
 
@@ -1138,14 +1138,14 @@ except Exception:
 ```
 - - -
 
-#### `tf.train.Coordinator.__init__()` {#Coordinator.__init__}
+#### [`tf.train.Coordinator.__init__()`](#Coordinator.__init__) {#Coordinator.__init__}
 
 Create a new Coordinator.
 
 
 - - -
 
-#### `tf.train.Coordinator.join(threads, stop_grace_period_secs=120)` {#Coordinator.join}
+#### [`tf.train.Coordinator.join(threads, stop_grace_period_secs=120)`](#Coordinator.join) {#Coordinator.join}
 
 Wait for threads to terminate.
 
@@ -1176,7 +1176,7 @@ that `RuntimeError`.
 
 - - -
 
-#### `tf.train.Coordinator.request_stop(ex=None)` {#Coordinator.request_stop}
+#### [`tf.train.Coordinator.request_stop(ex=None)`](#Coordinator.request_stop) {#Coordinator.request_stop}
 
 Request that the threads stop.
 
@@ -1192,7 +1192,7 @@ After this is called, calls to `should_stop()` will return `True`.
 
 - - -
 
-#### `tf.train.Coordinator.should_stop()` {#Coordinator.should_stop}
+#### [`tf.train.Coordinator.should_stop()`](#Coordinator.should_stop) {#Coordinator.should_stop}
 
 Check if stop was requested.
 
@@ -1203,7 +1203,7 @@ Check if stop was requested.
 
 - - -
 
-#### `tf.train.Coordinator.stop_on_exception()` {#Coordinator.stop_on_exception}
+#### [`tf.train.Coordinator.stop_on_exception()`](#Coordinator.stop_on_exception) {#Coordinator.stop_on_exception}
 
 Context manager to request stop when an Exception is raised.
 
@@ -1238,7 +1238,7 @@ exception Exception, ex:
 
 - - -
 
-#### `tf.train.Coordinator.wait_for_stop(timeout=None)` {#Coordinator.wait_for_stop}
+#### [`tf.train.Coordinator.wait_for_stop(timeout=None)`](#Coordinator.wait_for_stop) {#Coordinator.wait_for_stop}
 
 Wait till the Coordinator is told to stop.
 
@@ -1256,7 +1256,7 @@ Wait till the Coordinator is told to stop.
 
 - - -
 
-### `class tf.train.QueueRunner` {#QueueRunner}
+### [`class tf.train.QueueRunner`](#QueueRunner) {#QueueRunner}
 
 Holds a list of enqueue operations for a queue, each to be run in a thread.
 
@@ -1274,7 +1274,7 @@ and reporting exceptions, etc.
 The `QueueRunner`, combined with the `Coordinator`, helps handle these issues.
 - - -
 
-#### `tf.train.QueueRunner.__init__(queue, enqueue_ops)` {#QueueRunner.__init__}
+#### [`tf.train.QueueRunner.__init__(queue, enqueue_ops)`](#QueueRunner.__init__) {#QueueRunner.__init__}
 
 Create a QueueRunner.
 
@@ -1296,7 +1296,7 @@ to all be the same op, but it is expected that they all enqueue tensors in
 
 - - -
 
-#### `tf.train.QueueRunner.create_threads(sess, coord=None, daemon=False, start=False)` {#QueueRunner.create_threads}
+#### [`tf.train.QueueRunner.create_threads(sess, coord=None, daemon=False, start=False)`](#QueueRunner.create_threads) {#QueueRunner.create_threads}
 
 Create threads to run the enqueue ops.
 
@@ -1335,7 +1335,7 @@ have stopped.
 
 - - -
 
-#### `tf.train.QueueRunner.exceptions_raised` {#QueueRunner.exceptions_raised}
+#### [`tf.train.QueueRunner.exceptions_raised`](#QueueRunner.exceptions_raised) {#QueueRunner.exceptions_raised}
 
 Exceptions raised but not handled by the `QueueRunner` threads.
 
@@ -1356,7 +1356,7 @@ depending on whether or not a `Coordinator` was passed to
 
 - - -
 
-#### `tf.train.QueueRunner.name` {#QueueRunner.name}
+#### [`tf.train.QueueRunner.name`](#QueueRunner.name) {#QueueRunner.name}
 
 The string name of the underlying Queue.
 
@@ -1364,7 +1364,7 @@ The string name of the underlying Queue.
 
 - - -
 
-### `tf.train.add_queue_runner(qr, collection='queue_runners')` {#add_queue_runner}
+### [`tf.train.add_queue_runner(qr, collection='queue_runners')`](#add_queue_runner) {#add_queue_runner}
 
 Adds a `QueueRunner` to a collection in the graph.
 
@@ -1385,7 +1385,7 @@ all the collected queue runners.
 
 - - -
 
-### `tf.train.start_queue_runners(sess=None, coord=None, daemon=True, start=True, collection='queue_runners')` {#start_queue_runners}
+### [`tf.train.start_queue_runners(sess=None, coord=None, daemon=True, start=True, collection='queue_runners')`](#start_queue_runners) {#start_queue_runners}
 
 Starts all queue runners collected in the graph.
 
@@ -1429,7 +1429,7 @@ details.
 
 - - -
 
-### `tf.scalar_summary(tags, values, collections=None, name=None)` {#scalar_summary}
+### [`tf.scalar_summary(tags, values, collections=None, name=None)`](#scalar_summary) {#scalar_summary}
 
 Outputs a `Summary` protocol buffer with scalar values.
 
@@ -1453,7 +1453,7 @@ summary has a summary value for each tag-value pair in `tags` and `values`.
 
 - - -
 
-### `tf.image_summary(tag, tensor, max_images=3, collections=None, name=None)` {#image_summary}
+### [`tf.image_summary(tag, tensor, max_images=3, collections=None, name=None)`](#image_summary) {#image_summary}
 
 Outputs a `Summary` protocol buffer with images.
 
@@ -1504,7 +1504,7 @@ build the `tag` of the summary values:
 
 - - -
 
-### `tf.histogram_summary(tag, values, collections=None, name=None)` {#histogram_summary}
+### [`tf.histogram_summary(tag, values, collections=None, name=None)`](#histogram_summary) {#histogram_summary}
 
 Outputs a `Summary` protocol buffer with a histogram.
 
@@ -1532,7 +1532,7 @@ This op reports an `OutOfRange` error if any value is not finite.
 
 - - -
 
-### `tf.nn.zero_fraction(value, name=None)` {#zero_fraction}
+### [`tf.nn.zero_fraction(value, name=None)`](#zero_fraction) {#zero_fraction}
 
 Returns the fraction of zeros in `value`.
 
@@ -1557,7 +1557,7 @@ This is useful in summaries to measure and report sparsity.  For example,
 
 - - -
 
-### `tf.merge_summary(inputs, collections=None, name=None)` {#merge_summary}
+### [`tf.merge_summary(inputs, collections=None, name=None)`](#merge_summary) {#merge_summary}
 
 Merges summaries.
 
@@ -1586,7 +1586,7 @@ in the summaries to merge use the same tag.
 
 - - -
 
-### `tf.merge_all_summaries(key='summaries')` {#merge_all_summaries}
+### [`tf.merge_all_summaries(key='summaries')`](#merge_all_summaries) {#merge_all_summaries}
 
 Merges all summaries collected in the default graph.
 
@@ -1612,7 +1612,7 @@ overview of summaries, event files, and visualization in TensorBoard.
 
 - - -
 
-### `class tf.train.SummaryWriter` {#SummaryWriter}
+### [`class tf.train.SummaryWriter`](#SummaryWriter) {#SummaryWriter}
 
 Writes `Summary` protocol buffers to event files.
 
@@ -1624,7 +1624,7 @@ training.
 
 - - -
 
-#### `tf.train.SummaryWriter.__init__(logdir, graph_def=None, max_queue=10, flush_secs=120)` {#SummaryWriter.__init__}
+#### [`tf.train.SummaryWriter.__init__(logdir, graph_def=None, max_queue=10, flush_secs=120)`](#SummaryWriter.__init__) {#SummaryWriter.__init__}
 
 Creates a `SummaryWriter` and an event file.
 
@@ -1669,7 +1669,7 @@ the event file:
 
 - - -
 
-#### `tf.train.SummaryWriter.add_summary(summary, global_step=None)` {#SummaryWriter.add_summary}
+#### [`tf.train.SummaryWriter.add_summary(summary, global_step=None)`](#SummaryWriter.add_summary) {#SummaryWriter.add_summary}
 
 Adds a `Summary` protocol buffer to the event file.
 
@@ -1693,7 +1693,7 @@ commonly done to report evaluation results in event files.
 
 - - -
 
-#### `tf.train.SummaryWriter.add_event(event)` {#SummaryWriter.add_event}
+#### [`tf.train.SummaryWriter.add_event(event)`](#SummaryWriter.add_event) {#SummaryWriter.add_event}
 
 Adds an event to the event file.
 
@@ -1705,7 +1705,7 @@ Adds an event to the event file.
 
 - - -
 
-#### `tf.train.SummaryWriter.add_graph(graph_def, global_step=None)` {#SummaryWriter.add_graph}
+#### [`tf.train.SummaryWriter.add_graph(graph_def, global_step=None)`](#SummaryWriter.add_graph) {#SummaryWriter.add_graph}
 
 Adds a `GraphDef` protocol buffer to the event file.
 
@@ -1723,7 +1723,7 @@ TensorBoard. Most users pass a graph in the constructor instead.
 
 - - -
 
-#### `tf.train.SummaryWriter.flush()` {#SummaryWriter.flush}
+#### [`tf.train.SummaryWriter.flush()`](#SummaryWriter.flush) {#SummaryWriter.flush}
 
 Flushes the event file to disk.
 
@@ -1733,7 +1733,7 @@ disk.
 
 - - -
 
-#### `tf.train.SummaryWriter.close()` {#SummaryWriter.close}
+#### [`tf.train.SummaryWriter.close()`](#SummaryWriter.close) {#SummaryWriter.close}
 
 Flushes the event file to disk and close the file.
 
@@ -1743,7 +1743,7 @@ Call this method when you do not need the summary writer anymore.
 
 - - -
 
-### `tf.train.summary_iterator(path)` {#summary_iterator}
+### [`tf.train.summary_iterator(path)`](#summary_iterator) {#summary_iterator}
 
 An iterator for reading `Event` protocol buffers from an event file.
 
@@ -1791,7 +1791,7 @@ for more information about their attributes.
 
 - - -
 
-### `tf.train.global_step(sess, global_step_tensor)` {#global_step}
+### [`tf.train.global_step(sess, global_step_tensor)`](#global_step) {#global_step}
 
 Small helper to get the global step.
 
@@ -1821,7 +1821,7 @@ global_step: 10
 
 - - -
 
-### `tf.train.write_graph(graph_def, logdir, name, as_text=True)` {#write_graph}
+### [`tf.train.write_graph(graph_def, logdir, name, as_text=True)`](#write_graph) {#write_graph}
 
 Writes a graph proto on disk.
 

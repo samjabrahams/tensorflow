@@ -11,7 +11,7 @@ suitable if fast sharding or other non-sequential access is desired.
 
 - - -
 
-### `class tf.python_io.TFRecordWriter` {#TFRecordWriter}
+### [`class tf.python_io.TFRecordWriter`](#TFRecordWriter) {#TFRecordWriter}
 
 A class to write records to a TFRecords file.
 
@@ -20,7 +20,7 @@ in `with` blocks like a normal file.
 
 - - -
 
-#### `tf.python_io.TFRecordWriter.__init__(path)` {#TFRecordWriter.__init__}
+#### [`tf.python_io.TFRecordWriter.__init__(path)`](#TFRecordWriter.__init__) {#TFRecordWriter.__init__}
 
 Opens file `path` and creates a `TFRecordWriter` writing to it.
 
@@ -37,7 +37,7 @@ Opens file `path` and creates a `TFRecordWriter` writing to it.
 
 - - -
 
-#### `tf.python_io.TFRecordWriter.write(record)` {#TFRecordWriter.write}
+#### [`tf.python_io.TFRecordWriter.write(record)`](#TFRecordWriter.write) {#TFRecordWriter.write}
 
 Write a string record to the file.
 
@@ -49,7 +49,7 @@ Write a string record to the file.
 
 - - -
 
-#### `tf.python_io.TFRecordWriter.close()` {#TFRecordWriter.close}
+#### [`tf.python_io.TFRecordWriter.close()`](#TFRecordWriter.close) {#TFRecordWriter.close}
 
 Close the file.
 
@@ -57,7 +57,7 @@ Close the file.
 
 - - -
 
-### `tf.python_io.tf_record_iterator(path)` {#tf_record_iterator}
+### [`tf.python_io.tf_record_iterator(path)`](#tf_record_iterator) {#tf_record_iterator}
 
 An iterator that read the records from a TFRecords file.
 

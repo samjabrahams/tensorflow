@@ -14,7 +14,7 @@ operators to your graph.
 
 - - -
 
-### `tf.add(x, y, name=None)` {#add}
+### [`tf.add(x, y, name=None)`](#add) {#add}
 
 Returns x + y element-wise.
 
@@ -34,7 +34,7 @@ Returns x + y element-wise.
 
 - - -
 
-### `tf.sub(x, y, name=None)` {#sub}
+### [`tf.sub(x, y, name=None)`](#sub) {#sub}
 
 Returns x - y element-wise.
 
@@ -52,7 +52,7 @@ Returns x - y element-wise.
 
 - - -
 
-### `tf.mul(x, y, name=None)` {#mul}
+### [`tf.mul(x, y, name=None)`](#mul) {#mul}
 
 Returns x * y element-wise.
 
@@ -70,7 +70,7 @@ Returns x * y element-wise.
 
 - - -
 
-### `tf.div(x, y, name=None)` {#div}
+### [`tf.div(x, y, name=None)`](#div) {#div}
 
 Returns x / y element-wise.
 
@@ -88,7 +88,7 @@ Returns x / y element-wise.
 
 - - -
 
-### `tf.truediv(x, y, name=None)` {#truediv}
+### [`tf.truediv(x, y, name=None)`](#truediv) {#truediv}
 
 Divides x / y elementwise, always producing floating point results.
 
@@ -122,7 +122,7 @@ and `int64` (matching the behavior of Numpy).
 
 - - -
 
-### `tf.floordiv(x, y, name=None)` {#floordiv}
+### [`tf.floordiv(x, y, name=None)`](#floordiv) {#floordiv}
 
 Divides `x / y` elementwise, rounding down for floating point.
 
@@ -157,7 +157,7 @@ as well.
 
 - - -
 
-### `tf.mod(x, y, name=None)` {#mod}
+### [`tf.mod(x, y, name=None)`](#mod) {#mod}
 
 Returns element-wise remainder of division.
 
@@ -181,7 +181,7 @@ mathematical functions to your graph.
 
 - - -
 
-### `tf.add_n(inputs, name=None)` {#add_n}
+### [`tf.add_n(inputs, name=None)`](#add_n) {#add_n}
 
 Add all input tensors element wise.
 
@@ -199,7 +199,7 @@ Add all input tensors element wise.
 
 - - -
 
-### `tf.abs(x, name=None)` {#abs}
+### [`tf.abs(x, name=None)`](#abs) {#abs}
 
 Computes the absolute value of a tensor.
 
@@ -224,7 +224,7 @@ number.
 
 - - -
 
-### `tf.neg(x, name=None)` {#neg}
+### [`tf.neg(x, name=None)`](#neg) {#neg}
 
 Computes numerical negative value element-wise.
 
@@ -243,7 +243,7 @@ I.e., \\(y = -x\\).
 
 - - -
 
-### `tf.sign(x, name=None)` {#sign}
+### [`tf.sign(x, name=None)`](#sign) {#sign}
 
 Returns an element-wise indication of the sign of a number.
 
@@ -262,7 +262,7 @@ y = sign(x) = -1 if x < 0; 0 if x == 0; 1 if x > 0.
 
 - - -
 
-### `tf.inv(x, name=None)` {#inv}
+### [`tf.inv(x, name=None)`](#inv) {#inv}
 
 Computes the reciprocal of x element-wise.
 
@@ -281,7 +281,7 @@ I.e., \\(y = 1 / x\\).
 
 - - -
 
-### `tf.square(x, name=None)` {#square}
+### [`tf.square(x, name=None)`](#square) {#square}
 
 Computes square of x element-wise.
 
@@ -300,7 +300,7 @@ I.e., \\(y = x * x = x^2\\).
 
 - - -
 
-### `tf.round(x, name=None)` {#round}
+### [`tf.round(x, name=None)`](#round) {#round}
 
 Rounds the values of a tensor to the nearest integer, element-wise.
 
@@ -324,7 +324,7 @@ tf.round(a) ==> [ 1.0, 3.0, 2.0, -4.0 ]
 
 - - -
 
-### `tf.sqrt(x, name=None)` {#sqrt}
+### [`tf.sqrt(x, name=None)`](#sqrt) {#sqrt}
 
 Computes square root of x element-wise.
 
@@ -343,7 +343,7 @@ I.e., \\(y = \sqrt{x} = x^{1/2}\\).
 
 - - -
 
-### `tf.rsqrt(x, name=None)` {#rsqrt}
+### [`tf.rsqrt(x, name=None)`](#rsqrt) {#rsqrt}
 
 Computes reciprocal of square root of x element-wise.
 
@@ -362,7 +362,7 @@ I.e., \\(y = 1 / \sqrt{x}\\).
 
 - - -
 
-### `tf.pow(x, y, name=None)` {#pow}
+### [`tf.pow(x, y, name=None)`](#pow) {#pow}
 
 Computes the power of one value to another.
 
@@ -389,7 +389,7 @@ tf.pow(x, y) ==> [[256, 65536], [9, 27]]
 
 - - -
 
-### `tf.exp(x, name=None)` {#exp}
+### [`tf.exp(x, name=None)`](#exp) {#exp}
 
 Computes exponential of x element-wise.  \\(y = e^x\\).
 
@@ -406,7 +406,7 @@ Computes exponential of x element-wise.  \\(y = e^x\\).
 
 - - -
 
-### `tf.log(x, name=None)` {#log}
+### [`tf.log(x, name=None)`](#log) {#log}
 
 Computes natural logrithm of x element-wise.
 
@@ -425,7 +425,7 @@ I.e., \\(y = \log_e x\\).
 
 - - -
 
-### `tf.ceil(x, name=None)` {#ceil}
+### [`tf.ceil(x, name=None)`](#ceil) {#ceil}
 
 Returns element-wise smallest integer in not less than x.
 
@@ -442,7 +442,7 @@ Returns element-wise smallest integer in not less than x.
 
 - - -
 
-### `tf.floor(x, name=None)` {#floor}
+### [`tf.floor(x, name=None)`](#floor) {#floor}
 
 Returns element-wise largest integer not greater than x.
 
@@ -459,7 +459,7 @@ Returns element-wise largest integer not greater than x.
 
 - - -
 
-### `tf.maximum(x, y, name=None)` {#maximum}
+### [`tf.maximum(x, y, name=None)`](#maximum) {#maximum}
 
 Returns the max of x and y (i.e. x > y ? x : y) element-wise, broadcasts.
 
@@ -477,7 +477,7 @@ Returns the max of x and y (i.e. x > y ? x : y) element-wise, broadcasts.
 
 - - -
 
-### `tf.minimum(x, y, name=None)` {#minimum}
+### [`tf.minimum(x, y, name=None)`](#minimum) {#minimum}
 
 Returns the min of x and y (i.e. x < y ? x : y) element-wise, broadcasts.
 
@@ -495,7 +495,7 @@ Returns the min of x and y (i.e. x < y ? x : y) element-wise, broadcasts.
 
 - - -
 
-### `tf.cos(x, name=None)` {#cos}
+### [`tf.cos(x, name=None)`](#cos) {#cos}
 
 Computes cos of x element-wise.
 
@@ -512,7 +512,7 @@ Computes cos of x element-wise.
 
 - - -
 
-### `tf.sin(x, name=None)` {#sin}
+### [`tf.sin(x, name=None)`](#sin) {#sin}
 
 Computes sin of x element-wise.
 
@@ -535,7 +535,7 @@ mathematical functions for matrices to your graph.
 
 - - -
 
-### `tf.diag(diagonal, name=None)` {#diag}
+### [`tf.diag(diagonal, name=None)`](#diag) {#diag}
 
 Returns a diagonal tensor with a given diagonal values.
 
@@ -571,7 +571,7 @@ tf.diag(diagonal) ==> [[1, 0, 0, 0]
 
 - - -
 
-### `tf.transpose(a, perm=None, name='transpose')` {#transpose}
+### [`tf.transpose(a, perm=None, name='transpose')`](#transpose) {#transpose}
 
 Transposes `a`. Permutes the dimensions according to `perm`.
 
@@ -624,7 +624,7 @@ tf.transpose(b, perm=[0, 2, 1]) ==> [[[1  4]
 
 - - -
 
-### `tf.matmul(a, b, transpose_a=False, transpose_b=False, a_is_sparse=False, b_is_sparse=False, name=None)` {#matmul}
+### [`tf.matmul(a, b, transpose_a=False, transpose_b=False, a_is_sparse=False, b_is_sparse=False, name=None)`](#matmul) {#matmul}
 
 Multiplies matrix `a` by matrix `b`, producing `a` * `b`.
 
@@ -673,7 +673,7 @@ c = tf.matmul(a, b) => [[58 64]
 
 - - -
 
-### `tf.batch_matmul(x, y, adj_x=None, adj_y=None, name=None)` {#batch_matmul}
+### [`tf.batch_matmul(x, y, adj_x=None, adj_y=None, name=None)`](#batch_matmul) {#batch_matmul}
 
 Multiplies slices of two tensors in batches.
 
@@ -718,7 +718,7 @@ It is computed as:
 
 - - -
 
-### `tf.matrix_determinant(input, name=None)` {#matrix_determinant}
+### [`tf.matrix_determinant(input, name=None)`](#matrix_determinant) {#matrix_determinant}
 
 Calculates the determinant of a square matrix.
 
@@ -737,7 +737,7 @@ Calculates the determinant of a square matrix.
 
 - - -
 
-### `tf.batch_matrix_determinant(input, name=None)` {#batch_matrix_determinant}
+### [`tf.batch_matrix_determinant(input, name=None)`](#batch_matrix_determinant) {#batch_matrix_determinant}
 
 Calculates the determinants for a batch of square matrices.
 
@@ -760,7 +760,7 @@ for all input submatrices `[..., :, :]`.
 
 - - -
 
-### `tf.matrix_inverse(input, name=None)` {#matrix_inverse}
+### [`tf.matrix_inverse(input, name=None)`](#matrix_inverse) {#matrix_inverse}
 
 Calculates the inverse of a square invertible matrix.
 
@@ -786,7 +786,7 @@ garbage result.
 
 - - -
 
-### `tf.batch_matrix_inverse(input, name=None)` {#batch_matrix_inverse}
+### [`tf.batch_matrix_inverse(input, name=None)`](#batch_matrix_inverse) {#batch_matrix_inverse}
 
 Calculates the inverse of square invertible matrices.
 
@@ -816,7 +816,7 @@ garbage result.
 
 - - -
 
-### `tf.cholesky(input, name=None)` {#cholesky}
+### [`tf.cholesky(input, name=None)`](#cholesky) {#cholesky}
 
 Calculates the Cholesky decomposition of a square matrix.
 
@@ -841,7 +841,7 @@ input.
 
 - - -
 
-### `tf.batch_cholesky(input, name=None)` {#batch_cholesky}
+### [`tf.batch_cholesky(input, name=None)`](#batch_cholesky) {#batch_cholesky}
 
 Calculates the Cholesky decomposition of a batch of square matrices.
 
@@ -865,7 +865,7 @@ containing the Cholesky decompositions for all input submatrices `[..., :, :]`.
 
 - - -
 
-### `tf.self_adjoint_eig(input, name=None)` {#self_adjoint_eig}
+### [`tf.self_adjoint_eig(input, name=None)`](#self_adjoint_eig) {#self_adjoint_eig}
 
 Calculates the Eigen Decomposition of a square Self-Adjoint matrix.
 
@@ -889,7 +889,7 @@ subsequent rows are eigenvectors.
 
 - - -
 
-### `tf.batch_self_adjoint_eig(input, name=None)` {#batch_self_adjoint_eig}
+### [`tf.batch_self_adjoint_eig(input, name=None)`](#batch_self_adjoint_eig) {#batch_self_adjoint_eig}
 
 Calculates the Eigen Decomposition of a batch of square self-adjoint matrices.
 
@@ -920,7 +920,7 @@ functions to your graph.
 
 - - -
 
-### `tf.complex(real, imag, name=None)` {#complex}
+### [`tf.complex(real, imag, name=None)`](#complex) {#complex}
 
 Converts two real numbers to a complex number.
 
@@ -953,7 +953,7 @@ tf.complex(real, imag) ==> [[2.25 + 4.74j], [3.25 + 5.75j]]
 
 - - -
 
-### `tf.complex_abs(x, name=None)` {#complex_abs}
+### [`tf.complex_abs(x, name=None)`](#complex_abs) {#complex_abs}
 
 Computes the complex absolute value of a tensor.
 
@@ -982,7 +982,7 @@ tf.complex_abs(x) ==> [5.25594902, 6.60492229]
 
 - - -
 
-### `tf.conj(in_, name=None)` {#conj}
+### [`tf.conj(in_, name=None)`](#conj) {#conj}
 
 Returns the complex conjugate of a complex number.
 
@@ -1013,7 +1013,7 @@ tf.conj(in) ==> [-2.25 - 4.75j, 3.25 - 5.75j]
 
 - - -
 
-### `tf.imag(in_, name=None)` {#imag}
+### [`tf.imag(in_, name=None)`](#imag) {#imag}
 
 Returns the imaginary part of a complex number.
 
@@ -1042,7 +1042,7 @@ tf.imag(in) ==> [4.75, 5.75]
 
 - - -
 
-### `tf.real(in_, name=None)` {#real}
+### [`tf.real(in_, name=None)`](#real) {#real}
 
 Returns the real part of a complex number.
 
@@ -1077,7 +1077,7 @@ common math computations that reduce various dimensions of a tensor.
 
 - - -
 
-### `tf.reduce_sum(input_tensor, reduction_indices=None, keep_dims=False, name=None)` {#reduce_sum}
+### [`tf.reduce_sum(input_tensor, reduction_indices=None, keep_dims=False, name=None)`](#reduce_sum) {#reduce_sum}
 
 Computes the sum of elements across dimensions of a tensor.
 
@@ -1117,7 +1117,7 @@ tf.reduce_sum(x, [0, 1]) ==> 6
 
 - - -
 
-### `tf.reduce_prod(input_tensor, reduction_indices=None, keep_dims=False, name=None)` {#reduce_prod}
+### [`tf.reduce_prod(input_tensor, reduction_indices=None, keep_dims=False, name=None)`](#reduce_prod) {#reduce_prod}
 
 Computes the product of elements across dimensions of a tensor.
 
@@ -1145,7 +1145,7 @@ tensor with a single element is returned.
 
 - - -
 
-### `tf.reduce_min(input_tensor, reduction_indices=None, keep_dims=False, name=None)` {#reduce_min}
+### [`tf.reduce_min(input_tensor, reduction_indices=None, keep_dims=False, name=None)`](#reduce_min) {#reduce_min}
 
 Computes the minimum of elements across dimensions of a tensor.
 
@@ -1173,7 +1173,7 @@ tensor with a single element is returned.
 
 - - -
 
-### `tf.reduce_max(input_tensor, reduction_indices=None, keep_dims=False, name=None)` {#reduce_max}
+### [`tf.reduce_max(input_tensor, reduction_indices=None, keep_dims=False, name=None)`](#reduce_max) {#reduce_max}
 
 Computes the maximum of elements across dimensions of a tensor.
 
@@ -1201,7 +1201,7 @@ tensor with a single element is returned.
 
 - - -
 
-### `tf.reduce_mean(input_tensor, reduction_indices=None, keep_dims=False, name=None)` {#reduce_mean}
+### [`tf.reduce_mean(input_tensor, reduction_indices=None, keep_dims=False, name=None)`](#reduce_mean) {#reduce_mean}
 
 Computes the mean of elements across dimensions of a tensor.
 
@@ -1239,7 +1239,7 @@ tf.reduce_mean(x, 1) ==> [1.,  2.]
 
 - - -
 
-### `tf.reduce_all(input_tensor, reduction_indices=None, keep_dims=False, name=None)` {#reduce_all}
+### [`tf.reduce_all(input_tensor, reduction_indices=None, keep_dims=False, name=None)`](#reduce_all) {#reduce_all}
 
 Computes the "logical and" of elements across dimensions of a tensor.
 
@@ -1277,7 +1277,7 @@ tf.reduce_all(x, 1) ==> [True, False]
 
 - - -
 
-### `tf.reduce_any(input_tensor, reduction_indices=None, keep_dims=False, name=None)` {#reduce_any}
+### [`tf.reduce_any(input_tensor, reduction_indices=None, keep_dims=False, name=None)`](#reduce_any) {#reduce_any}
 
 Computes the "logical or" of elements across dimensions of a tensor.
 
@@ -1316,7 +1316,7 @@ tf.reduce_any(x, 1) ==> [True, False]
 
 - - -
 
-### `tf.accumulate_n(inputs, shape=None, tensor_dtype=None, name=None)` {#accumulate_n}
+### [`tf.accumulate_n(inputs, shape=None, tensor_dtype=None, name=None)`](#accumulate_n) {#accumulate_n}
 
 Returns the element-wise sum of a list of tensors.
 
@@ -1378,7 +1378,7 @@ tf.segment_sum(c, tf.constant([0, 0, 1]))
 
 - - -
 
-### `tf.segment_sum(data, segment_ids, name=None)` {#segment_sum}
+### [`tf.segment_sum(data, segment_ids, name=None)`](#segment_sum) {#segment_sum}
 
 Computes the sum along segments of a tensor.
 
@@ -1411,7 +1411,7 @@ that `segment_ids[j] == i`.
 
 - - -
 
-### `tf.segment_prod(data, segment_ids, name=None)` {#segment_prod}
+### [`tf.segment_prod(data, segment_ids, name=None)`](#segment_prod) {#segment_prod}
 
 Computes the product along segments of a tensor.
 
@@ -1445,7 +1445,7 @@ that `segment_ids[j] == i`.
 
 - - -
 
-### `tf.segment_min(data, segment_ids, name=None)` {#segment_min}
+### [`tf.segment_min(data, segment_ids, name=None)`](#segment_min) {#segment_min}
 
 Computes the minimum along segments of a tensor.
 
@@ -1479,7 +1479,7 @@ that `segment_ids[j] == i`.
 
 - - -
 
-### `tf.segment_max(data, segment_ids, name=None)` {#segment_max}
+### [`tf.segment_max(data, segment_ids, name=None)`](#segment_max) {#segment_max}
 
 Computes the maximum along segments of a tensor.
 
@@ -1512,7 +1512,7 @@ that `segment_ids[j] == i`.
 
 - - -
 
-### `tf.segment_mean(data, segment_ids, name=None)` {#segment_mean}
+### [`tf.segment_mean(data, segment_ids, name=None)`](#segment_mean) {#segment_mean}
 
 Computes the mean along segments of a tensor.
 
@@ -1548,7 +1548,7 @@ values summed.
 
 - - -
 
-### `tf.unsorted_segment_sum(data, segment_ids, num_segments, name=None)` {#unsorted_segment_sum}
+### [`tf.unsorted_segment_sum(data, segment_ids, num_segments, name=None)`](#unsorted_segment_sum) {#unsorted_segment_sum}
 
 Computes the sum along segments of a tensor.
 
@@ -1590,7 +1590,7 @@ If the sum is empty for a given segment ID `i`, `output[i] = 0`.
 
 - - -
 
-### `tf.sparse_segment_sum(data, indices, segment_ids, name=None)` {#sparse_segment_sum}
+### [`tf.sparse_segment_sum(data, indices, segment_ids, name=None)`](#sparse_segment_sum) {#sparse_segment_sum}
 
 Computes the sum along sparse segments of a tensor.
 
@@ -1643,7 +1643,7 @@ tf.segment_sum(c, tf.constant([0, 0, 1]))
 
 - - -
 
-### `tf.sparse_segment_mean(data, indices, segment_ids, name=None)` {#sparse_segment_mean}
+### [`tf.sparse_segment_mean(data, indices, segment_ids, name=None)`](#sparse_segment_mean) {#sparse_segment_mean}
 
 Computes the mean along sparse segments of a tensor.
 
@@ -1682,7 +1682,7 @@ a tensor.
 
 - - -
 
-### `tf.argmin(input, dimension, name=None)` {#argmin}
+### [`tf.argmin(input, dimension, name=None)`](#argmin) {#argmin}
 
 Returns the index with the smallest value across dimensions of a tensor.
 
@@ -1702,7 +1702,7 @@ Returns the index with the smallest value across dimensions of a tensor.
 
 - - -
 
-### `tf.argmax(input, dimension, name=None)` {#argmax}
+### [`tf.argmax(input, dimension, name=None)`](#argmax) {#argmax}
 
 Returns the index with the largest value across dimensions of a tensor.
 
@@ -1723,7 +1723,7 @@ Returns the index with the largest value across dimensions of a tensor.
 
 - - -
 
-### `tf.listdiff(x, y, name=None)` {#listdiff}
+### [`tf.listdiff(x, y, name=None)`](#listdiff) {#listdiff}
 
 Computes the difference between two lists of numbers or strings.
 
@@ -1766,7 +1766,7 @@ idx ==> [1, 3, 5]
 
 - - -
 
-### `tf.where(input, name=None)` {#where}
+### [`tf.where(input, name=None)`](#where) {#where}
 
 Returns locations of true values in a boolean tensor.
 
@@ -1815,7 +1815,7 @@ where(input) ==> [[0, 0, 0],
 
 - - -
 
-### `tf.unique(x, name=None)` {#unique}
+### [`tf.unique(x, name=None)`](#unique) {#unique}
 
 Finds unique elements in a 1-D tensor.
 
@@ -1852,7 +1852,7 @@ idx ==> [0, 0, 1, 2, 2, 2, 3, 4, 4]
 
 - - -
 
-### `tf.edit_distance(hypothesis, truth, normalize=True, name='edit_distance')` {#edit_distance}
+### [`tf.edit_distance(hypothesis, truth, normalize=True, name='edit_distance')`](#edit_distance) {#edit_distance}
 
 Computes the Levenshtein distance between sequences.
 
@@ -1921,7 +1921,7 @@ output ==> [[inf, 1.0],  # (0,0): no truth, (0,1): no hypothesis
 
 - - -
 
-### `tf.invert_permutation(x, name=None)` {#invert_permutation}
+### [`tf.invert_permutation(x, name=None)`](#invert_permutation) {#invert_permutation}
 
 Computes the inverse permutation of a tensor.
 

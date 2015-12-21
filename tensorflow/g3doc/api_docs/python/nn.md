@@ -20,7 +20,7 @@ shape as the input tensor.
 
 - - -
 
-### `tf.nn.relu(features, name=None)` {#relu}
+### [`tf.nn.relu(features, name=None)`](#relu) {#relu}
 
 Computes rectified linear: `max(features, 0)`.
 
@@ -37,7 +37,7 @@ Computes rectified linear: `max(features, 0)`.
 
 - - -
 
-### `tf.nn.relu6(features, name=None)` {#relu6}
+### [`tf.nn.relu6(features, name=None)`](#relu6) {#relu6}
 
 Computes Rectified Linear 6: `min(max(features, 0), 6)`.
 
@@ -55,7 +55,7 @@ Computes Rectified Linear 6: `min(max(features, 0), 6)`.
 
 - - -
 
-### `tf.nn.elu(features, name=None)` {#elu}
+### [`tf.nn.elu(features, name=None)`](#elu) {#elu}
 
 Computes exponential linear: `exp(features) - 1` if < 0, `features` otherwise.
 
@@ -75,7 +75,7 @@ See [Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)
 
 - - -
 
-### `tf.nn.softplus(features, name=None)` {#softplus}
+### [`tf.nn.softplus(features, name=None)`](#softplus) {#softplus}
 
 Computes softplus: `log(exp(features) + 1)`.
 
@@ -92,7 +92,7 @@ Computes softplus: `log(exp(features) + 1)`.
 
 - - -
 
-### `tf.nn.softsign(features, name=None)` {#softsign}
+### [`tf.nn.softsign(features, name=None)`](#softsign) {#softsign}
 
 Computes softsign: `features / (abs(features) + 1)`.
 
@@ -109,7 +109,7 @@ Computes softsign: `features / (abs(features) + 1)`.
 
 - - -
 
-### `tf.nn.dropout(x, keep_prob, noise_shape=None, seed=None, name=None)` {#dropout}
+### [`tf.nn.dropout(x, keep_prob, noise_shape=None, seed=None, name=None)`](#dropout) {#dropout}
 
 Computes dropout.
 
@@ -150,7 +150,7 @@ kept independently and each row and column will be kept or not kept together.
 
 - - -
 
-### `tf.nn.bias_add(value, bias, name=None)` {#bias_add}
+### [`tf.nn.bias_add(value, bias, name=None)`](#bias_add) {#bias_add}
 
 Adds `bias` to `value`.
 
@@ -176,7 +176,7 @@ case where both types are quantized.
 
 - - -
 
-### `tf.sigmoid(x, name=None)` {#sigmoid}
+### [`tf.sigmoid(x, name=None)`](#sigmoid) {#sigmoid}
 
 Computes sigmoid of `x` element-wise.
 
@@ -197,7 +197,7 @@ Specifically, `y = 1 / (1 + exp(-x))`.
 
 - - -
 
-### `tf.tanh(x, name=None)` {#tanh}
+### [`tf.tanh(x, name=None)`](#tanh) {#tanh}
 
 Computes hyperbolic tangent of `x` element-wise.
 
@@ -285,7 +285,7 @@ concatenated.
 
 - - -
 
-### `tf.nn.conv2d(input, filter, strides, padding, use_cudnn_on_gpu=None, name=None)` {#conv2d}
+### [`tf.nn.conv2d(input, filter, strides, padding, use_cudnn_on_gpu=None, name=None)`](#conv2d) {#conv2d}
 
 Computes a 2-D convolution given 4-D `input` and `filter` tensors.
 
@@ -331,7 +331,7 @@ horizontal and vertices strides, `strides = [1, stride, stride, 1]`.
 
 - - -
 
-### `tf.nn.depthwise_conv2d(input, filter, strides, padding, name=None)` {#depthwise_conv2d}
+### [`tf.nn.depthwise_conv2d(input, filter, strides, padding, name=None)`](#depthwise_conv2d) {#depthwise_conv2d}
 
 Depthwise 2-D convolution.
 
@@ -371,7 +371,7 @@ same horizontal and vertical strides, `strides = [1, stride, stride, 1]`.
 
 - - -
 
-### `tf.nn.separable_conv2d(input, depthwise_filter, pointwise_filter, strides, padding, name=None)` {#separable_conv2d}
+### [`tf.nn.separable_conv2d(input, depthwise_filter, pointwise_filter, strides, padding, name=None)`](#separable_conv2d) {#separable_conv2d}
 
 2-D convolution with separable filters.
 
@@ -430,7 +430,7 @@ to the `Convolution` section for details about the padding calculation.
 
 - - -
 
-### `tf.nn.avg_pool(value, ksize, strides, padding, name=None)` {#avg_pool}
+### [`tf.nn.avg_pool(value, ksize, strides, padding, name=None)`](#avg_pool) {#avg_pool}
 
 Performs the average pooling on the input.
 
@@ -457,7 +457,7 @@ window in `value`.
 
 - - -
 
-### `tf.nn.max_pool(value, ksize, strides, padding, name=None)` {#max_pool}
+### [`tf.nn.max_pool(value, ksize, strides, padding, name=None)`](#max_pool) {#max_pool}
 
 Performs the max pooling on the input.
 
@@ -480,7 +480,7 @@ Performs the max pooling on the input.
 
 - - -
 
-### `tf.nn.max_pool_with_argmax(input, ksize, strides, padding, Targmax=None, name=None)` {#max_pool_with_argmax}
+### [`tf.nn.max_pool_with_argmax(input, ksize, strides, padding, Targmax=None, name=None)`](#max_pool_with_argmax) {#max_pool_with_argmax}
 
 Performs max pooling on the input and outputs both max values and indices.
 
@@ -519,7 +519,7 @@ have varying scale, and to aid generalization.
 
 - - -
 
-### `tf.nn.l2_normalize(x, dim, epsilon=1e-12, name=None)` {#l2_normalize}
+### [`tf.nn.l2_normalize(x, dim, epsilon=1e-12, name=None)`](#l2_normalize) {#l2_normalize}
 
 Normalizes along dimension `dim` using an L2 norm.
 
@@ -546,7 +546,7 @@ dimension `dim`.
 
 - - -
 
-### `tf.nn.local_response_normalization(input, depth_radius=None, bias=None, alpha=None, beta=None, name=None)` {#local_response_normalization}
+### [`tf.nn.local_response_normalization(input, depth_radius=None, bias=None, alpha=None, beta=None, name=None)`](#local_response_normalization) {#local_response_normalization}
 
 Local Response Normalization.
 
@@ -583,7 +583,7 @@ convolutional neural networks (NIPS 2012)]
 
 - - -
 
-### `tf.nn.moments(x, axes, name=None)` {#moments}
+### [`tf.nn.moments(x, axes, name=None)`](#moments) {#moments}
 
 Calculate the mean and variance of `x`.
 
@@ -617,7 +617,7 @@ or for regularization purposes (weight decay).
 
 - - -
 
-### `tf.nn.l2_loss(t, name=None)` {#l2_loss}
+### [`tf.nn.l2_loss(t, name=None)`](#l2_loss) {#l2_loss}
 
 L2 Loss.
 
@@ -644,7 +644,7 @@ TensorFlow provides several operations that help you perform classification.
 
 - - -
 
-### `tf.nn.sigmoid_cross_entropy_with_logits(logits, targets, name=None)` {#sigmoid_cross_entropy_with_logits}
+### [`tf.nn.sigmoid_cross_entropy_with_logits(logits, targets, name=None)`](#sigmoid_cross_entropy_with_logits) {#sigmoid_cross_entropy_with_logits}
 
 Computes sigmoid cross entropy given `logits`.
 
@@ -678,7 +678,7 @@ To ensure stability and avoid overflow, the implementation uses
 
 - - -
 
-### `tf.nn.softmax(logits, name=None)` {#softmax}
+### [`tf.nn.softmax(logits, name=None)`](#softmax) {#softmax}
 
 Computes softmax activations.
 
@@ -700,7 +700,7 @@ For each batch `i` and class `j` we have
 
 - - -
 
-### `tf.nn.softmax_cross_entropy_with_logits(logits, labels, name=None)` {#softmax_cross_entropy_with_logits}
+### [`tf.nn.softmax_cross_entropy_with_logits(logits, labels, name=None)`](#softmax_cross_entropy_with_logits) {#softmax_cross_entropy_with_logits}
 
 Computes softmax cross entropy between `logits` and `labels`.
 
@@ -737,7 +737,7 @@ tensors.
 
 - - -
 
-### `tf.nn.embedding_lookup(params, ids, partition_strategy='mod', name=None)` {#embedding_lookup}
+### [`tf.nn.embedding_lookup(params, ids, partition_strategy='mod', name=None)`](#embedding_lookup) {#embedding_lookup}
 
 Looks up `ids` in a list of embedding tensors.
 
@@ -795,7 +795,7 @@ Since they are nondifferentiable, they are typically used at evaluation time.
 
 - - -
 
-### `tf.nn.top_k(input, k, name=None)` {#top_k}
+### [`tf.nn.top_k(input, k, name=None)`](#top_k) {#top_k}
 
 Returns the values and indices of the `k` largest elements for each row.
 
@@ -826,7 +826,7 @@ elements are equal, the lower-index element appears first.
 
 - - -
 
-### `tf.nn.in_top_k(predictions, targets, k, name=None)` {#in_top_k}
+### [`tf.nn.in_top_k(predictions, targets, k, name=None)`](#in_top_k) {#in_top_k}
 
 Says whether the targets are in the top `K` predictions.
 
@@ -880,7 +880,7 @@ TensorFlow provides the following sampled loss functions for faster training.
 
 - - -
 
-### `tf.nn.nce_loss(weights, biases, inputs, labels, num_sampled, num_classes, num_true=1, sampled_values=None, remove_accidental_hits=False, partition_strategy='mod', name='nce_loss')` {#nce_loss}
+### [`tf.nn.nce_loss(weights, biases, inputs, labels, num_sampled, num_classes, num_true=1, sampled_values=None, remove_accidental_hits=False, partition_strategy='mod', name='nce_loss')`](#nce_loss) {#nce_loss}
 
 Computes and returns the noise-contrastive estimation training loss.
 
@@ -936,7 +936,7 @@ with an otherwise unused class.
 
 - - -
 
-### `tf.nn.sampled_softmax_loss(weights, biases, inputs, labels, num_sampled, num_classes, num_true=1, sampled_values=None, remove_accidental_hits=True, partition_strategy='mod', name='sampled_softmax_loss')` {#sampled_softmax_loss}
+### [`tf.nn.sampled_softmax_loss(weights, biases, inputs, labels, num_sampled, num_classes, num_true=1, sampled_values=None, remove_accidental_hits=True, partition_strategy='mod', name='sampled_softmax_loss')`](#sampled_softmax_loss) {#sampled_softmax_loss}
 
 Computes and returns the sampled softmax training loss.
 
@@ -993,7 +993,7 @@ classes when using one of the sampled loss functions above.
 
 - - -
 
-### `tf.nn.uniform_candidate_sampler(true_classes, num_true, num_sampled, unique, range_max, seed=None, name=None)` {#uniform_candidate_sampler}
+### [`tf.nn.uniform_candidate_sampler(true_classes, num_true, num_sampled, unique, range_max, seed=None, name=None)`](#uniform_candidate_sampler) {#uniform_candidate_sampler}
 
 Samples a set of classes using a uniform base distribution.
 
@@ -1045,7 +1045,7 @@ compute them approximately.
 
 - - -
 
-### `tf.nn.log_uniform_candidate_sampler(true_classes, num_true, num_sampled, unique, range_max, seed=None, name=None)` {#log_uniform_candidate_sampler}
+### [`tf.nn.log_uniform_candidate_sampler(true_classes, num_true, num_sampled, unique, range_max, seed=None, name=None)`](#log_uniform_candidate_sampler) {#log_uniform_candidate_sampler}
 
 Samples a set of classes using a log-uniform (Zipfian) base distribution.
 
@@ -1104,7 +1104,7 @@ compute them approximately.
 
 - - -
 
-### `tf.nn.learned_unigram_candidate_sampler(true_classes, num_true, num_sampled, unique, range_max, seed=None, name=None)` {#learned_unigram_candidate_sampler}
+### [`tf.nn.learned_unigram_candidate_sampler(true_classes, num_true, num_sampled, unique, range_max, seed=None, name=None)`](#learned_unigram_candidate_sampler) {#learned_unigram_candidate_sampler}
 
 Samples a set of classes from a distribution learned during training.
 
@@ -1160,7 +1160,7 @@ compute them approximately.
 
 - - -
 
-### `tf.nn.fixed_unigram_candidate_sampler(true_classes, num_true, num_sampled, unique, range_max, vocab_file='', distortion=1.0, num_reserved_ids=0, num_shards=1, shard=0, unigrams=[], seed=None, name=None)` {#fixed_unigram_candidate_sampler}
+### [`tf.nn.fixed_unigram_candidate_sampler(true_classes, num_true, num_sampled, unique, range_max, vocab_file='', distortion=1.0, num_reserved_ids=0, num_shards=1, shard=0, unigrams=[], seed=None, name=None)`](#fixed_unigram_candidate_sampler) {#fixed_unigram_candidate_sampler}
 
 Samples a set of classes using the provided (fixed) base distribution.
 
@@ -1241,7 +1241,7 @@ compute them approximately.
 
 - - -
 
-### `tf.nn.compute_accidental_hits(true_classes, sampled_candidates, num_true, seed=None, name=None)` {#compute_accidental_hits}
+### [`tf.nn.compute_accidental_hits(true_classes, sampled_candidates, num_true, seed=None, name=None)`](#compute_accidental_hits) {#compute_accidental_hits}
 
 Compute the position ids in `sampled_candidates` matching `true_classes`.
 

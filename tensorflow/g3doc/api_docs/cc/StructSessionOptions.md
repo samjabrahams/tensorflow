@@ -16,13 +16,13 @@ Configuration information for a Session .
 
 ##Member Details
 
-#### `Env* tensorflow::SessionOptions::env` {#Env_tensorflow_SessionOptions_env}
+#### [`Env* tensorflow::SessionOptions::env`](#Env_tensorflow_SessionOptions_env) {#Env_tensorflow_SessionOptions_env}
 
 The environment to use.
 
 
 
-#### `string tensorflow::SessionOptions::target` {#string_tensorflow_SessionOptions_target}
+#### [`string tensorflow::SessionOptions::target`](#string_tensorflow_SessionOptions_target) {#string_tensorflow_SessionOptions_target}
 
 The TensorFlow runtime to connect to.
 
@@ -36,13 +36,13 @@ Upon creation, a single session affines itself to one of the remote processes, w
 
 If the session disconnects from the remote process during its lifetime, session calls may fail immediately.
 
-#### `ConfigProto tensorflow::SessionOptions::config` {#ConfigProto_tensorflow_SessionOptions_config}
+#### [`ConfigProto tensorflow::SessionOptions::config`](#ConfigProto_tensorflow_SessionOptions_config) {#ConfigProto_tensorflow_SessionOptions_config}
 
 Configuration options.
 
 
 
-#### `tensorflow::SessionOptions::SessionOptions()` {#tensorflow_SessionOptions_SessionOptions}
+#### [`tensorflow::SessionOptions::SessionOptions()`](#tensorflow_SessionOptions_SessionOptions) {#tensorflow_SessionOptions_SessionOptions}
 
 
 

@@ -12,7 +12,7 @@ examples of how a graph is launched in a [`tf.Session`](#Session).
 
 - - -
 
-### `class tf.Session` {#Session}
+### [`class tf.Session`](#Session) {#Session}
 
 A class for running TensorFlow operations.
 
@@ -68,7 +68,7 @@ sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True,
 
 - - -
 
-#### `tf.Session.__init__(target='', graph=None, config=None)` {#Session.__init__}
+#### [`tf.Session.__init__(target='', graph=None, config=None)`](#Session.__init__) {#Session.__init__}
 
 Creates a new TensorFlow session.
 
@@ -93,7 +93,7 @@ the session constructor.
 
 - - -
 
-#### `tf.Session.run(fetches, feed_dict=None)` {#Session.run}
+#### [`tf.Session.run(fetches, feed_dict=None)`](#Session.run) {#Session.run}
 
 Runs the operations and evaluates the tensors in `fetches`.
 
@@ -158,7 +158,7 @@ one of the following types:
 
 - - -
 
-#### `tf.Session.close()` {#Session.close}
+#### [`tf.Session.close()`](#Session.close) {#Session.close}
 
 Closes this session.
 
@@ -173,7 +173,7 @@ Calling this method frees all resources associated with the session.
 
 - - -
 
-#### `tf.Session.graph` {#Session.graph}
+#### [`tf.Session.graph`](#Session.graph) {#Session.graph}
 
 The graph that was launched in this session.
 
@@ -181,7 +181,7 @@ The graph that was launched in this session.
 
 - - -
 
-#### `tf.Session.as_default()` {#Session.as_default}
+#### [`tf.Session.as_default()`](#Session.as_default) {#Session.as_default}
 
 Returns a context manager that makes this object the default session.
 
@@ -236,7 +236,7 @@ thread's function.
 
 - - -
 
-### `class tf.InteractiveSession` {#InteractiveSession}
+### [`class tf.InteractiveSession`](#InteractiveSession) {#InteractiveSession}
 
 A TensorFlow `Session` for use in interactive contexts, such as a shell.
 
@@ -277,7 +277,7 @@ with tf.Session():
 
 - - -
 
-#### `tf.InteractiveSession.__init__(target='', graph=None)` {#InteractiveSession.__init__}
+#### [`tf.InteractiveSession.__init__(target='', graph=None)`](#InteractiveSession.__init__) {#InteractiveSession.__init__}
 
 Creates a new interactive TensorFlow session.
 
@@ -300,7 +300,7 @@ the session constructor.
 
 - - -
 
-#### `tf.InteractiveSession.close()` {#InteractiveSession.close}
+#### [`tf.InteractiveSession.close()`](#InteractiveSession.close) {#InteractiveSession.close}
 
 Closes an `InteractiveSession`.
 
@@ -309,7 +309,7 @@ Closes an `InteractiveSession`.
 
 - - -
 
-### `tf.get_default_session()` {#get_default_session}
+### [`tf.get_default_session()`](#get_default_session) {#get_default_session}
 
 Returns the default session for the current thread.
 
@@ -331,7 +331,7 @@ thread's function.
 
 - - -
 
-### `class tf.OpError` {#OpError}
+### [`class tf.OpError`](#OpError) {#OpError}
 
 A generic error that is raised when TensorFlow execution fails.
 
@@ -340,7 +340,7 @@ of `OpError` from the `tf.errors` module.
 
 - - -
 
-#### `tf.OpError.op` {#OpError.op}
+#### [`tf.OpError.op`](#OpError.op) {#OpError.op}
 
 The operation that failed, if known.
 
@@ -358,7 +358,7 @@ discover information about the op.
 
 - - -
 
-#### `tf.OpError.node_def` {#OpError.node_def}
+#### [`tf.OpError.node_def`](#OpError.node_def) {#OpError.node_def}
 
 The `NodeDef` proto representing the op that failed.
 
@@ -367,7 +367,7 @@ The `NodeDef` proto representing the op that failed.
 #### Other Methods
 - - -
 
-#### `tf.OpError.__init__(node_def, op, message, error_code)` {#OpError.__init__}
+#### [`tf.OpError.__init__(node_def, op, message, error_code)`](#OpError.__init__) {#OpError.__init__}
 
 Creates a new `OpError` indicating that a particular op failed.
 
@@ -382,14 +382,14 @@ Creates a new `OpError` indicating that a particular op failed.
 
 - - -
 
-#### `tf.OpError.error_code` {#OpError.error_code}
+#### [`tf.OpError.error_code`](#OpError.error_code) {#OpError.error_code}
 
 The integer error code that describes the error.
 
 
 - - -
 
-#### `tf.OpError.message` {#OpError.message}
+#### [`tf.OpError.message`](#OpError.message) {#OpError.message}
 
 The error message that describes the error.
 
@@ -397,7 +397,7 @@ The error message that describes the error.
 
 - - -
 
-### `class tf.errors.CancelledError` {#CancelledError}
+### [`class tf.errors.CancelledError`](#CancelledError) {#CancelledError}
 
 Raised when an operation or step is cancelled.
 
@@ -411,7 +411,7 @@ A step that is running such a long-running operation will fail by raising
 
 - - -
 
-#### `tf.errors.CancelledError.__init__(node_def, op, message)` {#CancelledError.__init__}
+#### [`tf.errors.CancelledError.__init__(node_def, op, message)`](#CancelledError.__init__) {#CancelledError.__init__}
 
 Creates a `CancelledError`.
 
@@ -419,7 +419,7 @@ Creates a `CancelledError`.
 
 - - -
 
-### `class tf.errors.UnknownError` {#UnknownError}
+### [`class tf.errors.UnknownError`](#UnknownError) {#UnknownError}
 
 Unknown error.
 
@@ -431,7 +431,7 @@ error.
 
 - - -
 
-#### `tf.errors.UnknownError.__init__(node_def, op, message, error_code=2)` {#UnknownError.__init__}
+#### [`tf.errors.UnknownError.__init__(node_def, op, message, error_code=2)`](#UnknownError.__init__) {#UnknownError.__init__}
 
 Creates an `UnknownError`.
 
@@ -439,7 +439,7 @@ Creates an `UnknownError`.
 
 - - -
 
-### `class tf.errors.InvalidArgumentError` {#InvalidArgumentError}
+### [`class tf.errors.InvalidArgumentError`](#InvalidArgumentError) {#InvalidArgumentError}
 
 Raised when an operation receives an invalid argument.
 
@@ -453,7 +453,7 @@ tensor.
 
 - - -
 
-#### `tf.errors.InvalidArgumentError.__init__(node_def, op, message)` {#InvalidArgumentError.__init__}
+#### [`tf.errors.InvalidArgumentError.__init__(node_def, op, message)`](#InvalidArgumentError.__init__) {#InvalidArgumentError.__init__}
 
 Creates an `InvalidArgumentError`.
 
@@ -461,7 +461,7 @@ Creates an `InvalidArgumentError`.
 
 - - -
 
-### `class tf.errors.DeadlineExceededError` {#DeadlineExceededError}
+### [`class tf.errors.DeadlineExceededError`](#DeadlineExceededError) {#DeadlineExceededError}
 
 Raised when a deadline expires before an operation could complete.
 
@@ -469,7 +469,7 @@ This exception is not currently used.
 
 - - -
 
-#### `tf.errors.DeadlineExceededError.__init__(node_def, op, message)` {#DeadlineExceededError.__init__}
+#### [`tf.errors.DeadlineExceededError.__init__(node_def, op, message)`](#DeadlineExceededError.__init__) {#DeadlineExceededError.__init__}
 
 Creates a `DeadlineExceededError`.
 
@@ -477,7 +477,7 @@ Creates a `DeadlineExceededError`.
 
 - - -
 
-### `class tf.errors.NotFoundError` {#NotFoundError}
+### [`class tf.errors.NotFoundError`](#NotFoundError) {#NotFoundError}
 
 Raised when a requested entity (e.g., a file or directory) was not found.
 
@@ -488,7 +488,7 @@ does not exist.
 
 - - -
 
-#### `tf.errors.NotFoundError.__init__(node_def, op, message)` {#NotFoundError.__init__}
+#### [`tf.errors.NotFoundError.__init__(node_def, op, message)`](#NotFoundError.__init__) {#NotFoundError.__init__}
 
 Creates a `NotFoundError`.
 
@@ -496,7 +496,7 @@ Creates a `NotFoundError`.
 
 - - -
 
-### `class tf.errors.AlreadyExistsError` {#AlreadyExistsError}
+### [`class tf.errors.AlreadyExistsError`](#AlreadyExistsError) {#AlreadyExistsError}
 
 Raised when an entity that we attempted to create already exists.
 
@@ -507,7 +507,7 @@ existing file was passed.
 
 - - -
 
-#### `tf.errors.AlreadyExistsError.__init__(node_def, op, message)` {#AlreadyExistsError.__init__}
+#### [`tf.errors.AlreadyExistsError.__init__(node_def, op, message)`](#AlreadyExistsError.__init__) {#AlreadyExistsError.__init__}
 
 Creates an `AlreadyExistsError`.
 
@@ -515,7 +515,7 @@ Creates an `AlreadyExistsError`.
 
 - - -
 
-### `class tf.errors.PermissionDeniedError` {#PermissionDeniedError}
+### [`class tf.errors.PermissionDeniedError`](#PermissionDeniedError) {#PermissionDeniedError}
 
 Raised when the caller does not have permission to run an operation.
 
@@ -526,7 +526,7 @@ file for which the user does not have the read file permission.
 
 - - -
 
-#### `tf.errors.PermissionDeniedError.__init__(node_def, op, message)` {#PermissionDeniedError.__init__}
+#### [`tf.errors.PermissionDeniedError.__init__(node_def, op, message)`](#PermissionDeniedError.__init__) {#PermissionDeniedError.__init__}
 
 Creates a `PermissionDeniedError`.
 
@@ -534,7 +534,7 @@ Creates a `PermissionDeniedError`.
 
 - - -
 
-### `class tf.errors.UnauthenticatedError` {#UnauthenticatedError}
+### [`class tf.errors.UnauthenticatedError`](#UnauthenticatedError) {#UnauthenticatedError}
 
 The request does not have valid authentication credentials.
 
@@ -542,7 +542,7 @@ This exception is not currently used.
 
 - - -
 
-#### `tf.errors.UnauthenticatedError.__init__(node_def, op, message)` {#UnauthenticatedError.__init__}
+#### [`tf.errors.UnauthenticatedError.__init__(node_def, op, message)`](#UnauthenticatedError.__init__) {#UnauthenticatedError.__init__}
 
 Creates an `UnauthenticatedError`.
 
@@ -550,7 +550,7 @@ Creates an `UnauthenticatedError`.
 
 - - -
 
-### `class tf.errors.ResourceExhaustedError` {#ResourceExhaustedError}
+### [`class tf.errors.ResourceExhaustedError`](#ResourceExhaustedError) {#ResourceExhaustedError}
 
 Some resource has been exhausted.
 
@@ -559,7 +559,7 @@ exhausted, or perhaps the entire file system is out of space.
 
 - - -
 
-#### `tf.errors.ResourceExhaustedError.__init__(node_def, op, message)` {#ResourceExhaustedError.__init__}
+#### [`tf.errors.ResourceExhaustedError.__init__(node_def, op, message)`](#ResourceExhaustedError.__init__) {#ResourceExhaustedError.__init__}
 
 Creates a `ResourceExhaustedError`.
 
@@ -567,7 +567,7 @@ Creates a `ResourceExhaustedError`.
 
 - - -
 
-### `class tf.errors.FailedPreconditionError` {#FailedPreconditionError}
+### [`class tf.errors.FailedPreconditionError`](#FailedPreconditionError) {#FailedPreconditionError}
 
 Operation was rejected because the system is not in a state to execute it.
 
@@ -577,7 +577,7 @@ before it has been initialized.
 
 - - -
 
-#### `tf.errors.FailedPreconditionError.__init__(node_def, op, message)` {#FailedPreconditionError.__init__}
+#### [`tf.errors.FailedPreconditionError.__init__(node_def, op, message)`](#FailedPreconditionError.__init__) {#FailedPreconditionError.__init__}
 
 Creates a `FailedPreconditionError`.
 
@@ -585,7 +585,7 @@ Creates a `FailedPreconditionError`.
 
 - - -
 
-### `class tf.errors.AbortedError` {#AbortedError}
+### [`class tf.errors.AbortedError`](#AbortedError) {#AbortedError}
 
 The operation was aborted, typically due to a concurrent action.
 
@@ -597,7 +597,7 @@ previously ran.
 
 - - -
 
-#### `tf.errors.AbortedError.__init__(node_def, op, message)` {#AbortedError.__init__}
+#### [`tf.errors.AbortedError.__init__(node_def, op, message)`](#AbortedError.__init__) {#AbortedError.__init__}
 
 Creates an `AbortedError`.
 
@@ -605,7 +605,7 @@ Creates an `AbortedError`.
 
 - - -
 
-### `class tf.errors.OutOfRangeError` {#OutOfRangeError}
+### [`class tf.errors.OutOfRangeError`](#OutOfRangeError) {#OutOfRangeError}
 
 Raised when an operation executed past the valid range.
 
@@ -617,7 +617,7 @@ operation executes.
 
 - - -
 
-#### `tf.errors.OutOfRangeError.__init__(node_def, op, message)` {#OutOfRangeError.__init__}
+#### [`tf.errors.OutOfRangeError.__init__(node_def, op, message)`](#OutOfRangeError.__init__) {#OutOfRangeError.__init__}
 
 Creates an `OutOfRangeError`.
 
@@ -625,7 +625,7 @@ Creates an `OutOfRangeError`.
 
 - - -
 
-### `class tf.errors.UnimplementedError` {#UnimplementedError}
+### [`class tf.errors.UnimplementedError`](#UnimplementedError) {#UnimplementedError}
 
 Raised when an operation has not been implemented.
 
@@ -637,7 +637,7 @@ because this is not yet supported.
 
 - - -
 
-#### `tf.errors.UnimplementedError.__init__(node_def, op, message)` {#UnimplementedError.__init__}
+#### [`tf.errors.UnimplementedError.__init__(node_def, op, message)`](#UnimplementedError.__init__) {#UnimplementedError.__init__}
 
 Creates an `UnimplementedError`.
 
@@ -645,7 +645,7 @@ Creates an `UnimplementedError`.
 
 - - -
 
-### `class tf.errors.InternalError` {#InternalError}
+### [`class tf.errors.InternalError`](#InternalError) {#InternalError}
 
 Raised when the system experiences an internal error.
 
@@ -654,7 +654,7 @@ has been broken. Catching this exception is not recommended.
 
 - - -
 
-#### `tf.errors.InternalError.__init__(node_def, op, message)` {#InternalError.__init__}
+#### [`tf.errors.InternalError.__init__(node_def, op, message)`](#InternalError.__init__) {#InternalError.__init__}
 
 Creates an `InternalError`.
 
@@ -662,7 +662,7 @@ Creates an `InternalError`.
 
 - - -
 
-### `class tf.errors.UnavailableError` {#UnavailableError}
+### [`class tf.errors.UnavailableError`](#UnavailableError) {#UnavailableError}
 
 Raised when the runtime is currently unavailable.
 
@@ -670,7 +670,7 @@ This exception is not currently used.
 
 - - -
 
-#### `tf.errors.UnavailableError.__init__(node_def, op, message)` {#UnavailableError.__init__}
+#### [`tf.errors.UnavailableError.__init__(node_def, op, message)`](#UnavailableError.__init__) {#UnavailableError.__init__}
 
 Creates an `UnavailableError`.
 
@@ -678,7 +678,7 @@ Creates an `UnavailableError`.
 
 - - -
 
-### `class tf.errors.DataLossError` {#DataLossError}
+### [`class tf.errors.DataLossError`](#DataLossError) {#DataLossError}
 
 Raised when unrecoverable data loss or corruption is encountered.
 
@@ -688,7 +688,7 @@ operation, if the file is truncated while it is being read.
 
 - - -
 
-#### `tf.errors.DataLossError.__init__(node_def, op, message)` {#DataLossError.__init__}
+#### [`tf.errors.DataLossError.__init__(node_def, op, message)`](#DataLossError.__init__) {#DataLossError.__init__}
 
 Creates a `DataLossError`.
 
