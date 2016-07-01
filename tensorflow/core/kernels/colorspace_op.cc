@@ -64,7 +64,7 @@ class RGBToHSVOp : public OpKernel {
 
     Tensor trange;
     OP_REQUIRES_OK(
-        context, context->allocate_temp(DataTypeToEnum<float>::value,
+        context, context->allocate_temp(DataTypeToEnum<T>::value,
                                         TensorShape({input_data.dimension(0)}),
                                         &trange));
 
