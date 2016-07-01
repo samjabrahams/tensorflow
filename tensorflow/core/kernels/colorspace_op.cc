@@ -114,6 +114,7 @@ class HSVToRGBOp : public OpKernel {
                           HSVToRGBOp<CPUDevice, T>);          \
   template class HSVToRGBOp<CPUDevice, T>;
 TF_CALL_float(REGISTER_CPU);
+TF_CALL_double(REGISTER_CPU);
 
 #if GOOGLE_CUDA
 // Forward declarations of the function specializations for GPU (to prevent
@@ -132,6 +133,7 @@ namespace functor {
       TTypes<T, 2>::Tensor output_data);                      \
   extern template struct HSVToRGB<GPUDevice, T>;
 TF_CALL_float(DECLARE_GPU);
+TF_CALL_double(DECLARE_GPU);
 }  // namespace functor
 #define REGISTER_GPU(T)                                       \
   REGISTER_KERNEL_BUILDER(Name("RGBToHSV").Device(DEVICE_GPU) \
@@ -141,6 +143,7 @@ TF_CALL_float(DECLARE_GPU);
                               .TypeConstraint<T>("T"),        \
                           HSVToRGBOp<GPUDevice, T>);
 TF_CALL_float(REGISTER_GPU);
+TF_CALL_double(REGISTER_GPU);
 #endif
 
 }  // namespace tensorflow
